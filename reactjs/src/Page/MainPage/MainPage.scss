@@ -1,0 +1,30 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+
+@font-face {
+  font-family: "CompagnonMedium";
+  src:local("CompagnonMedium") ,url("../../Components/assets/font/Compagnon-Medium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "clesmont";
+  src: local("clesmont") ,url("../../Components/assets/font/clesmont.ttf") format("truetype");
+}
+
+
+@media screen and (max-width: 768px){
+  .MainPage{
+    height: 100%;
+    width: 100%;
+    .MainPage_Header{
+      height: 10vh;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  
+}
