@@ -1,6 +1,7 @@
-body{
+*{
   margin: 0;
   padding: 0;
+
 }
 
 @font-face {
@@ -13,13 +14,46 @@ body{
   src: local("clesmont") ,url("../../Components/assets/font/clesmont.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "ladyrose";
+  src: local("ladyrose") ,url("../../Components/assets/font/ladyrose.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "LTYPE";
+  src: local("LTYPE") ,url("../../Components/assets/font/LTYPE.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "LTYPEB";
+  src: local("LTYPEB") ,url("../../Components/assets/font/LTYPEB.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "LTYPEBO";
+  src: local("LTYPEBO") ,url("../../Components/assets/font/LTYPEBO.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "LTYPEO";
+  src: local("LTYPEO") ,url("../../Components/assets/font/LTYPEO.TTF") format("truetype");
+}
 
 @media screen and (max-width: 768px){
   .MainPage{
     height: 100%;
     width: 100%;
+    background-color: black;
     .MainPage_Header{
       height: 10vh;
+      width: 100%;
+    }
+    .MainPage_Welcome{
+      height: 60vh;
+      width: 100%;
+    }
+    .MainPage_Prize{
+      height: 40vh;
       width: 100%;
     }
   }
