@@ -8,7 +8,7 @@ import BG3 from "../assets/ImgMobile/Background/WelcomeBG.jpg";
 import { useState, useRef, useEffect } from "react";
 
 function BackGroundChange() {
-  const imgBG = [BG1, BG2, BG3];
+  const imgBG = [BG3, BG3, BG3];
   const [currentSlide, setCurrentSlide] = useState(0);
 
   let sliderInterval = useRef();

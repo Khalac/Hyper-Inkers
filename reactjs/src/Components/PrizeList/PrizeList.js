@@ -10,6 +10,8 @@ import Second from "../assets/ImgMobile/Prize/Second.png";
 import Third from "../assets/ImgMobile/Prize/Third.png";
 import Top3 from "../assets/ImgMobile/Prize/Top3.png";
 
+import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
@@ -258,6 +260,16 @@ function PrizeList() {
             {currentSlide + 1}/{instanceRef.current.track.details.slides.length}
           </div>
         )}
+        <div className="Prize_Go_Left">
+          <MdArrowBackIos
+            onClick={(e) => e.stopPropagation() || instanceRef.current?.prev()}
+          />
+        </div>
+        <div className="Prize_Go_Right">
+          <MdArrowForwardIos
+            onClick={(e) => e.stopPropagation() || instanceRef.current?.next()}
+          />
+        </div>
       </div>
     </div>
   );
