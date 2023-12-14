@@ -38,18 +38,19 @@
     }
     .Welcome_Text{
       width: 80%;
-      height: 30%;
+      height: 25%;
       display: flex;
       align-items: flex-end;
-      font-size: 3.5vw;
+      font-size: 3vw;
       font-family: "CompagnonMedium";
       margin-left: 5%;
       color: #cc6600ca;
+
       z-index: 1;
     }
     .Welcome_Button{
       width: 90%;
-      height: 20%;
+      height: 25%;
       display: flex;
       justify-content: end;
       align-items: center;

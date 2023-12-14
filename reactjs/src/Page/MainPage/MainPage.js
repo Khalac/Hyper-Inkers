@@ -6,6 +6,8 @@ import Header from "../../Components/Header/Header";
 import Welcome from "../../Components/Welcome/Welcome";
 import PrizeList from "../../Components/PrizeList/PrizeList";
 import Slider from "../../Components/Slider/Slider";
+import AboutUs from "../../Components/AboutUs/AboutUs";
+import WDWH from "../../Components/WDWH/WDWH";
 
 function MainPage() {
   console.log(IsMobile);
@@ -19,6 +21,12 @@ function MainPage() {
       </div>
       <div className="MainPage_Prize">
         <PrizeList />
+      </div>
+      <div className="MainPage_AboutUs">
+        <AboutUs />
+      </div>
+      <div className="MainPage_WDWH">
+        <WDWH />
       </div>
     </div>
   ) : (
