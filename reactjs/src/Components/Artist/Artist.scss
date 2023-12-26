@@ -1,0 +1,152 @@
+@media screen and (max-width: 768px){
+  .Artist{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .Artist_BG{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .Artist_Name{
+      height: 15%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "clesmont";
+      color: #cc6600;
+      font-size: 6vw;
+     
+    }
+    .Artist_Text{
+      height: 10%;
+      width: 80%;
+      text-align: center;
+      font-family: "LTYPE";
+      color: #dcdbbec4;
+      font-size: 2.5vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 15px;
+    }
+    .Artist_Container{
+      height: 70%;
+      width: 100%;
+
+      z-index: 1;
+      position: relative;
+      .Artist_Container_Normal{
+        max-height: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .Artist_Container_Normal_Wrap{
+          height: 35%;
+          width: 90%;
+          background-image: linear-gradient( #cc66004b, #33333310);
+          position: relative;
+          transition: width 1s ease;
+          .Artist_Container_Img_Img{
+            position: absolute;
+            width: 100%;
+            height: auto;
+            transition: width 1s ease;
+            bottom: 0;
+          }
+          .Artist_Container_Name{
+            position: absolute;
+            transition: height 0.5s ease;
+            top: 5%;
+            left: 3%;
+            color: #dcdbbe9a;
+            font-size: 3vw;
+            font-family: "ladyrose";
+          }
+          .Artist_Container_Category{
+            height: 10%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            transition: height 0.5s ease;
+            background-color: rgba(0, 0, 0, 0.287);
+            color: #dcdbbeb3;
+            font-size: 1.2vw;
+            font-family: "LTYPE";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        
+      }
+      .Artist_Container_Active{
+        max-height: 80%;
+        height: 80%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .Artist_Container_Active_Wrap{
+          height: 50%;
+            width: 100%;
+            background-image: linear-gradient( #cc660051, #33333310);
+            position: relative;
+            transition: width 1s ease;
+          .Artist_Container_Img_Img_Active{
+            position: absolute;
+            width: 100%;
+            height: auto;
+            transition: width 1s ease;
+            bottom: 20%;
+          }
+          .Artist_Container_Name_Active{
+            position: absolute;
+            transition: height 0.5s ease;
+            top: 5%;
+              left: 3%;
+              color: #dcdbbe9a;
+              font-size: 4vw;
+              font-family: "ladyrose";
+          }
+          .Artist_Container_Category_Active{
+            height: 20%;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            transition: height 0.5s ease;
+            background-color: rgba(0, 0, 0, 0.287);
+            color: #dcdbbeb3;
+            font-size: 1.6vw;
+            font-family: "LTYPE";
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+      
+      }
+      .Artist_Link{
+        width: 30vw;
+        height: 10%;
+        position: absolute;
+        background-color: white;
+        bottom: 10%;
+      }
+    }
+   
+
+  }
+}
