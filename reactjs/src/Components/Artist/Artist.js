@@ -12,33 +12,33 @@ import Ben from "../assets/ImgMobile/Artist/Ben.webp";
 import Anet from "../assets/ImgMobile/Artist/Anet.webp";
 import Aaron from "../assets/ImgMobile/Artist/Aaron.webp";
 
-import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
+import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
 const ArtistArr = [
   {
     img: Min,
     name: "MINH",
-    category: "COLOR - REALISM - BLACK & GREY",
+    category: "COLOR, REALISM, BLACK & GREY",
   },
   {
     img: Ben,
     name: "BEN",
-    category: "PORTRAIT - REALISM - BLACK & GREY",
+    category: "PORTRAIT, REALISM, BLACK & GREY",
   },
   {
     img: Anet,
     name: "ANET",
-    category: "COLOR - LINEWORK - BLACK & GREY",
+    category: "COLOR, LINEWORK, BLACK & GREY",
   },
   {
     img: Nicole,
     name: "NICOLE",
-    category: "PIERCING - LINEWORK - BLACKWORK",
+    category: "PIERCING, LINEWORK, BLACKWORK",
   },
   {
     img: Aaron,
     name: "AARON",
-    category: "PORTRAIT - REALISM - BLACK & GREY",
+    category: "PORTRAIT, REALISM, BLACK & GREY",
   },
 ];
 function Artist() {
@@ -106,20 +106,28 @@ function Artist() {
           )
         )}
         {loaded && instanceRef.current && (
-          <div className="Artist_Link">
-            {currentSlide + 1}/{instanceRef.current.track.details.slides.length}
+          <div className="Artist_Button_Container">
+            <div className="Artist_Go_Left">
+              <IoIosArrowRoundBack
+                onClick={(e) =>
+                  e.stopPropagation() || instanceRef.current?.prev()
+                }
+              />
+            </div>
+            <div className="Artist_Link">
+              {/* {currentSlide + 1}/{instanceRef.current.track.details.slides.length} */}
+              VIEW PORFOLIO
+            </div>
+
+            <div className="Artist_Go_Right">
+              <IoIosArrowRoundForward
+                onClick={(e) =>
+                  e.stopPropagation() || instanceRef.current?.next()
+                }
+              />
+            </div>
           </div>
         )}
-        <div className="Artist_Go_Left">
-          <MdArrowBackIos
-            onClick={(e) => e.stopPropagation() || instanceRef.current?.prev()}
-          />
-        </div>
-        <div className="Artist_Go_Right">
-          <MdArrowForwardIos
-            onClick={(e) => e.stopPropagation() || instanceRef.current?.next()}
-          />
-        </div>
       </div>
     </div>
   );

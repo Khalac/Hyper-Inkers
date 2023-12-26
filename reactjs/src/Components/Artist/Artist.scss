@@ -53,17 +53,19 @@
         flex-direction: column;
 
         .Artist_Container_Normal_Wrap{
-          height: 35%;
+          height: 40%;
           width: 90%;
           background-image: linear-gradient( #cc66004b, #33333310);
           position: relative;
           transition: width 1s ease;
+          border-radius: 10px;
           .Artist_Container_Img_Img{
             position: absolute;
             width: 100%;
             height: auto;
             transition: width 1s ease;
             bottom: 0;
+            
           }
           .Artist_Container_Name{
             position: absolute;
@@ -73,6 +75,7 @@
             color: #dcdbbe9a;
             font-size: 3vw;
             font-family: "ladyrose";
+            left: 10%;
           }
           .Artist_Container_Category{
             height: 10%;
@@ -100,11 +103,12 @@
         align-items: center;
         flex-direction: column;
         .Artist_Container_Active_Wrap{
-          height: 50%;
+          height: 55%;
             width: 100%;
             background-image: linear-gradient( #cc660051, #33333310);
             position: relative;
             transition: width 1s ease;
+            border-radius: 10px;
           .Artist_Container_Img_Img_Active{
             position: absolute;
             width: 100%;
@@ -116,7 +120,7 @@
             position: absolute;
             transition: height 0.5s ease;
             top: 5%;
-              left: 3%;
+              left: 10%;
               color: #dcdbbe9a;
               font-size: 4vw;
               font-family: "ladyrose";
@@ -138,13 +142,46 @@
         }
       
       }
-      .Artist_Link{
-        width: 30vw;
-        height: 10%;
+      .Artist_Button_Container{
+        height: 5%;
+        width: 60%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
         position: absolute;
-        background-color: white;
         bottom: 10%;
+        left: 20%;
+        .Artist_Link{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 35vw;
+          height: 100%;
+          background-color: #1e5761;
+          bottom: 10%;
+          color: #dcdbbebe;
+          font-family: "LTYPE";
+          font-size: 3.5vw;
+          left: 32.5%;
+          border-radius: 10px;
+        }
+        .Artist_Go_Left{
+          display: flex;
+          justify-content: center;
+          color: #dcdbbebe;
+
+          font-size: 8vw;
+        }
+        .Artist_Go_Right{
+          display: flex;
+          justify-content: center;
+          color: #dcdbbebe;
+
+          font-size: 8vw;
+        }
       }
+      
     }
    
 
