@@ -9,6 +9,8 @@ import WDWH from "../../Components/WDWH/WDWH";
 import WWYG from "../../Components/WWYG/WWYG";
 import Service from "../../Components/Service/Service";
 import Artist from "../../Components/Artist/Artist";
+import Gallery from "../../Components/Gallery/Gallery";
+import Pricing from "../../Components/Pricing/Pricing";
 
 function MainPage() {
   return (
@@ -36,6 +38,12 @@ function MainPage() {
       </div>
       <div className="MainPage_Artist">
         <Artist />
+      </div>
+      <div className="MainPage_Gallery">
+        <Gallery />
+      </div>
+      <div className="MainPage_Pricing">
+        <Pricing />
       </div>
     </div>
   );

@@ -12,6 +12,8 @@ import Ben from "../assets/ImgMobile/Artist/Ben.webp";
 import Anet from "../assets/ImgMobile/Artist/Anet.webp";
 import Aaron from "../assets/ImgMobile/Artist/Aaron.webp";
 
+import { useNavigate } from "react-router-dom";
+
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
 const ArtistArr = [
@@ -19,29 +21,39 @@ const ArtistArr = [
     img: Min,
     name: "MINH",
     category: "COLOR, REALISM, BLACK & GREY",
+    link: "/Artist/Min",
   },
   {
     img: Ben,
     name: "BEN",
     category: "PORTRAIT, REALISM, BLACK & GREY",
+    link: "/Artist/ben",
   },
   {
     img: Anet,
     name: "ANET",
     category: "COLOR, LINEWORK, BLACK & GREY",
+    link: "/Artist/Anet",
   },
   {
     img: Nicole,
     name: "NICOLE",
     category: "PIERCING, LINEWORK, BLACKWORK",
+    link: "/Artist/Nicole",
   },
   {
     img: Aaron,
     name: "AARON",
     category: "PORTRAIT, REALISM, BLACK & GREY",
+    link: "/Artist/Aaron",
   },
 ];
 function Artist() {
+  const nav = useNavigate();
+  const goToPage = (i) => {
+    nav(ArtistArr[i].link);
+  };
+
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider({
@@ -114,8 +126,7 @@ function Artist() {
                 }
               />
             </div>
-            <div className="Artist_Link">
-              {/* {currentSlide + 1}/{instanceRef.current.track.details.slides.length} */}
+            <div className="Artist_Link" onClick={() => goToPage(currentSlide)}>
               VIEW PORFOLIO
             </div>
 
