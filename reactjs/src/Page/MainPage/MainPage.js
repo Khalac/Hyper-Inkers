@@ -2,15 +2,18 @@ import React from "react";
 import "./MainPage.scss";
 
 import Header from "../../Components/Header/Header";
-import Welcome from "../../Components/Welcome/Welcome";
-import PrizeList from "../../Components/PrizeList/PrizeList";
-import AboutUs from "../../Components/AboutUs/AboutUs";
-import WDWH from "../../Components/WDWH/WDWH";
-import WWYG from "../../Components/WWYG/WWYG";
-import Service from "../../Components/Service/Service";
-import Artist from "../../Components/Artist/Artist";
-import Gallery from "../../Components/Gallery/Gallery";
-import Pricing from "../../Components/Pricing/Pricing";
+import Welcome from "../../Components/MainPage/Welcome/Welcome";
+import PrizeList from "../../Components/MainPage/PrizeList/PrizeList";
+import AboutUs from "../../Components/MainPage/AboutUs/AboutUs";
+import WDWH from "../../Components/MainPage/WDWH/WDWH";
+import WWYG from "../../Components/MainPage/WWYG/WWYG";
+import Service from "../../Components/MainPage/Service/Service";
+import Artist from "../../Components/MainPage/Artist/Artist";
+import Gallery from "../../Components/MainPage/Gallery/Gallery";
+import Pricing from "../../Components/MainPage/Pricing/Pricing";
+import FAQ from "../../Components/MainPage/FAQ/FAQ";
+import Contact from "../../Components/MainPage/Contact/Contact";
+import Booking from "../../Components/MainPage/Booking/Booking";
 
 function MainPage() {
   return (
@@ -44,6 +47,15 @@ function MainPage() {
       </div>
       <div className="MainPage_Pricing">
         <Pricing />
+      </div>
+      <div className="MainPage_FAQ">
+        <FAQ />
+      </div>
+      <div className="MainPage_Contact">
+        <Contact />
+      </div>
+      <div className="MainPage_Booking">
+        <Booking />
       </div>
     </div>
   );

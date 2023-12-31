@@ -1,0 +1,77 @@
+@media screen and (max-width: 768px){
+  .WWYG{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .WWYG_BG{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .WWYG_Name{
+      height: 5%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "clesmont";
+        color: #cc6600;
+        font-size: 6vw;
+    }
+    .WWYG_Text{
+      height: 5%;
+      width: 80%;
+      text-align: center;
+      font-family: "LTYPE";
+      color: #dcdbbec4;
+      font-size: 2.5vw;
+      display: flex;
+      justify-content: center;
+      line-height: 15px;
+    }
+    .WWYG_Detail{
+      height: 25%;
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      background-image: linear-gradient( #cc66002a, #33333310);
+      z-index: 2;
+      margin-bottom: 10%;
+      .WWYG_Detail_Img{
+        height: 60%;
+        width: auto;
+
+      }
+      .WWYG_Detail_Name{
+        height: 10%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #cc6600;
+        font-family: "ladyrose";
+        font-size: 3.3vw;
+      }
+      .WWYG_Detail_Des{
+        height: 15%;
+        width: 75%;
+        text-align: center;
+        font-family: "LTYPE";
+      color: #dcdbbec4;
+      font-size: 2.5vw;
+      display: flex;
+      justify-content: center;
+      line-height: 15px;
+      }
+    }
+  }
+}
