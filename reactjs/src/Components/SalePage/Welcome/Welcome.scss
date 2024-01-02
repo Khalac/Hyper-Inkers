@@ -1,0 +1,72 @@
+@media screen and (max-width: 768px){
+  .Welcome_Sale{
+    height: 100%;
+    width: 100%;
+    background-image: url("../../assets/ImgMobile/ImgSalePage/bg.webp");
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .Welcome_Sale_Text{
+      height: 75%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .Welcome_Sale_Name{
+        font-family: "clesmont";
+        font-size: 7vw;
+        color: #cc6600ca;
+        z-index: 3;
+      }
+      .Welcome_Sale_Des{
+        width: 70%;
+        font-size: 5vw;
+        color: #cc6600ca;
+        color: #dcdbbe96;
+        z-index: 3;
+        font-family: "CompagnonMedium";
+        text-align: center;
+      }
+    }
+    .Welcome_Sale_Icon{
+      height: 25%;
+      width: 100%;
+      display: flex;
+
+      .Welcome_Sale_Icon_Left{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .Welcome_Sale_Icon_Left_Icon{
+          margin-left: 3%;
+          margin-right: 3%;
+          width: auto;
+          height: 6.5vw;
+          cursor: pointer;
+        }
+      }
+      .Welcome_Sale_Icon_Right{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .Welcome_Sale_Icon_Right_Icon{
+          width: auto;
+          height: 6.5vw;
+          cursor: pointer;
+        }
+      }
+    }
+   
+  }
+}

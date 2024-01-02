@@ -9,8 +9,8 @@ root.render(
   <React.StrictMode>
     <HashRouter>
       <Routes>
-        <Route exac path="/SalePage" element={<SalePage />} />
-        <Route exac path="/" element={<MainPage />} />
+        <Route exac path="/" element={<SalePage />} />
+        <Route exac path="/MainPage" element={<MainPage />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>
