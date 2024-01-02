@@ -3,7 +3,6 @@ import "./Booking.scss";
 
 import BG from "../../assets/ImgMobile/Background/MainBG.png";
 import { useState } from "react";
-import { set } from "mongoose";
 
 function Booking() {
   const [name, setName] = useState();
