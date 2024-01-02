@@ -10,7 +10,7 @@ import time from "../../assets/Logo/time.webp";
 
 function Contact() {
   return (
-    <div className="Contact">
+    <div className="Contact" id="Contact">
       <img src={BG} alt="" className="Contact_BG" />
       <div className="Contact_Name">CONTACT US</div>
       <div className="Contact_GoogleMap">

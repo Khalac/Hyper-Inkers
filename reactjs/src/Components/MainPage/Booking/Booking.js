@@ -2,8 +2,11 @@ import React from "react";
 import "./Booking.scss";
 
 import BG from "../../assets/ImgMobile/Background/MainBG.png";
+import { useState } from "react";
+import { set } from "mongoose";
 
 function Booking() {
+  const [name, setName] = useState();
   return (
     <div className="Booking">
       <img src={BG} alt="" className="Booking_BG" />
@@ -15,7 +18,35 @@ function Booking() {
         Please tell us about your ideas, style, size, color, placement and your
         budget
       </div>
-      <div className="Booking_Form"></div>
+      <div className="Booking_Form">
+        <input
+          className="Booking_Form_Value"
+          placeholder="Your name"
+          onChange={(values) => setName(values.target.value)}
+        />
+      </div>
+      <div className="Booking_Form">
+        <input
+          className="Booking_Form_Value"
+          placeholder="Phone number"
+          onChange={(values) => setName(values.target.value)}
+        />
+      </div>
+      <div className="Booking_Form">
+        <input
+          className="Booking_Form_Value"
+          placeholder="Email address"
+          onChange={(values) => setName(values.target.value)}
+        />
+      </div>
+      <div className="Booking_Form">
+        <input
+          className="Booking_Form_Value"
+          placeholder="Description"
+          onChange={(values) => setName(values.target.value)}
+        />
+      </div>
+      <div className="Booking_Button">BOOKING NOW</div>
     </div>
   );
 }

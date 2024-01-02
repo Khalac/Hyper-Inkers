@@ -10,7 +10,7 @@ function Welcome() {
     nav("/About");
   }
   return (
-    <div className="Welcome">
+    <div className="Welcome" id="Home">
       <div className="Welcome_BG_Change">
         <BackGroundChange />
       </div>

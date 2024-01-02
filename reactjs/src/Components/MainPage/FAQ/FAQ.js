@@ -277,7 +277,7 @@ function FAQ() {
   };
 
   return (
-    <div className="FAQ">
+    <div className="FAQ" id="FAQ">
       <img src={BG} alt="" className="FAQ_BG" />
       <div className="FAQ_Name">FREQUENTLY ASKED QUESTION</div>
       <div className="FAQ_Ques">

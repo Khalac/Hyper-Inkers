@@ -1,0 +1,20 @@
+
+@media screen and (max-width: 768px){
+  .SalePage{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    .SalePage_Header{
+      height: 10vh;
+      width: 100%;
+    }
+    .SalePage_Footer{
+      height: 30vh;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  
+}

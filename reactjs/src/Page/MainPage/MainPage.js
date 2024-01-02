@@ -14,6 +14,7 @@ import Pricing from "../../Components/MainPage/Pricing/Pricing";
 import FAQ from "../../Components/MainPage/FAQ/FAQ";
 import Contact from "../../Components/MainPage/Contact/Contact";
 import Booking from "../../Components/MainPage/Booking/Booking";
+import Footer from "../../Components/Footer/Footer";
 
 function MainPage() {
   return (
@@ -56,6 +57,9 @@ function MainPage() {
       </div>
       <div className="MainPage_Booking">
         <Booking />
+      </div>
+      <div className="MainPage_Footer">
+        <Footer/>
       </div>
     </div>
   );

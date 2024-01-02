@@ -36,6 +36,41 @@
       font-family: "LTYPE";
       color: #dcdbbec4;
       font-size: 2.5vw;
+      margin-bottom: 5%;
+    }
+    .Booking_Form{
+      height: 10%;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .Booking_Form_Value{
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid #dcdbbec4;
+        width: 95%;
+        height: 60%;
+        font-size: 3vw;
+        padding-left: 5%;
+        z-index: 3;
+        font-family: "CompagnonMedium";
+        color: #dcdbbec4;
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+    .Booking_Button{
+      height: 8%;
+      background-color: #1e5761;
+      color: #dcdbbec4;
+      font-size: 4vw;
+      font-family: "clesmont";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      margin-top: 5%;
+      z-index: 3;
     }
     
   }
