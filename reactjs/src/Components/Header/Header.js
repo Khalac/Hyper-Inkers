@@ -13,7 +13,7 @@ function Header() {
       <div className="Pages">
         <HashLink
           className="Page"
-          to="/#Home"
+          to="/MainPage/#Home"
           scroll={(el) =>
             el.scrollIntoView({ behavior: "smooth", block: "center" })
           }
@@ -22,7 +22,7 @@ function Header() {
         </HashLink>
         <HashLink
           className="Page"
-          to="/#Artist"
+          to="/MainPage/#Artist"
           scroll={(el) =>
             el.scrollIntoView({ behavior: "smooth", block: "center" })
           }
@@ -31,7 +31,7 @@ function Header() {
         </HashLink>
         <HashLink
           className="Page"
-          to="/#Contact"
+          to="/MainPage/#Contact"
           scroll={(el) =>
             el.scrollIntoView({ behavior: "smooth", block: "center" })
           }
@@ -40,7 +40,7 @@ function Header() {
         </HashLink>
         <HashLink
           className="Page"
-          to="/#FAQ"
+          to="/MainPage/#FAQ"
           scroll={(el) =>
             el.scrollIntoView({ behavior: "smooth", block: "center" })
           }
