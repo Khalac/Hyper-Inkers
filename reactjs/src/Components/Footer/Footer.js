@@ -20,7 +20,7 @@ function Footer() {
       <div className="Footer_Link">
         <HashLink
           className="Footer_Link_Link"
-          to="/#Home"
+          to="/MainPage/#Home"
           scroll={(el) =>
             el.scrollIntoView({ behavior: "smooth", block: "center" })
           }
@@ -29,7 +29,7 @@ function Footer() {
         </HashLink>
         <HashLink
           className="Footer_Link_Link"
-          to="/#Artist"
+          to="/MainPage/#Artist"
           scroll={(el) =>
             el.scrollIntoView({ behavior: "smooth", block: "center" })
           }
@@ -38,7 +38,7 @@ function Footer() {
         </HashLink>
         <HashLink
           className="Footer_Link_Link"
-          to="/#Contact"
+          to="/MainPage/#Contact"
           scroll={(el) =>
             el.scrollIntoView({ behavior: "smooth", block: "center" })
           }
@@ -47,7 +47,7 @@ function Footer() {
         </HashLink>
         <HashLink
           className="Footer_Link_Link"
-          to="/#FAQ"
+          to="/MainPage/#FAQ"
           scroll={(el) =>
             el.scrollIntoView({ behavior: "smooth", block: "center" })
           }

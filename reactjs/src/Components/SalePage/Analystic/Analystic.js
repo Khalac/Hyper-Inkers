@@ -3,9 +3,14 @@ import "./Analystic.scss";
 
 import BG from "../../assets/ImgMobile/Background/MainBG.png";
 
+import phone from "../../assets/ImgMobile/ImgSalePage/PhoneCall.webp";
+
 function Analystic() {
   return (
     <div className="Analystic">
+      <div className="PhoneCall">
+        <img src={phone} alt="" className="PhoneCall_Icon" />
+      </div>
       <img src={BG} alt="" className="Analystic_BG" />
       <div className="Analystic_Container">
         <div className="Analystic_Part">

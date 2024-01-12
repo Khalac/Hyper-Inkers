@@ -1,54 +1,44 @@
 @media screen and (max-width: 768px){
-  .Booking{
+  .Booking_SalePage{
     height: 100%;
     width: 100%;
+    background-color: rgba(255, 255, 255, 0.166);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     position: relative;
-    .Booking_BG{
+    .Booking_SalePage_BG{
       position: absolute;
       width: 100%;
       height: 100%;
       top: 0;
       left: 0;
     }
-    .Booking_Name{
+    .Booking_SalePage_Name{
+      margin-left: 5%;
       height: 10%;
-      width: 100%;
+      width: 85%;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      align-items: center;
-      font-family: "clesmont";
+      font-family: "ladyrose";
       color: #cc6600;
-      font-size: 6vw;
+      font-size: 4.3vw;
+      line-height: 130%;
     }
-    .Booking_Text{
-      width: 80%;
-      height: 10%;
-      text-align: center;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "LTYPE";
-      color: #dcdbbec4;
-      font-size: 2.5vw;
-      margin-bottom: 5%;
-    }
-    .Booking_Form{
+    .Booking_SalePage_Form{
+      margin-left: 5%;
       height: 10%;
       width: 90%;
       display: flex;
       justify-content: center;
       align-items: center;
-      .Booking_Form_Value{
+      .Booking_SalePage_Value{
         background-color: rgba(0, 0, 0, 0);
         border: 1px solid #dcdbbec4;
         width: 95%;
-        height: 60%;
-        font-size: 3vw;
+        height: 70%;
+        font-size: 4vw;
         padding-left: 5%;
         z-index: 3;
         font-family: "CompagnonMedium";
@@ -58,11 +48,12 @@
         }
       }
     }
-    .Booking_Button{
-      height: 8%;
+    .Booking_SalePage_Button{
+      margin-left: 5%;
+      height: 6%;
       background-color: #1e5761;
-      color: #dcdbbec4;
-      font-size: 4vw;
+      color: #dcdbbed4;
+      font-size: 5vw;
       font-family: "clesmont";
       display: flex;
       justify-content: center;
