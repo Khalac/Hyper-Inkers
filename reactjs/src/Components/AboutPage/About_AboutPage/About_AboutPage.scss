@@ -41,8 +41,6 @@
         z-index: 2;
         .About_AboutPage_Section1_Text{
           width: 80%;
-
-
           right: 0;
           top: 0;
           color: #cddbbe72;
@@ -57,24 +55,136 @@
           bottom: 0;
           right: 0;
           border-top: 10px solid;
-            border-left: 10px solid;
-            border-image: linear-gradient(to right top, #cc6600, black);
-            border-image-slice: 1;
+          border-left: 10px solid;
+          border-image: linear-gradient(to right top, #cc6600, black);
+          border-image-slice: 1;
   
         }
       }
-
-      .About_AboutPage_Section1_Img1{
+      .About_AboutPage_Section1_Number_Img{
         position: absolute;
         width: 45%;
-        height: auto;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        .About_AboutPage_Section1_Img1{
+          width: 100%;
+          height: auto;
+        }
+        .About_AboutPage_Section1_Number_Container{
+          height: 35%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          margin-top: 15%;
+          .About_AboutPage_Section1_Number{
+            height: 100%;
+            width: 85%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .About_AboutPage_Section1_Number_Number{
+              color: #cc6600;
+              font-family: "clesmont";
+              font-size: 8vw;
+            }
+            .About_AboutPage_Section1_Number_Text{
+              color: #cddbbeac;
+              font-family: "clesmont";
+              font-size: 3vw;
+            }
+          }
+        }
       }
+      
     
     }
     .About_AboutPage_Section2{
       height: 50%;
       width: 90%;
-      background-color: rgba(128, 128, 128, 0.416);
+      .About_AboutPage_Section2_Name{
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        font-size: 8vw;
+        font-family: "CopperplateGothicBold";
+        color: #cc9933;
+        letter-spacing: 1.5px;
+      }
+      .About_AboutPage_Section2_Img{
+        height: 60%;
+        width: 100%;
+        position: relative;
+        
+        .About_AboutPage_Section2_Img1{
+          position: absolute;
+          left: 0;
+          top: -15%;
+          height: 100%;
+          width: 45%;
+          display: flex;
+          flex-direction: column;
+          z-index: 3;
+          .About_AboutPage_Section2_Img1_Img{
+            width: 100%;
+            height: auto;
+            border-bottom: 10px solid;
+            border-right: 10px solid;
+            border-image: linear-gradient(to left bottom, #cc6600, black);
+            border-image-slice: 1;
+          }
+          .About_AboutPage_Section2_Img1_Container{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+
+            .About_AboutPage_Section2_Number{
+              height: 100%;
+              width: 90%;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              margin-top: 15%;
+              .About_AboutPage_Section2_Number_Number{
+                color: #cc6600;
+              font-family: "clesmont";
+              font-size: 6vw;
+              }
+              .About_AboutPage_Section2_Number_Text{
+                color: #cddbbeac;
+                font-family: "clesmont";
+                font-size: 2.77vw;
+              }
+            }
+          }
+        }
+        .About_AboutPage_Section2_Img2{
+          position: absolute;
+          right: 0;
+          bottom: 0%;
+          height: 100%;
+          width: 60%;
+          display: flex;
+          align-items: end;
+          .About_AboutPage_Section2_Img2_Img{
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+      .About_AboutPage_Section2_Text{
+          color: #cddbbe72;
+          font-family: "LucidaSansTypewriterOblique";
+          font-size: 2.5vw;
+          text-align: justify;
+          margin-top: 5%;
+
+      }
     }
     
   }
