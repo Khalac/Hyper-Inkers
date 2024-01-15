@@ -28,34 +28,48 @@
       height: 35%;
       width: 90%;
       position: relative;
-      .About_AboutPage_Section1_Text{
-        width: 43%;
+      .About_AboutPage_Section1_Text_Img{
+        height: 100%;
+        width: 60%;
         position: absolute;
         right: 0;
         top: 0;
-        color: #cddbbe72;
-        font-family: "LucidaSansTypewriterOblique";
-        font-size: 2.5vw;
-        text-align: right;
-        line-height: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: space-between;
+        z-index: 2;
+        .About_AboutPage_Section1_Text{
+          width: 80%;
+
+
+          right: 0;
+          top: 0;
+          color: #cddbbe72;
+          font-family: "LucidaSansTypewriterOblique";
+          font-size: 2.5vw;
+          text-align: right;
+          line-height: 15px;
+        }
+        .About_AboutPage_Section1_Img2{
+          width: 100%;
+          height: auto;
+          bottom: 0;
+          right: 0;
+          border-top: 10px solid;
+            border-left: 10px solid;
+            border-image: linear-gradient(to right top, #cc6600, black);
+            border-image-slice: 1;
+  
+        }
       }
+
       .About_AboutPage_Section1_Img1{
         position: absolute;
         width: 45%;
         height: auto;
       }
-      .About_AboutPage_Section1_Img2{
-        position: absolute;
-        width: 60%;
-        height: auto;
-        bottom: 0;
-        right: 0;
-        border-top: 10px solid;
-          border-left: 10px solid;
-          border-image: linear-gradient(to right top, #cc6600, black);
-          border-image-slice: 1;
-
-      }
+    
     }
     .About_AboutPage_Section2{
       height: 50%;

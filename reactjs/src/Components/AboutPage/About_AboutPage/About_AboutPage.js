@@ -14,13 +14,16 @@ function About_AboutPage() {
       <img src={BG} alt="" className="About_AboutPage_BG" />
       <div className="About_AboutPage_Name">ALL ABOUT US</div>
       <div className="About_AboutPage_Section1">
-        <div className="About_AboutPage_Section1_Text">
-          Hyper Inkers Tattoo Studio established in 2023 Hyper team with all
-          technique, enthusiasm and creativity, ready to meet any unique ideas
-          coming from you - Our Inkers
+        <div className="About_AboutPage_Section1_Text_Img">
+          <div className="About_AboutPage_Section1_Text">
+            Hyper Inkers Tattoo Studio established in 2023 Hyper team with all
+            technique, enthusiasm and creativity, ready to meet any unique ideas
+            coming from you - Our Inkers
+          </div>
+          <img src={Img2} alt="" className="About_AboutPage_Section1_Img2" />
         </div>
+
         <img src={Img1} alt="" className="About_AboutPage_Section1_Img1" />
-        <img src={Img2} alt="" className="About_AboutPage_Section1_Img2" />
       </div>
       <div className="About_AboutPage_Section2"></div>
     </div>
