@@ -10,6 +10,8 @@
     height: 100%;
     width: 100%;
     background-color: black;
+    overflow-y: auto;
+    overflow-x: hidden;
     .AboutPage_Header{
       height: 10dvh;
       width: 100%;
