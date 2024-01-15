@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+@media screen and (max-width: 768px){
+  .Nicole{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    .Nicole_Header{
+      height: 10vh;
+      width: 100%;
+    }
+    .Nicole_Welcome{
+      height: 40vh;
+      width: 100%;
+    }
+    .Nicole_Section1{
+      height: 120vh;
+      width: 100%;
+    }
+    .Nicole_Porfolio{
+      height: 120vh;
+      width: 100%;
+    }
+    .Nicole_Section2{
+      height: 100vh;
+      width: 100%;
+    }
+    .Nicole_Footer{
+      height: 30vh;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  
+}

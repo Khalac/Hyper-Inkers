@@ -1,0 +1,114 @@
+@media screen and (max-width: 768px){
+  .Ben_Porfolio{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.166);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    
+    .Ben_Porfolio_BG{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .Ben_Porfolio_Name{
+      display: flex;
+      font-size: 6vw;
+      color: #cc6600;
+      font-family: "clesmont";
+      letter-spacing: 1.5px;
+    }
+    .Ben_Porfolio_Img_Container{
+      height: 70%;
+      width: 80%;
+      z-index: 3;
+      position: relative;
+      .Ben_Porfolio_Img_Container_Gallery{
+        height: 70%;
+        width: 80%;
+        display: grid;
+        grid-template-columns: 30% 30% 30% ;
+        grid-template-rows: 20% 20% 20% 20%;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 20px;
+        .Ben_Porfolio_Img_Container_Gallery_1,.Ben_Porfolio_Img_Container_Gallery_2,.Ben_Porfolio_Img_Container_Gallery_3,.Ben_Porfolio_Img_Container_Gallery_4,.Ben_Porfolio_Img_Container_Gallery_5,.Ben_Porfolio_Img_Container_Gallery_6{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .Ben_Porfolio_Img_Container_Gallery_1,.Ben_Porfolio_Img_Container_Gallery_5{
+          grid-column: span 2;
+          grid-row: span 2;
+        }
+      }
+      .Ben_Porfolio_Button_Container{
+        height: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        bottom: 0%;
+
+        .Ben_Porfolio_dots {
+          display: flex;
+          justify-content: center;
+          z-index: 6;
+        }
+        .Ben_Porfolio_dot {
+          border: none;
+          width: 1vw;
+          height: 1vw;
+          background: #dcdbbe83;
+          border-radius: 50%;
+          margin: 0 30%;
+          padding: 20%;
+          cursor: pointer;
+          z-index: 6;
+        }
+        
+        .Ben_Porfolio_dot:focus {
+          outline: none;
+        }
+        
+        .Ben_Porfolio_dot.active {
+          background: white;
+        }
+        
+        .Ben_Porfolio_Go_Left{
+          display: flex;
+          justify-content: center;
+          color: #398795be;
+
+          font-size: 10vw;
+        }
+        .Ben_Porfolio_Go_Right{
+          display: flex;
+          justify-content: center;
+          color: #398795be;
+          font-size: 10vw;
+        }
+      }
+    }
+    .Ben_Porfolio_Book_Now{
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 7%;
+        width: 80%;
+        background-color: #1e5761;
+        color: #dcdbbebe;
+        font-family: "clesmont";
+        font-size: 6vw;
+        z-index: 3;
+    }
+  }
+}

@@ -5,6 +5,11 @@
 }
 
 @font-face {
+  font-family: "LucidaSansTypewriterOblique";
+  src: local("LucidaSansTypewriterOblique"),url("../../Components/assets/font/Lucida-Sans-Typewriter-Oblique.ttf") format("truetype");
+}
+
+@font-face {
   font-family: "CompagnonMedium";
   src:local("CompagnonMedium") ,url("../../Components/assets/font/Compagnon-Medium.otf") format("truetype");
 }

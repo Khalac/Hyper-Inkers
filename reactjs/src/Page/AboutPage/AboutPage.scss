@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+@media screen and (max-width: 768px){
+  .AboutPage{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    .AboutPage_Header{
+      height: 10vh;
+      width: 100%;
+    }
+    .Welcome_AboutPage{
+      height: 40vh;
+      width: 100%;
+    }
+    .AboutPage_About{
+      height: 150vh;
+      width: 100%;
+    }
+    .AboutPage_Footer{
+      height: 30vh;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  
+}

@@ -1,0 +1,67 @@
+@media screen and (max-width: 768px){
+  .About_AboutPage{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    .About_AboutPage_BG{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .About_AboutPage_Name{
+      color: #cc6600;
+      font-size: 6vw;
+      width: 90%;
+      display: flex;
+      align-items: flex-end;
+      font-family: 'clesmont';
+      letter-spacing: 2px;
+      z-index: 1;
+    }
+    .About_AboutPage_Section1{
+      height: 35%;
+      width: 90%;
+      position: relative;
+      .About_AboutPage_Section1_Text{
+        width: 43%;
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: #cddbbe72;
+        font-family: "LucidaSansTypewriterOblique";
+        font-size: 2.5vw;
+        text-align: right;
+        line-height: 15px;
+      }
+      .About_AboutPage_Section1_Img1{
+        position: absolute;
+        width: 45%;
+        height: auto;
+      }
+      .About_AboutPage_Section1_Img2{
+        position: absolute;
+        width: 60%;
+        height: auto;
+        bottom: 0;
+        right: 0;
+        border-top: 10px solid;
+          border-left: 10px solid;
+          border-image: linear-gradient(to right top, #cc6600, black);
+          border-image-slice: 1;
+
+      }
+    }
+    .About_AboutPage_Section2{
+      height: 50%;
+      width: 90%;
+      background-color: rgba(128, 128, 128, 0.416);
+    }
+    
+  }
+}

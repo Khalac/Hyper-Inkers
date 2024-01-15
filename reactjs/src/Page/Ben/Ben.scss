@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+@media screen and (max-width: 768px){
+  .Ben{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    .Ben_Header{
+      height: 10vh;
+      width: 100%;
+    }
+    .Ben_Welcome{
+      height: 40vh;
+      width: 100%;
+    }
+    .Ben_Section1{
+      height: 120vh;
+      width: 100%;
+    }
+    .Ben_Porfolio{
+      height: 120vh;
+      width: 100%;
+    }
+    .Ben_Section2{
+      height: 80vh;
+      width: 100%;
+    }
+    .Ben_Footer{
+      height: 30vh;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  
+}

@@ -1,0 +1,42 @@
+*{
+  margin: 0;
+  padding: 0;
+
+}
+
+
+@media screen and (max-width: 768px){
+  .Aaron{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    .Aaron_Header{
+      height: 10vh;
+      width: 100%;
+    }
+    .Aaron_Welcome{
+      height: 40vh;
+      width: 100%;
+    }
+    .Aaron_Section1{
+      height: 120vh;
+      width: 100%;
+    }
+    .Aaron_Porfolio{
+      height: 120vh;
+      width: 100%;
+    }
+    .Aaron_Section2{
+      height: 90vh;
+      width: 100%;
+    }
+    .Aaron_Footer{
+      height: 30vh;
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  
+}

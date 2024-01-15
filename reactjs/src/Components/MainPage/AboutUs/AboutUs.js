@@ -5,7 +5,10 @@ import BG from "../../assets/ImgMobile/Background/MainBG.png";
 import videoThumb from "../../assets/ImgMobile/Video/thumb.jpg";
 import video from "../../assets/ImgMobile/Video/video.mp4";
 
+import { useNavigate } from "react-router-dom";
+
 function AboutUs() {
+  const nav = useNavigate();
   return (
     <div className="AboutUs">
       <img src={BG} className="AboutUs_BG" />
@@ -16,7 +19,12 @@ function AboutUs() {
         from you - Our Inkers
       </div>
       <div className="AboutUs_Button_Container">
-        <div className="AboutUs_Button_Container_Button">VIEW DETAILS</div>
+        <div
+          className="AboutUs_Button_Container_Button"
+          onClick={() => nav("/AboutPage")}
+        >
+          VIEW DETAILS
+        </div>
       </div>
       <div className="AboutUs_Video_Container">
         <video
