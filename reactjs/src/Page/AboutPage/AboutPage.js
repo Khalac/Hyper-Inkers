@@ -4,6 +4,7 @@ import Header from "../../Components/Header/Header";
 import Footer from "../../Components/Footer/Footer";
 import AboutPage_Welcome from "../../Components/AboutPage/Welcome/AboutPage_Welcome";
 import About_AboutPage from "../../Components/AboutPage/About_AboutPage/About_AboutPage";
+import Artist_AboutPage from "../../Components/AboutPage/Artist_AboutPage/Artist_AboutPage";
 
 function AboutPage() {
   return (
@@ -16,6 +17,9 @@ function AboutPage() {
       </div>
       <div className="AboutPage_About">
         <About_AboutPage />
+      </div>
+      <div className="AboutPage_Artist">
+        <Artist_AboutPage />
       </div>
       <div className="AboutPage_Footer">
         <Footer />
