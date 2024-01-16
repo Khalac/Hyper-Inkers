@@ -1,0 +1,38 @@
+@media screen and (max-width: 768px){
+  .YOEX{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    .YOEX_BG{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .YOEX_Name{
+      width: 90%;
+      display: flex;
+      flex-direction:column ;
+      margin-left: 5%;
+      font-family: "ladyrose";
+      color: #cc6600;
+      font-size: 5vw;
+    }
+    .YOEX_Img{
+      width: 90%;
+      height: auto;
+    }
+    .YOEX_Text{
+      width: 90%;
+      color: #cddbbeac;
+      font-family: "LucidaSansTypewriterOblique";
+      font-size: 2.5vw;
+      text-align: justify;
+    }
+  }
+}
