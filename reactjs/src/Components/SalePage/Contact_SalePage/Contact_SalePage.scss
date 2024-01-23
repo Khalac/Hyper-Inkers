@@ -1,8 +1,9 @@
+
 @media screen and (max-width: 768px){
   .Contact_SalePage{
     height: 100%;
     width: 100%;
-
+    background-color: rgba(255, 255, 255, 0.166);
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -36,112 +37,8 @@
         width: 100%;
       }
     }
-    .Contact_SalePage_Infor{
-      height: 15%;
-      width: 90%;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      .Contact_SalePage_Infor_Left{
-        height: 100%;
-        width: 48%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        .Contact_SalePage_Infor_Left_Email{
-          height: 45%;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          .Contact_SalePage_Infor_Left_Email_Logo{
-            width: 13%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          .Contact_SalePage_Infor_Left_Email_Text{
-            width: 83%;
-            color: #dcdbbe;
-            font-family: "CompagnonMedium";
-            font-size: 2.8vw;
-          }
-        }
-        .Contact_SalePage_Infor_Left_Location{
-          height: 45%;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          .Contact_SalePage_Infor_Left_Location_Logo{
-            width: 13%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          .Contact_SalePage_Infor_Left_Location_Text{
-            width: 83%;
-            color: #dcdbbe;
-            font-family: "CompagnonMedium";
-            font-size: 2.8vw;
-          }
-        }
-      }
-       .Contact_SalePage_Infor_Right{
-        height: 100%;
-        width: 48%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        .Contact_SalePage_Infor_Right_Phone{
-          height: 45%;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          .Contact_SalePage_Infor_Right_Phone_Logo{
-            width: 13%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          .Contact_SalePage_Infor_Right_Phone_Text{
-            width: 83%;
-            color: #dcdbbe;
-            font-family: "CompagnonMedium";
-            font-size: 2.8vw;
-          }
-        }
-        .Contact_SalePage_Infor_Right_Time{
-          height: 45%;
-          display: flex;
-          flex-direction: row;
-          justify-content: space-between;
-          align-items: center;
-          .Contact_SalePage_Infor_Right_Time_Logo{
-            width: 13%;
-            height: auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-          }
-          .Contact_SalePage_Infor_Right_Time_Text{
-            width: 83%;
-            color: #dcdbbe;
-            font-family: "CompagnonMedium";
-            font-size: 2.8vw;
-          }
-        }
-      }
-    }
     .Contact_SalePage_Phone{
-      height: 8%;
+      height: 4%;
       width: 90%;
       color: #dcdbbe;
       display: flex;
@@ -150,9 +47,10 @@
       background-color: #cc6600aa;
       font-family: "clesmont";
       font-size: 6vw;
+      border-radius: 30px;
     }
     .Contact_SalePage_Direction{
-      height: 8%;
+      height: 4%;
       width: 90%;
       color: #dcdbbe;
       display: flex;
@@ -161,29 +59,79 @@
       background-color: #1e5761;
       font-family: "clesmont";
       font-size: 6vw;
+      border-radius: 30px;
     }
-    .Contact_SalePage_Payment_Text{
-      color: #cc6600;
-      height: 5%;
-      width: 90%;
+   
+    .Contact_SalePage_Infor{
+      height: 20%;
+      width: 100%;
       display: flex;
-      justify-content: center;
-      align-items: center;
-
-      font-family: "clesmont";
-      font-size: 4vw;
-    }
-    .Contact_SalePage_Payment_Img{
-      height: 5%;
-      width: 90%;
-      display: flex;
-      flex-direction: row;
+      flex-direction: column;
       justify-content: space-evenly;
       align-items: center;
-      .Contact_SalePage_Payment_Img_Img{
-        width: 25%;
-        height: auto;
+      .Contact_SalePage_Infor_Detail{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .Contact_SalePage_Infor_Detail_Name{
+          color: #dcdbbe;
+          font-family: "ladyrose";
+          font-size: 3vw;
+          width: 30%;
+          display: flex;
+          justify-content: end;
+          margin-right: 5%;
+        }
+        .Contact_SalePage_Infor_Detail_Infor{
+          width: 60%;
+          color: #dcdbbe;
+          font-family: "CompagnonMedium";
+          display: flex;
+          font-size: 3vw;
+          margin-bottom: 1.5%;
+        }
+        .Contact_SalePage_Infor_Detail_Logo{
+          width: 60%;
+          display: flex;
+          flex-direction: row;
+          .Contact_SalePage_Infor_Detail_Logo_Logo{
+            width: 10%;
+            height: auto;
+            margin-right: 5%;
+          }
+        }
       }
     }
+    .Contact_SalePage_Payment{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 15%;
+      .Contact_SalePage_Payment_Text{
+        color: #cc6600;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "clesmont";
+        font-size: 4vw;
+      }
+      .Contact_SalePage_Payment_Img{
+        height: 80%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        .Contact_SalePage_Payment_Img_Img{
+          width: 23%;
+          height: auto;
+        }
+      }
+    }
+   
   }
 }

@@ -2,7 +2,6 @@
   .Booking_SalePage{
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.166);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -37,12 +36,13 @@
         background-color: rgba(0, 0, 0, 0);
         border: 1px solid #dcdbbec4;
         width: 95%;
-        height: 70%;
+        height: 60%;
         font-size: 4vw;
         padding-left: 5%;
         z-index: 3;
         font-family: "CompagnonMedium";
         color: #dcdbbec4;
+        border-radius: 50px;
         &:focus{
           outline: none;
         }
@@ -61,6 +61,7 @@
       width: 90%;
       margin-top: 5%;
       z-index: 3;
+      border-radius: 50px;
     }
     
   }

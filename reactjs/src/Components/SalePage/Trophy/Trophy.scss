@@ -1,23 +1,23 @@
 @media screen and (max-width: 768px){
-  .TrophyAwards{
+  .Trophy{
     height: 100%;
     width: 100%;
-
+    background-color: rgba(255, 255, 255, 0.166);
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    .TrophyAwards_BG{
+    .Trophy_BG{
       position: absolute;
       width: 100%;
       height: 100%;
       top: 0;
       left: 0;
     }
-    .TrophyAwards_Name{
-      margin-left: 5%;
+    .Trophy_Name{
+
       height: 10%;
-      width: 85%;
+      width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -25,27 +25,13 @@
       color: #cc6600;
       font-size: 6vw;
     }
-    .TrophyAwards_Text{
-      height: 15%;
-      width: 85%;
-      text-align: center;
-      margin-left: 5%;
-      font-family: "LTYPE";
-      color: #dcdbbec4;
-      font-size: 2.5vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      line-height: 15px;
-
-    }
-    .TrophyAwards_Container{
-      height: 50%;
+    .Trophy_Container{
+      height: 70%;
       width: 100%;
 
       z-index: 1;
       position: relative;
-      .TrophyAwards_Container_Normal{
+      .Trophy_Container_Normal{
         max-height: 100%;
         height: 100%;
         display: flex;
@@ -53,7 +39,7 @@
         align-items: center;
         flex-direction: column;
 
-        .TrophyAwards_Container_Normal_Wrap{
+        .Trophy_Container_Normal_Wrap{
           height: 50%;
           width: 70%;
           transition: width 1s ease;
@@ -61,7 +47,7 @@
           justify-content: space-evenly;
           align-items: center;
           flex-direction: column;
-          .TrophyAwards_Container_Img_Img{
+          .Trophy_Container_Img_Img{
             width: 100%;
             height: auto;
             transition: width 1s ease;
@@ -71,7 +57,7 @@
         }
         
       }
-      .TrophyAwards_Container_Active{
+      .Trophy_Container_Active{
         max-height: 100%;
         height: 100%;
         
@@ -79,7 +65,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        .TrophyAwards_Container_Active_Wrap{
+        .Trophy_Container_Active_Wrap{
             height: 70%;
             width: 100%;
             transition: width 1s ease;
@@ -87,14 +73,14 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-          .TrophyAwards_Container_Img_Img_Active{
+          .Trophy_Container_Img_Img_Active{
             
             width: 100%;
             height: auto;
             transition: width 1s ease;
 
           }
-          .TrophyAwards_Container_Name_Active{
+          .Trophy_Container_Name_Active{
             margin-top: 15%;
             transition: height 0.5s ease;
               color: #cc6600ae;
@@ -103,14 +89,14 @@
               margin-bottom: 5%;
               text-align: center;
           }
-          .TrophyAwards_Container_Location_Active{
+          .Trophy_Container_Location_Active{
             font-family: "CompagnonMedium";
             font-size: 2.5vw;
             color: #dcdbbea2;
             text-align: center;
             margin-bottom: 3%;
           }
-          .TrophyAwards_Container_Country_Active{
+          .Trophy_Container_Country_Active{
             font-family: "CompagnonMedium";
             font-size: 2.5vw;
             color: #dcdbbea2;
@@ -118,7 +104,7 @@
         }
       
       }
-      .TrophyAwards_Button_Container{
+      .Trophy_Button_Container{
         height: 5%;
         width: 60%;
         display: flex;
@@ -128,7 +114,7 @@
         position: absolute;
         bottom: 7%;
         left: 20%;
-        .TrophyAwards_Link{
+        .Trophy_Link{
           display: flex;
           justify-content: center;
           align-items: center;
@@ -141,14 +127,14 @@
 
           border-radius: 10px;
         }
-        .TrophyAwards_Go_Left{
+        .Trophy_Go_Left{
           display: flex;
           justify-content: center;
           color: #dcdbbebe;
 
           font-size: 8vw;
         }
-        .TrophyAwards_Go_Right{
+        .Trophy_Go_Right{
           display: flex;
           justify-content: center;
           color: #dcdbbebe;
@@ -156,24 +142,5 @@
         }
       }
     }
-    .TrophyAwarts_PhoneCall_Container{
-      height: 10%;
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      .TrophyAwarts_PhoneCall{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 80%;
-        width: 90%;
-        background-color: #1e5761;
-        color: #dcdbbebe;
-        font-family: "clesmont";
-        font-size: 8vw;
-      }
-    }
-    
   }
 }

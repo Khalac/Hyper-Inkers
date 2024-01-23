@@ -12,7 +12,7 @@
     align-items: center;
     position: relative;
     .Welcome_Sale_Text{
-      height: 75%;
+      height: 80%;
       width: 100%;
       display: flex;
       justify-content: center;
@@ -21,32 +21,33 @@
       .Welcome_Sale_Name{
         font-family: "clesmont";
         font-size: 7vw;
-        color: #cc6600ca;
+        color: #cc6600;
         z-index: 3;
       }
-      .Welcome_Sale_Des{
+      .Welcome_Sale_Text_Text{
         width: 70%;
         font-size: 5vw;
-        color: #cc6600ca;
-        color: #dcdbbe96;
+        color: #dcdbbeab;
         z-index: 3;
         font-family: "CompagnonMedium";
         text-align: center;
       }
-    }
-    .Welcome_Sale_Icon{
-      height: 25%;
-      width: 100%;
-      display: flex;
-
-      .Welcome_Sale_Icon_Left{
-        width: 50%;
-        height: 100%;
+      .Welcome_Sale_Des{
+        width: 70%;
+        font-size: 5vw;
+        color: #dcdbbe;
+        z-index: 3;
+        font-family: "CompagnonMedium";
+        text-align: center;
+      }
+      .Welcome_Sale_Text_Icon{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: center;
-        .Welcome_Sale_Icon_Left_Icon{
+        align-items: end;
+        width: 100%;
+        height: 25%;
+        .Welcome_Sale_Text_Icon_Icon{
           margin-left: 3%;
           margin-right: 3%;
           width: auto;
@@ -54,19 +55,28 @@
           cursor: pointer;
         }
       }
-      .Welcome_Sale_Icon_Right{
-        width: 50%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+    }
+    .Welcome_Sale_Icon{
+      height: 15%;
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
         .Welcome_Sale_Icon_Right_Icon{
           width: auto;
-          height: 6.5vw;
+          height: 6vw;
           cursor: pointer;
         }
-      }
+        .Welcome_Sale_Icon_Book{
+          width: 35%;
+          height: 6vw;
+          background-color: #327f80;
+          color: white;
+          font-family: "ladyrose";
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+        }
     }
-   
   }
 }

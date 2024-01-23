@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./TrophyAwards.scss";
+import "./Trophy.scss";
 
 import BG from "../../assets/ImgMobile/Background/MainBG.png";
 
@@ -187,7 +187,7 @@ const Prize = [
   },
 ];
 
-function TrophyAwards() {
+function Trophy() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
   const [sliderRef, instanceRef] = useKeenSlider({
@@ -206,66 +206,59 @@ function TrophyAwards() {
     },
   });
   return (
-    <div className="TrophyAwards">
-      <img src={BG} alt="" className="TrophyAwards_BG" />
-      <div className="TrophyAwards_Name">TROPHY AWARDS</div>
-      <div className="TrophyAwards_Text">
-        Hyper Inkers is more than a brand; it's a canvas of possibilities where
-        dreams are meticulously etched onto skin with precision and passion.
-        Join our community of ink enthusiasts for an TrophyAwardsic journey that
-        goes beyond a mere appointment. It's your opportunity to define and
-        proudly wear your uniqueness.
-      </div>
-      <div ref={sliderRef} className="keen-slider TrophyAwards_Container">
+    <div className="Trophy">
+      <img src={BG} alt="" className="Trophy_BG" />
+      <div className="Trophy_Name">TROPHY AWARDS</div>
+      <div ref={sliderRef} className="keen-slider Trophy_Container">
         {Prize.map((prize, key) =>
           currentSlide === key ? (
-            <div className="keen-slider__slide TrophyAwards_Container_Active">
-              <div className="TrophyAwards_Container_Active_Wrap">
+            <div className="keen-slider__slide Trophy_Container_Active">
+              <div className="Trophy_Container_Active_Wrap">
                 <img
                   src={prize.imgPrize}
                   alt=""
-                  className="TrophyAwards_Container_Img_Img_Active"
+                  className="Trophy_Container_Img_Img_Active"
                 />
 
-                <div className="TrophyAwards_Container_Name_Active">
+                <div className="Trophy_Container_Name_Active">
                   {prize.namePrize}
                 </div>
-                <div className="TrophyAwards_Container_Location_Active">
+                <div className="Trophy_Container_Location_Active">
                   {prize.location}
                 </div>
-                <div className="TrophyAwards_Container_Country_Active">
+                <div className="Trophy_Container_Country_Active">
                   {prize.country}
                 </div>
               </div>
             </div>
           ) : (
-            <div className="keen-slider__slide TrophyAwards_Container_Normal">
-              <div className="TrophyAwards_Container_Normal_Wrap">
+            <div className="keen-slider__slide Trophy_Container_Normal">
+              <div className="Trophy_Container_Normal_Wrap">
                 <img
                   src={prize.imgPrize}
                   alt=""
-                  className="TrophyAwards_Container_Img_Img"
+                  className="Trophy_Container_Img_Img"
                 />
               </div>
             </div>
           )
         )}
         {loaded && instanceRef.current && (
-          <div className="TrophyAwards_Button_Container">
-            <div className="TrophyAwards_Go_Left">
+          <div className="Trophy_Button_Container">
+            <div className="Trophy_Go_Left">
               <IoIosArrowRoundBack
                 onClick={(e) =>
                   e.stopPropagation() || instanceRef.current?.prev()
                 }
               />
             </div>
-            <div className="TrophyAwards_Link">
+            <div className="Trophy_Link">
               {" "}
               {currentSlide + 1}/
               {instanceRef.current.track.details.slides.length}
             </div>
 
-            <div className="TrophyAwards_Go_Right">
+            <div className="Trophy_Go_Right">
               <IoIosArrowRoundForward
                 onClick={(e) =>
                   e.stopPropagation() || instanceRef.current?.next()
@@ -275,11 +268,8 @@ function TrophyAwards() {
           </div>
         )}
       </div>
-      <div className="TrophyAwarts_PhoneCall_Container">
-        <div className="TrophyAwarts_PhoneCall">(210) 997-9737</div>
-      </div>
     </div>
   );
 }
 
-export default TrophyAwards;
+export default Trophy;

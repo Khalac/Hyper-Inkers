@@ -1,26 +1,19 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Gallery_SalePage.scss";
-
 import BG from "../../assets/ImgMobile/Background/MainBG.png";
 
+import realismImg from "../../assets/ImgMobile/ImgSalePage/realism.webp";
+import asianImg from "../../assets/ImgMobile/ImgSalePage/asian.webp";
+import portraitImg from "../../assets/ImgMobile/ImgSalePage/portrait.webp";
+import colorImg from "../../assets/ImgMobile/ImgSalePage/color.webp";
+import bngImg from "../../assets/ImgMobile/ImgSalePage/bng.webp";
+import smallImg from "../../assets/ImgMobile/ImgSalePage/small.webp";
+import numberImg from "../../assets/ImgMobile/ImgSalePage/number.webp";
+import cartoonImg from "../../assets/ImgMobile/ImgSalePage/cartoon.webp";
+
 function Gallery_SalePage() {
-  const [nameStyle, setNameStyle] = useState("Realism");
-  const [style, setStyle] = useState();
-
-  const [activeRealism, setActiveRealism] = useState(true);
-  const [activeColor, setActiveColor] = useState(false);
-  const [activeFineLine, setActiveFineLine] = useState(false);
-  const [activeBlackGrey, setActiveBlackGrey] = useState(false);
-  const [activePortrait, setActivePortrait] = useState(false);
-
-  useEffect(() => {
-    if (nameStyle === "Realism") setStyle(listImgRealism);
-    if (nameStyle === "Color") setStyle(listImgColor);
-    if (nameStyle === "FineLine") setStyle(listImgFineLine);
-    if (nameStyle === "BlackGrey") setStyle(listImgBlackGrey);
-    if (nameStyle === "Portrait") setStyle(listImgPortrait);
-  }, [nameStyle]);
-
+  const [popUp, setPopUp] = useState(false);
+  const [type, setType] = useState("");
   function importAll(r) {
     let images = {};
     r.keys().forEach((item, index) => {
@@ -28,6 +21,15 @@ function Gallery_SalePage() {
     });
     return images;
   }
+  const popUpImg = (s) => {
+    setType(s);
+    setPopUp(!popUp);
+    if (popUp === true) {
+      document.body.style.overflow = "auto";
+    } else {
+      document.body.style.overflow = "hidden";
+    }
+  };
 
   const imagesRealism = importAll(
     require.context(
@@ -89,27 +91,6 @@ function Gallery_SalePage() {
     );
   });
 
-  const imagesFineLine = importAll(
-    require.context(
-      "../../assets/ImgMobile/ImgGallery/fineline",
-      false,
-      /\.webp$/
-    )
-  );
-  let imgFineLine = [];
-  for (let i = 1; i <= 15; ++i) {
-    imgFineLine.push(imagesFineLine[`${i}.webp`]);
-  }
-  var fineline = 0;
-  const listImgFineLine = imgFineLine.map((img) => {
-    fineline++;
-    return (
-      <div className={`FineLine_div_` + fineline}>
-        <img src={img} alt="" className={`FineLine_` + fineline}></img>{" "}
-      </div>
-    );
-  });
-
   const imagesBlackGrey = importAll(
     require.context(
       "../../assets/ImgMobile/ImgGallery/blackgrey",
@@ -130,106 +111,110 @@ function Gallery_SalePage() {
       </div>
     );
   });
-  const setRealism = () => {
-    setNameStyle("Realism");
-    setActiveRealism(true);
-    setActivePortrait(false);
-    setActiveFineLine(false);
-    setActiveColor(false);
-    setActiveBlackGrey(false);
-  };
-  const setPortrait = () => {
-    setNameStyle("Portrait");
-    setActiveRealism(false);
-    setActivePortrait(true);
-    setActiveFineLine(false);
-    setActiveColor(false);
-    setActiveBlackGrey(false);
-  };
-  const setFineLine = () => {
-    setNameStyle("FineLine");
-    setActiveRealism(false);
-    setActivePortrait(false);
-    setActiveFineLine(true);
-    setActiveColor(false);
-    setActiveBlackGrey(false);
-  };
-  const setColor = () => {
-    setNameStyle("Color");
-    setActiveRealism(false);
-    setActivePortrait(false);
-    setActiveFineLine(false);
-    setActiveColor(true);
-    setActiveBlackGrey(false);
-  };
-  const setBlackGrey = () => {
-    setNameStyle("BlackGrey");
-    setActiveRealism(false);
-    setActivePortrait(false);
-    setActiveFineLine(false);
-    setActiveColor(false);
-    setActiveBlackGrey(true);
-  };
-
   return (
-    <div className="Gallery_SalePage_Normal">
-      <img src={BG} alt="" className="Gallery_SalePage_Normal_BG" />
-      <div className="Gallery_SalePage_Normal_Name">HYPER GALLERY</div>
-      <div className="Gallery_SalePage_Normal_Gallery">
-        <div className="Gallery_SalePage_Normal_Gallery_Styles">
-          <div
-            className={
-              activeRealism
-                ? `Gallery_SalePage_Normal_Gallery_Styles_Style active`
-                : `Gallery_SalePage_Normal_Gallery_Styles_Style`
-            }
-            onClick={setRealism}
-          >
-            REALISM
-          </div>
-          <div
-            className={
-              activePortrait
-                ? `Gallery_SalePage_Normal_Gallery_Styles_Style active`
-                : `Gallery_SalePage_Normal_Gallery_Styles_Style`
-            }
-            onClick={setPortrait}
-          >
-            PORTRAIT
-          </div>
-          <div
-            className={
-              activeFineLine
-                ? `Gallery_SalePage_Normal_Gallery_Styles_Style active`
-                : `Gallery_SalePage_Normal_Gallery_Styles_Style`
-            }
-            onClick={setFineLine}
-          >
-            LINEWORK
-          </div>
-          <div
-            className={
-              activeColor
-                ? `Gallery_SalePage_Normal_Gallery_Styles_Style active`
-                : `Gallery_SalePage_Normal_Gallery_Styles_Style`
-            }
-            onClick={setColor}
-          >
-            COLOR
-          </div>
-          <div
-            className={
-              activeBlackGrey
-                ? `Gallery_SalePage_Normal_Gallery_Styles_Style active`
-                : `Gallery_SalePage_Normal_Gallery_Styles_Style`
-            }
-            onClick={setBlackGrey}
-          >
-            BLACK&GREY
+    <div className="Gallery_SalePage">
+      {popUp && (
+        <div className="popUp">
+          <div onClick={() => popUpImg()} className="overlay"></div>
+          <div className="popUP_Content">
+            {" "}
+            {type === "color"
+              ? listImgColor
+              : type === "portrait"
+              ? listImgPortrait
+              : type === "blackgrey"
+              ? listImgBlackGrey
+              : listImgRealism}
           </div>
         </div>
-        <div className="Gallery_SalePage_Normal_Gallery_Img">{style}</div>
+      )}
+      <img src={BG} alt="" className="Gallery_SalePage_BG" />
+      <div className="Gallery_SalePage_Name">TATTOO GALLERY</div>
+      <div className="Gallery_SalePage_Gallery">
+        <div className="Gallery_SalePage_Gallery_Cat">
+          <img
+            src={asianImg}
+            alt="img"
+            className="Gallery_SalePage_Gallery_Cat_Img"
+          />
+          <div className="Gallery_SalePage_Gallery_Cat_Text">Asian Tattoo</div>
+        </div>
+        <div className="Gallery_SalePage_Gallery_Cat">
+          <img
+            src={portraitImg}
+            alt="img"
+            className="Gallery_SalePage_Gallery_Cat_Img"
+            onClick={() => popUpImg("portrait")}
+          />
+          <div className="Gallery_SalePage_Gallery_Cat_Text">Portrait</div>
+        </div>
       </div>
+      <div className="Gallery_SalePage_Gallery">
+        <div className="Gallery_SalePage_Gallery_Cat">
+          <img
+            src={colorImg}
+            alt="img"
+            className="Gallery_SalePage_Gallery_Cat_Img"
+            onClick={() => popUpImg("color")}
+          />
+          <div className="Gallery_SalePage_Gallery_Cat_Text">Color</div>
+        </div>
+        <div className="Gallery_SalePage_Gallery_Cat">
+          <img
+            src={bngImg}
+            alt="img"
+            className="Gallery_SalePage_Gallery_Cat_Img"
+            onClick={() => popUpImg("blackgrey")}
+          />
+          <div className="Gallery_SalePage_Gallery_Cat_Text">
+            Black and Grey
+          </div>
+        </div>
+      </div>
+      <div className="Gallery_SalePage_Gallery">
+        <div className="Gallery_SalePage_Gallery_Cat">
+          <img
+            src={smallImg}
+            alt="img"
+            className="Gallery_SalePage_Gallery_Cat_Img"
+          />
+          <div className="Gallery_SalePage_Gallery_Cat_Text">Small Tattoo</div>
+        </div>
+        <div className="Gallery_SalePage_Gallery_Cat">
+          <img
+            src={realismImg}
+            alt="img"
+            className="Gallery_SalePage_Gallery_Cat_Img"
+            onClick={() => popUpImg("realism")}
+          />
+          <div className="Gallery_SalePage_Gallery_Cat_Text">
+            Realism Tattoo
+          </div>
+        </div>
+      </div>
+      <div className="Gallery_SalePage_Gallery">
+        <div className="Gallery_SalePage_Gallery_Cat">
+          <img
+            src={cartoonImg}
+            alt="img"
+            className="Gallery_SalePage_Gallery_Cat_Img"
+          />
+          <div className="Gallery_SalePage_Gallery_Cat_Text">
+            Cartoon Tattoo
+          </div>
+        </div>
+        <div className="Gallery_SalePage_Gallery_Cat">
+          <img
+            src={numberImg}
+            alt="img"
+            className="Gallery_SalePage_Gallery_Cat_Img"
+          />
+          <div className="Gallery_SalePage_Gallery_Cat_Text">
+            Number - Lettering
+          </div>
+        </div>
+      </div>
+      <div className="Gallery_SalePage_Booking">BOOKING NOW</div>
     </div>
   );
 }
