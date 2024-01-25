@@ -45,7 +45,6 @@
       .PrizeList_Container_Prize{
         max-height: 80%;
         height: 80%;
-
         display: flex;
         justify-content: center;
         align-items: center;
@@ -58,7 +57,7 @@
           align-items: center;
 
           .PrizeList_Container_Prize_Img_Img{
-            width: 10%;
+            width: 20%;
             height: auto;
             transition: width 1s ease;
           }
@@ -67,9 +66,9 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 8%;
+          height: 10%;
           font-family: 'ladyrose';
-          font-size: 1vw;
+          font-size: 1.5vw;
           text-align: center;
           width: 50%;
           transition: height 0.5s ease;
@@ -80,7 +79,7 @@
           align-items: center;
           height: 3%;
           font-family: "CompagnonMedium";
-          font-size: 1.5vw;
+          font-size: 2vw;
           text-align: center;
           transition: height 0.5s ease;
         }
@@ -88,9 +87,9 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 3%;
+          height: 6%;
           font-family: "CompagnonMedium";
-          font-size: 1.5vw;
+          font-size: 2vw;
           text-align: center;
           transition: height 0.5s ease;
         }
@@ -111,7 +110,7 @@
           align-items: center;
 
           .PrizeList_Container_Prize_Img_Img_Active{
-            width: 25%;
+            width: 30%;
             height: auto;
             transition: width 1s ease;
           }
@@ -120,9 +119,9 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 10%;
+          height: 15%;
           font-family: 'ladyrose';
-          font-size: 1.5vw;
+          font-size: 2.2vw;
           text-align: center;
           width: 100%;
           transition: height 0.5s ease;
@@ -133,7 +132,7 @@
           align-items: center;
           height: 5%;
           font-family: "CompagnonMedium";
-          font-size: 2vw;
+          font-size: 2.5vw;
           text-align: center;
           transition: height 0.5s ease;
         }
@@ -141,9 +140,9 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 5%;
+          height: 8%;
           font-family: "CompagnonMedium";
-          font-size: 2vw;
+          font-size: 2.5vw;
           text-align: center;
           transition: height 0.5s ease;
         }

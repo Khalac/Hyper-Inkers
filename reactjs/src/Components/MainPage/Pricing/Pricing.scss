@@ -29,7 +29,7 @@
     }
     .Pricing_Container{
       width: 90%;
-      height: 50%;
+      height: 40%;
       display: flex;
       flex-direction: row;
       justify-content: space-between;
@@ -49,7 +49,7 @@
           border-top-right-radius: 10px;
           border-top-left-radius: 10px;
           font-family: "ladyrose";
-          font-size: 4vw;
+          font-size: 3.5vw;
         }
         .Pricing_Text{
           height: 80%;
@@ -68,9 +68,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
-         
             font-family: "LTYPEB";
-            font-size: 3vw;
+            font-size: 2.5vw;
           }
           .Pricing_Text_Price{
             height: 30%;

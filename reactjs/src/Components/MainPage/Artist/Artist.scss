@@ -28,11 +28,12 @@
     }
     .Artist_Text{
       height: 10%;
-      width: 80%;
+      width: 90%;
       text-align: center;
       font-family: "LTYPE";
       color: #dcdbbec4;
-      font-size: 2.5vw;
+      font-size: 2vw;
+      letter-spacing: 1px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -138,6 +139,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            margin-bottom: 25%;
           }
         }
       
@@ -161,7 +163,7 @@
           background-color: #1e5761;
           bottom: 10%;
           color: #dcdbbebe;
-          font-family: "LTYPE";
+          font-family: "CompagnonMedium";
           font-size: 3.5vw;
           left: 32.5%;
           border-radius: 10px;
@@ -351,7 +353,7 @@
           background-color: #1e5761;
           bottom: 10%;
           color: #dcdbbebe;
-          font-family: "LTYPE";
+  font-family: "CompagnonMedium";
           font-size: 2vw;
           left: 32.5%;
           border-radius: 30px;

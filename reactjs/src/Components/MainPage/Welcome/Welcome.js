@@ -7,7 +7,7 @@ import BackGroundChange from "../BackGroundChange/BackGroundChange";
 function Welcome() {
   const nav = useNavigate();
   function goToAbout() {
-    nav("/#/About");
+    nav("/AboutPage");
   }
   return (
     <div className="Welcome" id="Home">

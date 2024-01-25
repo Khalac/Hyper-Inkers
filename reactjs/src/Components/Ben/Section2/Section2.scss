@@ -20,14 +20,15 @@
 
       width: 80%;
       color: #dcdbbeb3;
-      font-size: 2.5vw;
+      font-size: 2vw;
+      letter-spacing: 1px;
       font-family: "LTYPE";
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
       text-align: justify;
-      line-height: 15px;
+      line-height: 13px;
     }
     .Section2_Ben_Img{
       height: 50%;
@@ -68,7 +69,7 @@
         width: 10%;
         z-index: 5;
         background-color: rgba(255, 255, 255, 0);
-        color: white;
+        color: #327f80;
         right: 5%;
         bottom: 8%;
       }

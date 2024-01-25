@@ -4,7 +4,7 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     position: relative;
     .Trophies_BG{
@@ -22,15 +22,18 @@
         font-family: "ladyrose";
         color: #cc6600;
         font-size: 5vw;
+        margin-bottom: 10%;
     }
     .Trophies_banner{
       width: 100%;
       height: auto;
+      margin-bottom: 5%;
     }
     .Trophies_Img{
       display: flex;
       justify-content: space-between;
       flex-direction: row;
+      margin-bottom: 10%;
       .Trophies_Img_Img{
         width: 30%;
         height: auto;
@@ -40,7 +43,9 @@
       width: 90%;
       color: #cddbbeac;
       font-family: "LucidaSansTypewriterOblique";
-      font-size: 2.5vw;
+      font-size: 2vw;
+      line-height: 13px;
+      left: 1px;
       text-align: justify;
     }
   }

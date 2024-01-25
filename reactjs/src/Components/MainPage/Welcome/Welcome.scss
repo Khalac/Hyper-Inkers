@@ -34,6 +34,7 @@
         font-size: 8vw;
         color: #dcdbbe;
         z-index: 1;
+        margin-top: 3%;
       }
     }
     .Welcome_Text{
@@ -47,6 +48,7 @@
       color: #cc6600ca;
       line-height: 15px;
       z-index: 1;
+      letter-spacing: 1px;
     }
     .Welcome_Button{
       width: 90%;
@@ -54,7 +56,7 @@
       display: flex;
       justify-content: end;
       align-items: center;
-      font-family: "LTYPEB";
+      font-family: "bebas";
       color: #1e5761;
       z-index: 1;
       .Welcome_Button_Text{
@@ -64,6 +66,7 @@
         justify-content: center;
         align-items: center;
         z-index: 1;
+        font-size: 6vw;
       }
     }
   }
