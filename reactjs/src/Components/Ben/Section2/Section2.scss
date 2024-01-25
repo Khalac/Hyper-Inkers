@@ -30,10 +30,10 @@
       line-height: 15px;
     }
     .Section2_Ben_Img{
-      height: 60%;
+      height: 50%;
       width: 100%;
       position: relative;
-      margin-bottom: 10%;
+
       .Section2_Ben_Img_Top_Container{
         position: absolute;
           height: auto;
@@ -52,6 +52,84 @@
         width: 60%;
         z-index: 3;
         right: 10%;
+        top: 20%;
+       
+        .Section2_Ben_Img_Bottom{
+          width: 100%;
+          height: 100%;
+          opacity: 0.5;
+        }
+      }
+      
+      
+      .Section2_Ben_Img_Button{
+        position: absolute;
+        height: auto;
+        width: 10%;
+        z-index: 5;
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+        right: 5%;
+        bottom: 8%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .Section2_Ben{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    
+    .Section2_Ben_BG{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .Section2_Ben_Text{
+
+      width: 80%;
+      color: #dcdbbeb3;
+      font-size: 1.5vw;
+      font-family: "LTYPE";
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: justify;
+      line-height: 30px;
+    }
+    .Section2_Ben_Img{
+      height: 50%;
+      width: 100%;
+      position: relative;
+
+      .Section2_Ben_Img_Top_Container{
+        position: absolute;
+          height: auto;
+          width: 35%;
+          left: 25%;
+          z-index: 4;
+        .Section2_Ben_Img_Top{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .Section2_Ben_Img_Bottom_Container{
+        position: absolute;
+        height: auto;
+        width: 35%;
+        z-index: 3;
+        right: 25%;
         top: 20%;
        
         .Section2_Ben_Img_Bottom{

@@ -187,9 +187,11 @@ const Prize = [
   },
 ];
 
+const animation = { duration: 10000, easing: (t) => t };
+
 function Trophy() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(true);
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
     renderMode: performance,
@@ -199,6 +201,18 @@ function Trophy() {
     created() {
       setLoaded(true);
     },
+    created(s) {
+      s.moveToIdx(5, true, animation);
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    loop: true,
+    renderMode: "performance",
+    drag: false,
     slides: {
       origin: "center",
       perView: 3,
@@ -243,30 +257,29 @@ function Trophy() {
             </div>
           )
         )}
-        {loaded && instanceRef.current && (
-          <div className="Trophy_Button_Container">
-            <div className="Trophy_Go_Left">
-              <IoIosArrowRoundBack
-                onClick={(e) =>
-                  e.stopPropagation() || instanceRef.current?.prev()
-                }
-              />
-            </div>
-            <div className="Trophy_Link">
-              {" "}
-              {currentSlide + 1}/
-              {instanceRef.current.track.details.slides.length}
-            </div>
 
-            <div className="Trophy_Go_Right">
-              <IoIosArrowRoundForward
-                onClick={(e) =>
-                  e.stopPropagation() || instanceRef.current?.next()
-                }
-              />
-            </div>
+        <div className="Trophy_Button_Container">
+          <div className="Trophy_Go_Left">
+            <IoIosArrowRoundBack
+              onClick={(e) =>
+                e.stopPropagation() || instanceRef.current?.prev()
+              }
+            />
           </div>
-        )}
+          <div className="Trophy_Link">
+            {" "}
+            {currentSlide + 1}/
+            {instanceRef.current?.track.details.slides.length}
+          </div>
+
+          <div className="Trophy_Go_Right">
+            <IoIosArrowRoundForward
+              onClick={(e) =>
+                e.stopPropagation() || instanceRef.current?.next()
+              }
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

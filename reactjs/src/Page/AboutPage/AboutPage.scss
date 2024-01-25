@@ -54,5 +54,49 @@
 }
 
 @media screen and (min-width: 768px){
-  
+  .AboutPage{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    .AboutPage_Header{
+      height: 10vh;
+      width: 100%;
+    }
+    .Welcome_AboutPage{
+      height: 100vh;
+      width: 100%;
+    }
+    .AboutPage_About{
+      height: 280vh;
+      width: 100%;
+    }
+    .AboutPage_Artist{
+      height: 250vh;
+      width: 100%;
+    }
+    .AboutPage_YOEX{
+      height: 80vh;
+      width: 100%;
+    }
+    .AboutPage_Convention{
+      height: 200vh;
+      width: 100%;
+    }
+    .AboutPage_Trophies{
+      height: 150vh;
+      width: 100%;
+    }
+    .AboutPage_Prize{
+      height: 100vh;
+      width: 100%;
+    }
+    .AboutPage_Service{
+      height: 170vh;
+      width: 100%;
+    }
+    .AboutPage_Footer{
+      height: 40vh;
+      width: 100%;
+    }
+  }
 }

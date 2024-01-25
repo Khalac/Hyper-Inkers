@@ -4,6 +4,43 @@
     height: 100%;
     width: 100%;
     background-color: black;
+    .SalePage_Consultant{
+      position: sticky;
+      top: 0;
+      height: 5vh;
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-evenly;
+      z-index: 5;
+      background-color: rgba(0, 0, 0, 0.536);
+      .SalePage_Consultant_Text{
+        font-family: "ladyrose";
+        color: #cb9833;
+        font-size: 3vw;
+      }
+      .SalePage_Consultant_Logo{
+        width: 7%;
+        height: auto;
+      }
+    }
+    .SalePage_Check{
+      position: sticky;
+      bottom: 0;
+      width: 100%;
+      height: 5vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "ladyrose";
+        color: #cb9833;
+        font-size: 3vw;
+        z-index: 5;
+        background-color: rgba(0, 0, 0, 0.66);
+        cursor: pointer;
+    }
     .SalePage_Header{
       height: 10vh;
       width: 100%;
@@ -56,5 +93,96 @@
 }
 
 @media screen and (min-width: 768px){
-  
+  .SalePage{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    .SalePage_Consultant{
+      position: sticky;
+      top: 0;
+      height: 6vh;
+      width: 100%;
+
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      z-index: 5;
+      background-color: rgba(0, 0, 0, 0.536);
+      .SalePage_Consultant_Text{
+        font-family: "ladyrose";
+        color: #cb9833;
+        font-size: 1.5vw;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .SalePage_Consultant_Logo{
+        width: 3%;
+        height: auto;
+      }
+    }
+    .SalePage_Check{
+      position: sticky;
+      bottom: 0;
+      width: 100%;
+      height: 5vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: "ladyrose";
+        color: #cb9833;
+        font-size: 1.5vw;
+        z-index: 5;
+        background-color: rgba(0, 0, 0, 0.66);
+        cursor: pointer;
+    }
+    .SalePage_Header{
+      height: 10vh;
+      width: 100%;
+    }
+    .SalePage_Welcome{
+      height: 90vh;
+      width: 100%;
+    }
+    .SalePage_Break{
+      height: 13vh;
+      width: 100%;
+    }
+    .SalePage_OpenTime{
+      height: 100vh;
+      width: 100%;
+    }
+    .SalePage_WCU{
+      height: 60vh;
+      width: 100%;
+    }
+    .SalePage_Trohpy{
+      height: 90vh;
+      width: 100%;
+    }
+    .SalePage_Service{
+      height: 250vh;
+      width: 100%;
+    }
+    .SalePage_Artist{
+      height: 70vh;
+      width: 100%;
+    }
+    .SalePage_Gallery{
+      height: 200vh;
+      width: 100%;
+    }
+    .SalePage_Contact{
+      height: 150vh;
+      width: 100%;
+    }
+    .SalePage_Footer{
+      height: 40vh;
+      width: 100%;
+    }
+    .SalePage_Booking{
+      height: 130vh;
+      width: 100%;
+    }
+  }
 }

@@ -151,3 +151,157 @@
     }
   }
 }
+
+@media screen and (min-width: 768px){
+  .PrizeList{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.66);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .PrizeList_BG{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 0;
+    }
+    .PrizeList_Container{
+      height: 70%;
+      width: 100%;
+      background-color: white;
+      z-index: 1;
+
+      .Prize_Index{
+        position: absolute;
+        bottom: 5%;
+        left: 48%;
+        font-size: 1.5vw;
+        font-family: "CompagnonMedium";
+      }
+      .Prize_Go_Left{
+        position: absolute;
+        bottom: 40%;
+        left: 3%;
+        font-size: 2.5vw;
+
+      }
+      .Prize_Go_Right{
+        position: absolute;
+        bottom: 40%;
+        right: 3%;
+        font-size: 2.5vw;
+
+      }
+      .PrizeList_Container_Prize{
+        max-height: 80%;
+        height: 80%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .PrizeList_Container_Prize_Img{
+          width: 100%;
+          height: 15%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .PrizeList_Container_Prize_Img_Img{
+            width: 7%;
+            height: auto;
+            transition: width 1s ease;
+          }
+        }
+        .PrizeList_Container_Prize_NamePrize{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 8%;
+          font-family: 'ladyrose';
+          font-size: 1vw;
+          text-align: center;
+          width: 50%;
+          transition: height 0.5s ease;
+        }
+        .PrizeList_Container_Prize_Location{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 3%;
+          font-family: "CompagnonMedium";
+          font-size: 1.3vw;
+          text-align: center;
+          transition: height 0.5s ease;
+        }
+        .PrizeList_Container_Prize_Country{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 8%;
+          font-family: "CompagnonMedium";
+          font-size: 1.3vw;
+          text-align: center;
+          transition: height 0.5s ease;
+        }
+      }
+      .PrizeList_Container_Prize_Active{
+        max-height: 80%;
+        height: 80%;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        .PrizeList_Container_Prize_Img_Active{
+          width: 100%;
+          height: 40%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .PrizeList_Container_Prize_Img_Img_Active{
+            width: 20%;
+            height: auto;
+            transition: width 1s ease;
+          }
+        }
+        .PrizeList_Container_Prize_NamePrize_Active{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 10%;
+          font-family: 'ladyrose';
+          font-size: 1.2vw;
+          text-align: center;
+          width: 100%;
+          transition: height 0.5s ease;
+        }
+        .PrizeList_Container_Prize_Location_Active{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 5%;
+          font-family: "CompagnonMedium";
+          font-size: 1.5vw;
+          text-align: center;
+          transition: height 0.5s ease;
+        }
+        .PrizeList_Container_Prize_Country_Active{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 7%;
+          font-family: "CompagnonMedium";
+          font-size: 1.5vw;
+          text-align: center;
+          transition: height 0.5s ease;
+        }
+      }
+    }
+  }
+}

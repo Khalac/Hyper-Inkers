@@ -39,6 +39,8 @@ const ArtistArr = [
   },
 ];
 
+const animation = { duration: 10000, easing: (t) => t };
+
 function Artist_Salepage() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
@@ -50,6 +52,20 @@ function Artist_Salepage() {
     created() {
       setLoaded(true);
     },
+    created() {
+      setLoaded(true);
+    },
+    created(s) {
+      s.moveToIdx(5, true, animation);
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    loop: true,
+    renderMode: "performance",
     mode: "free",
     slides: {
       perView: 1.5,

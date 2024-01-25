@@ -28,15 +28,18 @@ function MainPage() {
       <div className="MainPage_Prize">
         <PrizeList />
       </div>
+
       <div className="MainPage_AboutUs">
         <AboutUs />
       </div>
       <div className="MainPage_WDWH">
         <WDWH />
       </div>
+
       <div className="MainPage_WWYG">
         <WWYG />
       </div>
+
       <div className="MainPage_Service">
         <Service />
       </div>
@@ -46,9 +49,11 @@ function MainPage() {
       <div className="MainPage_Gallery">
         <Gallery />
       </div>
+
       <div className="MainPage_Pricing">
         <Pricing />
       </div>
+
       <div className="MainPage_FAQ">
         <FAQ />
       </div>
@@ -59,7 +64,7 @@ function MainPage() {
         <Booking />
       </div>
       <div className="MainPage_Footer">
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );

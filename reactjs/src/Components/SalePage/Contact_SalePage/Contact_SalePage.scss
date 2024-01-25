@@ -135,3 +135,140 @@
    
   }
 }
+
+@media screen and (min-width: 768px){
+  .Contact_SalePage{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.166);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    z-index: 0;
+    .Contact_SalePage_BG{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .Contact_SalePage_Name{
+        height: 5%;
+        width: 90%;
+        display: flex;
+
+        align-items: center;
+        font-family: "clesmont";
+        color: #cc6600;
+        font-size: 4vw;
+    }
+    .Contact_SalePage_GoogleMap{
+      width: 60%;
+      height: 30%;
+      .GoogleMap{
+        border: none  ;
+        height: 100%;
+        width: 100%;
+      }
+    }
+    .Contact_SalePage_Phone{
+      height: 4%;
+      width: 60%;
+      color: #dcdbbe;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #cc6600aa;
+      font-family: "clesmont";
+      font-size: 3vw;
+      border-radius: 30px;
+    }
+    .Contact_SalePage_Direction{
+      height: 4%;
+      width: 60%;
+      color: #dcdbbe;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #1e5761;
+      font-family: "clesmont";
+      font-size: 3vw;
+      border-radius: 30px;
+    }
+   
+    .Contact_SalePage_Infor{
+      height: 25%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      .Contact_SalePage_Infor_Detail{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        .Contact_SalePage_Infor_Detail_Name{
+          color: #dcdbbe;
+          font-family: "ladyrose";
+          font-size: 2vw;
+          width: 30%;
+          display: flex;
+          justify-content: end;
+          margin-right: 5%;
+        }
+        .Contact_SalePage_Infor_Detail_Infor{
+          width: 60%;
+          color: #dcdbbe;
+          font-family: "CompagnonMedium";
+          display: flex;
+          font-size: 1.5vw;
+          margin-bottom: 0.5%;
+        }
+        .Contact_SalePage_Infor_Detail_Logo{
+          width: 60%;
+          display: flex;
+          flex-direction: row;
+          .Contact_SalePage_Infor_Detail_Logo_Logo{
+            width: 5%;
+            height: auto;
+            margin-right: 5%;
+          }
+        }
+      }
+    }
+    .Contact_SalePage_Payment{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 15%;
+      .Contact_SalePage_Payment_Text{
+        color: #cc6600;
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: "clesmont";
+        font-size: 2vw;
+      }
+      .Contact_SalePage_Payment_Img{
+        height: 80%;
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        .Contact_SalePage_Payment_Img_Img{
+          width: 15%;
+          height: auto;
+        }
+      }
+    }
+   
+  }
+}

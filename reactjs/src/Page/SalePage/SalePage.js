@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 
 import "./SalePage.scss";
 import Header from "../../Components/Header/Header";
@@ -15,9 +15,24 @@ import Artist_Salepage from "../../Components/SalePage/Artist_Salepage/Artist_Sa
 import Gallery_SalePage from "../../Components/SalePage/Gallery_SalePage/Gallery_SalePage";
 import Contact_SalePage from "../../Components/SalePage/Contact_SalePage/Contact_SalePage";
 
+import call from "../../Components/assets/ImgMobile/ImgSalePage/call.webp";
+
+import { HashLink } from "react-router-hash-link";
+
 function SalePage() {
+  const ref = useRef(null);
+
+  const handleClick = () => {
+    ref.current?.scrollIntoView({ behavior: "smooth" });
+  };
+
   return (
     <div className="SalePage">
+      <div className="SalePage_Consultant">
+        <div className="SalePage_Consultant_Text">Free Consultation</div>
+        <img src={call} alt="logo" className="SalePage_Consultant_Logo" />
+        <div className="SalePage_Consultant_Text">(210) 997-9737</div>
+      </div>
       <div className="SalePage_Header">
         <Header />
       </div>
@@ -27,32 +42,43 @@ function SalePage() {
       <div className="SalePage_Break">
         <Break />
       </div>
+
       <div className="SalePage_OpenTime">
         <OpenTime />
       </div>
+
       <div className="SalePage_WCU">
         <WCU />
       </div>
+
       <div className="SalePage_Trohpy">
         <Trophy />
       </div>
+
       <div className="SalePage_Service">
         <Service_Salepage />
       </div>
-      <div className="SalePage_Artist">
+
+      <div className="SalePage_Artist" id="Galleryhh">
         <Artist_Salepage />
       </div>
-      <div className="SalePage_Gallery">
+      <div className="SalePage_Gallery" ref={ref}>
         <Gallery_SalePage />
       </div>
+
       <div className="SalePage_Contact">
         <Contact_SalePage />
       </div>
+
       <div className="SalePage_Booking">
         <Booking_SalePage />
       </div>
+
       <div className="SalePage_Footer">
         <Footer />
+      </div>
+      <div className="SalePage_Check" onClick={() => handleClick()}>
+        Check Our Porfolio
       </div>
     </div>
   );

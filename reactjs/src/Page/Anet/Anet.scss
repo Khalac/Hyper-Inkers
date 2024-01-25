@@ -38,5 +38,33 @@
 }
 
 @media screen and (min-width: 768px){
-  
+  .Anet{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    .Anet_Header{
+      height: 10vh;
+      width: 100%;
+    }
+    .Anet_Welcome{
+      height: 100vh;
+      width: 100%;
+    }
+    .Anet_Section1{
+      height: 150vh;
+      width: 100%;
+    }
+    .Anet_Porfolio{
+      height: 150vh;
+      width: 100%;
+    }
+    .Anet_Section2{
+      height: 150vh;
+      width: 100%;
+    }
+    .Anet_Footer{
+      height: 40vh;
+      width: 100%;
+    }
+  }
 }

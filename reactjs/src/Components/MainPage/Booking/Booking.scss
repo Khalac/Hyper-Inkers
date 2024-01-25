@@ -74,3 +74,81 @@
     
   }
 }
+
+@media screen and (min-width: 768px){
+  .Booking{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    .Booking_BG{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .Booking_Name{
+
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      font-family: "clesmont";
+      color: #cc6600;
+      font-size: 4vw;
+      margin-bottom: 1%;
+    }
+    .Booking_Text{
+      width: 80%;
+
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: "LTYPE";
+      color: #dcdbbec4;
+      font-size: 1.5vw;
+      margin-bottom: 3%;
+    }
+    .Booking_Form{
+      height: 10%;
+      width: 90%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .Booking_Form_Value{
+        background-color: rgba(0, 0, 0, 0);
+        border: 1px solid #dcdbbec4;
+        width: 50%;
+        height: 60%;
+        font-size: 1.5vw;
+        padding-left: 5%;
+        z-index: 3;
+        font-family: "CompagnonMedium";
+        color: #dcdbbec4;
+        &:focus{
+          outline: none;
+        }
+      }
+    }
+    .Booking_Button{
+      height: 8%;
+      background-color: #1e5761;
+      color: #dcdbbec4;
+      font-size: 4vw;
+      font-family: "clesmont";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 50%;
+      margin-top: 3%;
+      z-index: 3;
+    }
+    
+  }
+}

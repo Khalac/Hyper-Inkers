@@ -20,6 +20,7 @@
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: 3;
     .OpenTime_Time_Time{
       margin-top: 3%;
       width: 95%;
@@ -54,6 +55,68 @@
       text-align: justify;
       text-indent: 30px;
       line-height: 15px;
+
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .OpenTime{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.166);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    position: relative;
+    .OpenTime_BG{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .OpenTime_Time{
+      height: 70%;
+      width: 75%;
+      background-image: url("../../assets/ImgMobile/ImgSalePage/OpenTime.webp");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 3;
+    .OpenTime_Time_Time{
+      margin-top: 3%;
+      width: 95%;
+      display: flex;
+      justify-content: end;
+      color: #dcdbbe;
+      z-index: 3;
+      font-family: "CompagnonMedium";
+      font-size: 2vw;
+    }
+    .OpenTime_Time_Text{
+      color: #cc9933;
+      font-family: "CompagnonMedium";
+      font-size: 4vw;
+      width: 95%;
+      display: flex;
+      justify-content: end;
+    }
+    }
+    .OpenTime_Text{
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #dcdbbead;
+      z-index: 3;
+      font-family: "CompagnonMedium";
+      font-size: 1.3vw;
+      text-align: justify;
+      text-indent: 30px;
+      line-height: 25px;
 
     }
   }

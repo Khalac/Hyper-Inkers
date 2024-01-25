@@ -114,5 +114,66 @@
 }
 
 @media screen and (min-width: 768px){
-  
+  .MainPage{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+
+    .MainPage_Header{
+      height: 10vh;
+      width: 100%;
+    }
+    .MainPage_Welcome{
+      height: 100vh;
+      width: 100%;
+    }
+    .MainPage_Prize{
+      height: 60vh;
+      width: 100%;
+    }
+    .MainPage_AboutUs{
+      height: 100vh;
+      width: 100%;
+    }
+    .MainPage_WDWH{
+      height: 170vh;
+      width: 100%;
+    }
+    .MainPage_WWYG{
+      height: 230vh;
+      width: 100%;
+    }
+    .MainPage_Service{
+      height: 150vh;
+      width: 100%;
+    }
+    .MainPage_Artist{
+      height: 100vh;
+      width: 100%;
+    }
+    .MainPage_Gallery{
+      height: 120vh;
+      width: 100%;
+    }
+    .MainPage_Pricing{
+      height: 50vh;
+      width: 100%;
+    }
+    .MainPage_FAQ{
+      height: 170vh;
+      width: 100%;
+    }
+    .MainPage_Contact{
+      height: 100vh;
+      width: 100%;
+    }
+    .MainPage_Booking{
+      height: 100vh;
+      width: 100%;
+    }
+    .MainPage_Footer{
+      height: 40vh;
+      width: 100%;
+    }
+  }
 }

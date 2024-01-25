@@ -122,3 +122,127 @@
     }
   }
 }
+
+@media screen and (min-width: 768px){
+  .Service{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.166);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    .Service_BG{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .Service_Name{
+      width: 90%;
+      display: flex;
+
+      align-items: center;
+      font-family: "clesmont";
+      color: #cc6600;
+      font-size: 4vw;
+    }
+    .Service_Img{
+      height: 30%;
+      width: 100%;
+      position: relative;
+      margin-bottom: 10%;
+      .Service_Img_Top_Container{
+        position: absolute;
+          height: auto;
+          width: 50%;
+          left: 15%;
+          z-index: 4;
+        .Service_Img_Top{
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .Service_Img_Bottom_Container{
+        position: absolute;
+        height: auto;
+        width: 50%;
+        z-index: 3;
+        right: 15%;
+        top: 20%;
+       
+        .Service_Img_Bottom{
+          width: 100%;
+          height: 100%;
+          opacity: 0.5;
+        }
+      }
+      
+      
+      .Service_Img_Button{
+        position: absolute;
+        height: auto;
+        width: 10%;
+        z-index: 5;
+        background-color: rgba(255, 255, 255, 0);
+        color: white;
+        right: 5%;
+        bottom: 8%;
+      }
+    }
+    .Service_Service{
+      height: 40%;
+      width: 100%;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      flex-direction: column;
+      .Service_Detail{
+        height: 30%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .Service_Detail_Img_Container{
+          width: 20%;
+          height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .Service_Detail_Img{
+            width: 35%;
+            height: auto;
+          }
+        }
+        .Service_Detail_Text{
+          width: 60%;
+          height: 100%;
+          display: flex;
+          justify-content: space-evenly;
+          flex-direction: column;
+          .Service_Detail_Text_Name{
+            display: flex;
+            align-items: end;
+            height: 30%;
+            width: 100%;
+            font-family: "CompagnonMedium";
+            color: #cc6600;
+            font-size: 2.5vw;
+          }
+          .Service_Detail_Text_Des{
+            height: 50%;
+            width: 100%;
+            line-height: 30px;
+            font-family: "LTYPE";
+            color: #dcdbbec4;
+            font-size: 1.5vw;
+          }
+        }
+      }
+    }
+  }
+}

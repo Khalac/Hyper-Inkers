@@ -112,3 +112,119 @@
     }
   }
 }
+
+@media screen and (min-width: 768px){
+  .Nicole_Porfolio{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.166);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    
+    .Nicole_Porfolio_BG{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+    }
+    .Nicole_Porfolio_Name{
+      display: flex;
+      font-size: 4vw;
+      color: #cc6600;
+      font-family: "clesmont";
+      letter-spacing: 1.5px;
+    }
+    .Nicole_Porfolio_Img_Container{
+      height: 70%;
+      width: 100%;
+      z-index: 3;
+      position: relative;
+
+      .Nicole_Porfolio_Img_Container_Gallery{
+        height: 70%;
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto ;
+        grid-template-rows: 20% 20% 20% 20%;
+        align-items: center;
+        justify-content: center;
+        column-gap: 20px;
+        row-gap: 20px;
+        .Nicole_Porfolio_Img_Container_Gallery_1,.Nicole_Porfolio_Img_Container_Gallery_2,.Nicole_Porfolio_Img_Container_Gallery_3,.Nicole_Porfolio_Img_Container_Gallery_4,.Nicole_Porfolio_Img_Container_Gallery_5,.Nicole_Porfolio_Img_Container_Gallery_6{
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+        .Nicole_Porfolio_Img_Container_Gallery_1,.Nicole_Porfolio_Img_Container_Gallery_5{
+          grid-column: span 2;
+          grid-row: span 2;
+        }
+      }
+      .Nicole_Porfolio_Button_Container{
+        height: 5%;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        bottom: 0%;
+
+        .Nicole_Porfolio_dots {
+          display: flex;
+          justify-content: center;
+          z-index: 6;
+        }
+        .Nicole_Porfolio_dot {
+          border: none;
+          width: 0.5vw;
+          height: 0.5vw;
+          background: #dcdbbe83;
+          border-radius: 50%;
+          margin: 0 30%;
+          padding: 20%;
+          cursor: pointer;
+          z-index: 6;
+        }
+        
+        .Nicole_Porfolio_dot:focus {
+          outline: none;
+        }
+        
+        .Nicole_Porfolio_dot.active {
+          background: white;
+        }
+        
+        .Nicole_Porfolio_Go_Left{
+          display: flex;
+          justify-content: center;
+          color: #398795be;
+
+          font-size: 6vw;
+        }
+        .Nicole_Porfolio_Go_Right{
+          display: flex;
+          justify-content: center;
+          color: #398795be;
+          font-size: 6vw;
+        }
+      }
+    }
+    .Nicole_Porfolio_Book_Now{
+      display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 7%;
+        width: 60%;
+        background-color: #1e5761;
+        color: #dcdbbebe;
+        font-family: "clesmont";
+        font-size: 3vw;
+        z-index: 3;
+    }
+  }
+}
