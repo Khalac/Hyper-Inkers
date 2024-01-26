@@ -70,7 +70,7 @@ function WCU() {
           <div className="WCU_Detail_1_Text">Trophies</div>
         </div>
         <div className="WCU_Detail_1">
-          <div className="WCU_Detail_1_Number">10000</div>
+          <div className="WCU_Detail_1_Number">10K</div>
           <div className="WCU_Detail_1_Text">Tattoos</div>
         </div>
       </div>

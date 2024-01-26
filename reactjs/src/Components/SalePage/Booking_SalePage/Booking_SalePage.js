@@ -8,8 +8,8 @@ function Booking_SalePage() {
     <div className="Booking_SalePage">
       <img src={BG} alt="" className="Booking_SalePage_BG" />
       <div className="Booking_SalePage_Name">
-        <div className="Booking_SalePage_Name1">IF YOU'RE INTERESTED</div>
-        <div className="Booking_SalePage_Name2">DON'T HESITATE TO BOOK NOW</div>
+        <div className="Booking_SalePage_Name1">If you're interested</div>
+        <div className="Booking_SalePage_Name2">Don't hesitate to book now</div>
       </div>
       <div className="Booking_SalePage_Form">
         <input className="Booking_SalePage_Value" placeholder="Your name" />

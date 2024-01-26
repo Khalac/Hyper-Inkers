@@ -59,6 +59,11 @@
   src: local("lucida") ,url("../../Components/assets/font/Lucida-Sans-Typewriter-Oblique.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "ttrun";
+  src: local("ttrun") ,url("../../Components/assets/font/TT-Runs-Trial-Variable-Roman-BF640004cf9d367.ttf") format("truetype");
+}
+
 
 @media screen and (max-width: 768px){
   .MainPage{
@@ -94,7 +99,7 @@
       width: 100%;
     }
     .MainPage_Artist{
-      height: 70vh;
+      height: 60vh;
       width: 100%;
     }
     .MainPage_Gallery{

@@ -26,6 +26,7 @@
       color: #cc6600;
       font-family: "clesmont";
       margin-left: 5%;
+      line-height: 35px;
     }
     .FAQ_Ques{
       height:5%;
@@ -47,22 +48,24 @@
           border: none;
           cursor: pointer;
           width: 90%;
+          background-image: linear-gradient(to right, #cc660080, #33333321);
           .question-align {
             height: 8vw;
             align-items: center;
+            justify-content: space-evenly;
             display: flex;
-            font-size: 3vw;
+            font-size: 3.5vw;
             text-align: left;
-            background-image: linear-gradient(to right, #cc660080, #33333321);
+            
             h4 {
-              margin-left: 2%;
+              margin-left: 5%;
             }
             .question-style{
               color:#dcdbbe;
               font-family: "CompagnonMedium";
               font-size: 80%;
-              width: 80%;
-
+              width: 50%;
+              margin-bottom: 1%;
             }
             .question-icon {
               background: none;

@@ -40,7 +40,7 @@
   
           font-family: "LTYPE";
           color: #dcdbbec4;
-          font-size: 2vw;
+          font-size: 2.2vw;
           letter-spacing: 1px;
         }
       }
@@ -55,7 +55,7 @@
         .WDWH_Tag{
           height: 100%;
           width: 60%;
-          background-color: white;
+          background-color: rgb(238, 238, 237);
           z-index: 3;
           border-radius: 10px;
           display: flex;
@@ -65,7 +65,8 @@
           .WDWH_Tag_Logo{
             position: absolute;
             left: 5%;
-            top:25%;
+            transform: translateY(-50%);
+            top: 50%;
             width: 9%;
             height: auto;
           }
@@ -94,7 +95,7 @@
             }
           }
           .WDWH_Tag_Learn_More{
-            font-family: "LTYPEB";
+            font-family: "lucida";
             color: #1e5761;
             font-size: 3vw;
             margin-right: 5%;

@@ -163,7 +163,7 @@
       left: 0;
     }
     .Trophy_Name{
-      height: 10%;
+
       width: 100%;
       display: flex;
       justify-content: center;
@@ -173,7 +173,7 @@
       font-size: 4vw;
     }
     .Trophy_Container{
-      height: 80%;
+      height: 60%;
       width: 100%;
 
       z-index: 1;
@@ -222,7 +222,7 @@
             flex-direction: column;
           .Trophy_Container_Img_Img_Active{
             
-            width: 80%;
+            width: 60%;
             height: auto;
             transition: width 1s ease;
 
@@ -235,6 +235,7 @@
               font-family: "ladyrose";
               margin-bottom: 2%;
               text-align: center;
+              margin-top: 10%;
           }
           .Trophy_Container_Location_Active{
             font-family: "CompagnonMedium";
@@ -247,6 +248,7 @@
             font-family: "CompagnonMedium";
             font-size: 1.5vw;
             color: #dcdbbea2;
+            margin-bottom: 30%;
           }
         }
       

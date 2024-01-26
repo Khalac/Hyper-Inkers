@@ -20,28 +20,33 @@
       width: 100%;
       background-color: white;
       z-index: 1;
-
-      .Prize_Index{
+      position: relative;
+      .Prize_Button{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
         position: absolute;
-        bottom: 10%;
-        left: 47%;
-        font-size: 2.5vw;
-        font-family: "CompagnonMedium";
-      }
-      .Prize_Go_Left{
-        position: absolute;
-        bottom: 40%;
-        left: 3%;
-        font-size: 2.5vw;
+        bottom: 5%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 30%;
 
+        .Prize_Index{
+          font-size: 2.5vw;
+          font-family: "CompagnonMedium";
+          margin-bottom: 5%;
+        }
+        .Prize_Go_Left{
+          font-size: 2.5vw;
+  
+        }
+        .Prize_Go_Right{
+          font-size: 2.5vw;
+  
+        }
       }
-      .Prize_Go_Right{
-        position: absolute;
-        bottom: 40%;
-        right: 3%;
-        font-size: 2.5vw;
 
-      }
       .PrizeList_Container_Prize{
         max-height: 80%;
         height: 80%;
@@ -72,6 +77,8 @@
           text-align: center;
           width: 50%;
           transition: height 0.5s ease;
+          margin-top: 5%;
+          line-height: 8px;
         }
         .PrizeList_Container_Prize_Location{
           display: flex;
@@ -125,12 +132,14 @@
           text-align: center;
           width: 100%;
           transition: height 0.5s ease;
+          margin-top: 5%;
+          line-height: 10px;
         }
         .PrizeList_Container_Prize_Location_Active{
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 5%;
+
           font-family: "CompagnonMedium";
           font-size: 2.5vw;
           text-align: center;
@@ -140,7 +149,7 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 8%;
+
           font-family: "CompagnonMedium";
           font-size: 2.5vw;
           text-align: center;

@@ -270,17 +270,19 @@ function Prize() {
           />
         </div>
       </div>
-      <div className="Prize_Text">
-        We view every client as an extension of our family, and your trust in us
-        is a responsibility we cherish. Our promise is to deliver nothing short
-        of excellence, ensuring that your tattoo experience is not just
-        satisfactory but extraordinary.
-      </div>
-      <div className="Prize_Text">
-        At Hyper Inkers, we continuously push the boundaries of tattoo artistry.
-        We embrace innovation, collaborate with diverse alents, and stay at the
-        forefront of industry trends. This relentless pursuit of artistic
-        evolution enables us to offer you the best of the best.
+      <div className="Prize_Text_Container">
+        <div className="Prize_Text">
+          We view every client as an extension of our family, and your trust in
+          us is a responsibility we cherish. Our promise is to deliver nothing
+          short of excellence, ensuring that your tattoo experience is not just
+          satisfactory but extraordinary.
+        </div>
+        <div className="Prize_Text">
+          At Hyper Inkers, we continuously push the boundaries of tattoo
+          artistry. We embrace innovation, collaborate with diverse alents, and
+          stay at the forefront of industry trends. This relentless pursuit of
+          artistic evolution enables us to offer you the best of the best.
+        </div>
       </div>
     </div>
   );

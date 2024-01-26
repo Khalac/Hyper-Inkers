@@ -10,8 +10,8 @@ function Pricing() {
       <div className="Pricing_Name">OUR PRICING</div>
       <div className="Pricing_Container">
         <div className="Pricing_Detail">
-          <div className="Pricing_Name">MINIMUM</div>
-          <div className="Pricing_Text">
+          <div className="Pricing_Detail_Name">MINIMUM</div>
+          <div className="Pricing_Detail_Text">
             <div className="Pricing_Text_Des">
               Shop hourly minimum rate at start at
             </div>
@@ -19,8 +19,8 @@ function Pricing() {
           </div>
         </div>
         <div className="Pricing_Detail">
-          <div className="Pricing_Name">MIDDLE</div>
-          <div className="Pricing_Text">
+          <div className="Pricing_Detail_Name">MIDDLE</div>
+          <div className="Pricing_Detail_Text">
             <div className="Pricing_Text_Des">
               Shop hourly middle rate at start at
             </div>
@@ -28,8 +28,8 @@ function Pricing() {
           </div>
         </div>
         <div className="Pricing_Detail">
-          <div className="Pricing_Name">HIGH</div>
-          <div className="Pricing_Text">
+          <div className="Pricing_Detail_Name">HIGH</div>
+          <div className="Pricing_Detail_Text">
             <div className="Pricing_Text_Des">
               Shop hourly high rate at start at
             </div>

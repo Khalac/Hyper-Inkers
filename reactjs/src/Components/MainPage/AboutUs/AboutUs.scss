@@ -4,6 +4,9 @@
     width: 100%;
     position: relative;
     z-index: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     .AboutUs_BG{
       position: absolute;
       z-index: -1;
@@ -15,7 +18,6 @@
     .AboutUs_Name{
       color: #cc6600;
       font-size: 6vw;
-      height: 20%;
       width: 90%;
       display: flex;
       align-items: flex-end;
@@ -25,7 +27,6 @@
       z-index: 1;
     }
     .AboutUs_Text{
-      height: 20%;
       width: 90%;
       color: #dcdbbec4;
       font-family: "lucida";
@@ -38,25 +39,26 @@
       line-height: 15px;
     }
     .AboutUs_Button_Container{
-      height: 10%;
+      height: 6%;
       width: 95%;
       z-index: 1;
       display: flex;
       justify-content: end;
       align-items: center;
       .AboutUs_Button_Container_Button{
-        height: 60%;
+        height: 100%;
         width: 35%;
         background-color: #1e5761;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: 'ladyrose';
-        font-size: 2.5vw;
+        font-family: "CompagnonMedium";
+        font-size: 3.5vw;
         border-radius: 15px;
         z-index: 2;
         color: #dcdbbec2;
         cursor: pointer;
+        padding-bottom: 1%;
       }
     }
     .AboutUs_Video_Container{

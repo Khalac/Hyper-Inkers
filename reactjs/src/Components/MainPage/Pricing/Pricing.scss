@@ -5,7 +5,7 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     position: relative;
     z-index: 0;
@@ -26,6 +26,7 @@
         font-family: "clesmont";
         color: #cc6600;
         font-size: 6vw;
+        margin-bottom: 2%;
     }
     .Pricing_Container{
       width: 90%;
@@ -34,10 +35,11 @@
       flex-direction: row;
       justify-content: space-between;
       align-content: center;
+      margin-top: 4%;
       .Pricing_Detail{
         height: 100%;
         width: 30%;
-        .Pricing_Name{
+        .Pricing_Detail_Name{
           height: 20%;
           width: 100%;
           display: flex;
@@ -51,7 +53,7 @@
           font-family: "ladyrose";
           font-size: 3.5vw;
         }
-        .Pricing_Text{
+        .Pricing_Detail_Text{
           height: 80%;
           width: 100%;
           background-color: rgb(175, 173, 173);
@@ -125,7 +127,7 @@
       .Pricing_Detail{
         height: 100%;
         width: 30%;
-        .Pricing_Name{
+        .Pricing_Detail_Name{
           height: 20%;
           width: 100%;
           display: flex;
@@ -139,7 +141,7 @@
           font-family: "ladyrose";
           font-size: 2vw;
         }
-        .Pricing_Text{
+        .Pricing_Detail_Text{
           height: 80%;
           width: 100%;
           background-color: rgb(175, 173, 173);

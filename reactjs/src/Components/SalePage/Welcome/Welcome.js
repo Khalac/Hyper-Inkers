@@ -7,6 +7,8 @@ import insta from "../../assets/ImgMobile/ImgSalePage/Insta.webp";
 import fb from "../../assets/ImgMobile/ImgSalePage/Facebook.webp";
 import phone from "../../assets/ImgMobile/ImgSalePage/Callnow.webp";
 
+import { isMobile } from "react-device-detect";
+
 function Welcome() {
   return (
     <div className="Welcome_Sale">
@@ -14,7 +16,7 @@ function Welcome() {
         <div className="Welcome_Sale_Text_Text">Welcome to</div>
         <div className="Welcome_Sale_Name">HYPER INKERS</div>
         <div className="Welcome_Sale_Des">
-          THE BEST TATTOO STUDIO IN YOUR TOWN
+          INTERNATIONAL AWARD TATTOO STUDIO
         </div>
         <div className="Welcome_Sale_Text_Icon">
           <img src={mail} alt="" className="Welcome_Sale_Text_Icon_Icon" />
@@ -44,10 +46,14 @@ function Welcome() {
           />
         </div>
       </div>
-      <div className="Welcome_Sale_Icon">
-        <img src={phone} alt="" className="Welcome_Sale_Icon_Right_Icon" />
-        <div className="Welcome_Sale_Icon_Book">BOOKING</div>
-      </div>
+      {isMobile ? (
+        <div className="Welcome_Sale_Icon">
+          <img src={phone} alt="" className="Welcome_Sale_Icon_Right_Icon" />
+          <div className="Welcome_Sale_Icon_Book">BOOKING</div>
+        </div>
+      ) : (
+        <></>
+      )}
     </div>
   );
 }

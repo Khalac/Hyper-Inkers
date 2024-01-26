@@ -203,7 +203,7 @@ function Gallery() {
               className="Gallery_Gallery_Line3_Bottom_Container"
               onClick={() => popUpImg()}
             >
-              <div className="Gallery_Gallery_Line3_Bottom_Text">REALISM</div>
+              <div className="Gallery_Gallery_Line3_Bottom_Text">Blackwork</div>
             </div>
           </div>
         </div>

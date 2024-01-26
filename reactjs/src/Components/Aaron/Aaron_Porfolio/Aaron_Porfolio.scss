@@ -53,7 +53,7 @@
         width: 100%;
         display: flex;
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
         align-items: center;
         position: absolute;
         bottom: 0%;
@@ -105,7 +105,7 @@
         height: 7%;
         width: 80%;
         background-color: #1e5761;
-        color: #dcdbbebe;
+        color: white;
         font-family: "clesmont";
         font-size: 6vw;
         z-index: 3;
@@ -203,7 +203,6 @@
           display: flex;
           justify-content: center;
           color: #398795be;
-
           font-size: 6vw;
         }
         .Aaron_Porfolio_Go_Right{

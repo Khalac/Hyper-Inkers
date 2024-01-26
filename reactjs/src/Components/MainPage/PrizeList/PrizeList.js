@@ -256,20 +256,27 @@ function PrizeList() {
           )
         )}
         {loaded && instanceRef.current && (
-          <div className="Prize_Index">
-            {currentSlide + 1}/{instanceRef.current.track.details.slides.length}
+          <div className="Prize_Button">
+            <div className="Prize_Go_Left">
+              <MdArrowBackIos
+                onClick={(e) =>
+                  e.stopPropagation() || instanceRef.current?.prev()
+                }
+              />
+            </div>
+            <div className="Prize_Index">
+              {currentSlide + 1}/
+              {instanceRef.current.track.details.slides.length}
+            </div>
+            <div className="Prize_Go_Right">
+              <MdArrowForwardIos
+                onClick={(e) =>
+                  e.stopPropagation() || instanceRef.current?.next()
+                }
+              />
+            </div>
           </div>
         )}
-        <div className="Prize_Go_Left">
-          <MdArrowBackIos
-            onClick={(e) => e.stopPropagation() || instanceRef.current?.prev()}
-          />
-        </div>
-        <div className="Prize_Go_Right">
-          <MdArrowForwardIos
-            onClick={(e) => e.stopPropagation() || instanceRef.current?.next()}
-          />
-        </div>
       </div>
     </div>
   );

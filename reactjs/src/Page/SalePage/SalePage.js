@@ -78,7 +78,7 @@ function SalePage() {
         <Footer />
       </div>
       <div className="SalePage_Check" onClick={() => handleClick()}>
-        Check Our Porfolio
+        Check Our Portfolio
       </div>
     </div>
   );

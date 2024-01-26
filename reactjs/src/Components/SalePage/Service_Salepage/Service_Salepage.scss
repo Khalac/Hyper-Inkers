@@ -32,11 +32,12 @@
     justify-content: center;
     color: #dcdbbead;
     z-index: 3;
-    font-family: "CompagnonMedium";
+    font-family: "ttrun";
     font-size: 3vw;
     text-align: justify;
     text-indent: 30px;
-    line-height: 15px;
+    line-height: 18px;
+    letter-spacing: 1px;
    }
    .Service_Salepage_Detail{
       height: 17%;
@@ -66,14 +67,13 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: 10%;
+        position: relative;
         .Service_Salepage_Detail_Des_Detail{
           width: 90%;
           display: flex;
           flex-direction: row;
           justify-content: center;
           align-items: center;
-
           .dot{
             background-color: #dcdbbead;
             border-radius: 50%;
@@ -82,9 +82,8 @@
             margin-right: 2%;
           }
           .Service_Salepage_Detail_Des1_Text{
-            width: 100%;
-            display: flex;
 
+            display: flex;
             flex-direction: row;
             color: #dcdbbead;
             font-family: "ladyrose";

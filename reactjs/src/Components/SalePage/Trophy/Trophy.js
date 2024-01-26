@@ -10,184 +10,190 @@ import "keen-slider/keen-slider.min.css";
 
 import { IoIosArrowRoundBack, IoIosArrowRoundForward } from "react-icons/io";
 
+import Best from "../../assets/ImgMobile/Prize/Best.png";
+import First from "../../assets/ImgMobile/Prize/First.png";
+import Second from "../../assets/ImgMobile/Prize/Second.png";
+import Third from "../../assets/ImgMobile/Prize/Third.png";
+import Top3 from "../../assets/ImgMobile/Prize/Top3.png";
+
 const Prize = [
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "BEST OF SMALL COLOR FEMALE",
     location: "Villian Arts",
     country: "HOUSTON 2021",
   },
   {
-    imgPrize: Min,
+    imgPrize: Second,
     namePrize: "BEST OF SHOW",
     location: "Villian Arts",
     country: "HOUSTON 2021",
   },
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "BEST OF SHOW",
     location: "Land of Ink",
     country: "BANGKOK 2022",
   },
   {
-    imgPrize: Min,
+    imgPrize: Second,
     namePrize: "MINIMAL COLOR",
     location: "Land of Ink",
     country: "BANGKOK 2022",
   },
   {
-    imgPrize: Min,
+    imgPrize: Third,
     namePrize: "SMALL JOB BLACK AND GREY",
     location: "Land of Ink",
     country: "BANGKOK 2022",
   },
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "BEST OF SHOW",
     location: "Body Art Expo",
     country: "LOS ANGELES 2023",
   },
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "PORTRAIT",
     location: "Star of Texas",
     country: "AUSTIN 2023",
   },
   {
-    imgPrize: Min,
+    imgPrize: Second,
     namePrize: "HORROR",
     location: "Star of Texas",
     country: "AUSTIN 2023",
   },
   {
-    imgPrize: Min,
+    imgPrize: Third,
     namePrize: "LARGE BLACK AND GREY",
     location: "Star of Texas",
     country: "AUSTIN 2023",
   },
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "BEST OF SHOW",
     location: "Palm City Tattoo Expo",
     country: "MCALLEN 2023",
   },
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "CICATRIZADO",
     location: "Pachamama Convention",
     country: "PERU",
   },
   {
-    imgPrize: Min,
+    imgPrize: Second,
     namePrize: "BEST OF GRANDES",
     location: "Pièces Epinal Show",
     country: "FRANCE",
   },
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "COLORIDO",
     location: "Expo Tattoo Brasília",
     country: "BRAZIL",
   },
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "CICATRIZADO",
     location: "Expo Tattoo Brasília",
     country: "BRAZIL",
   },
   {
-    imgPrize: Min,
+    imgPrize: Second,
     namePrize: "ORIENTAL",
     location: "Expo Tattoo Brasília",
     country: "BRAZIL",
   },
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "MELHOR DO EVENTO",
     location: "Expo Tattoo Brasília",
     country: "BRAZIL",
   },
   {
-    imgPrize: Min,
+    imgPrize: Top3,
     namePrize: "COLOR",
     location: "Tattoo Collectors Expo",
     country: "DALLAS, USA",
   },
   {
-    imgPrize: Min,
+    imgPrize: Best,
     namePrize: "BEST ASIAN",
     location: "Tattoo Collectors Expo",
     country: "DALLAS, USA",
   },
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "BEST ORIENTA",
     location: "Tattoo Week",
     country: "BRAZIL",
   },
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "MELHOR DO",
     location: "Evento Tattoo Week",
     country: "BRAZIL",
   },
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "BEST COMIC STYLE",
     location: "Mayagna Convention",
     country: "NICARAGUA",
   },
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "BEST ORIENTA",
     location: "Inksane Tattoo Fest V",
     country: "PUERTO RICO",
   },
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "BEST OVER ALL",
     location: "Inksane Tattoo Fest V",
     country: "PUERTO RICO",
   },
   {
-    imgPrize: Min,
+    imgPrize: Best,
     namePrize: "BEST OF SHOW",
     location: "Inksane Tattoo Fest V",
     country: "PUERTO RICO",
   },
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "ARTE FUSION",
     location: "Cangaco Tattoo Ink",
     country: "BRAZIL",
   },
   {
-    imgPrize: Min,
+    imgPrize: Best,
     namePrize: "MELHOR DO EVENTO",
     location: "Cangaco Tattoo Ink",
     country: "BRAZIL",
   },
   {
-    imgPrize: Min,
+    imgPrize: Second,
     namePrize: "REALISMO COLORIDO",
     location: "Cangaco Tattoo Ink",
     country: "BRAZIL",
   },
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "FECHAMENTO",
     location: "Cangaco Tattoo Ink",
     country: "BRAZIL",
   },
   {
-    imgPrize: Min,
+    imgPrize: First,
     namePrize: "FREE HAND",
     location: "Cangaco Tattoo Ink",
     country: "BRAZIL",
   },
 ];
 
-const animation = { duration: 10000, easing: (t) => t };
+const animation = { duration: 11000, easing: (t) => t };
 
 function Trophy() {
   const [currentSlide, setCurrentSlide] = useState(0);

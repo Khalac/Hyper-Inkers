@@ -30,11 +30,12 @@
       z-index: 3;
       font-family: "CompagnonMedium";
       font-size: 4vw;
+      margin-bottom: 2%;
     }
     .OpenTime_Time_Text{
       color: #cc9933;
-      font-family: "CompagnonMedium";
-      font-size: 6vw;
+      font-family: "ladyrose";
+      font-size: 4.5vw;
       width: 95%;
       display: flex;
       justify-content: end;
@@ -50,11 +51,12 @@
       justify-content: center;
       color: #dcdbbead;
       z-index: 3;
-      font-family: "CompagnonMedium";
+      font-family: "ttrun";
       font-size: 3vw;
       text-align: justify;
       text-indent: 30px;
-      line-height: 15px;
+      line-height: 18px;
+      letter-spacing: 1px;
 
     }
   }
@@ -79,7 +81,7 @@
     }
     .OpenTime_Time{
       height: 70%;
-      width: 75%;
+      width: 60%;
       background-image: url("../../assets/ImgMobile/ImgSalePage/OpenTime.webp");
       background-position: 50% 50%;
       background-repeat: no-repeat;
@@ -93,19 +95,20 @@
       color: #dcdbbe;
       z-index: 3;
       font-family: "CompagnonMedium";
-      font-size: 2vw;
+      font-size: 1.5vw;
+      margin-bottom: 2%;
     }
     .OpenTime_Time_Text{
       color: #cc9933;
-      font-family: "CompagnonMedium";
-      font-size: 4vw;
+      font-family: "ladyrose";
+      font-size: 2vw;
       width: 95%;
       display: flex;
       justify-content: end;
     }
     }
     .OpenTime_Text{
-      width: 70%;
+      width: 60%;
       display: flex;
       flex-direction: column;
       align-items: center;
