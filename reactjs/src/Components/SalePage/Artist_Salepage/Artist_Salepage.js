@@ -39,7 +39,7 @@ const ArtistArr = [
   },
 ];
 
-const animation = { duration: 11000, easing: (t) => t };
+const animation = { duration: 15000, easing: (t) => t };
 
 function Artist_Salepage() {
   const [currentSlide, setCurrentSlide] = useState(0);

@@ -24,7 +24,8 @@ function Service_Salepage() {
           <div className="Service_Salepage_Detail_Des_Detail">
             <div className="dot" />
             <div className="Service_Salepage_Detail_Des1_Text">
-              100% designs will be submitted for approval before an appointment
+              <div>100% designs will be submitted for</div>
+              <div>approval before an appointment</div>
             </div>
           </div>
           <div className="Service_Salepage_Detail_Des_Detail">
@@ -64,7 +65,8 @@ function Service_Salepage() {
           <div className="Service_Salepage_Detail_Des_Detail">
             <div className="dot" />
             <div className="Service_Salepage_Detail_Des1_Text">
-              We offer discounts of up to 30% for group tattoos
+              <div>We offer discounts of up to</div>
+              <div> 30% for group tattoos</div>
             </div>
           </div>
           <div className="Service_Salepage_Detail_Des_Detail">
