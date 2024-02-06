@@ -227,7 +227,6 @@ function Prize() {
   });
   return (
     <div className="Prize">
-      <img src={BG} alt="" className="Prize_BG" />
       <div ref={sliderRef} className="keen-slider Prize_Container">
         {PrizeList.map((prize, key) =>
           currentSlide === key ? (

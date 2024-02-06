@@ -11,7 +11,6 @@ import img3 from "../../assets/ImgMobile/AboutPage/trp3.webp";
 function Trophies() {
   return (
     <div className="Trophies">
-      <img src={BG} alt="" className="Trophies_BG" />
       <div className="Trophies_Name">
         <div>30+ TROPHIES</div>
         <div>WITH PRICELESS VALUE</div>

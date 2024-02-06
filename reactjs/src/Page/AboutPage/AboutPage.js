@@ -14,6 +14,7 @@ import Service_AboutPage from "../../Components/AboutPage/Service_AboutPage/Serv
 function AboutPage() {
   return (
     <div className="AboutPage">
+      <div className="AboutPage_Bg"></div>
       <div className="AboutPage_Header">
         <Header />
       </div>

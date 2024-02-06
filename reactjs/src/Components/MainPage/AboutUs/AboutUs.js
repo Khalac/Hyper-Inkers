@@ -11,7 +11,6 @@ function AboutUs() {
   const nav = useNavigate();
   return isMobile ? (
     <div className="AboutUs">
-      {/* <img src={BG} className="AboutUs_BG" /> */}
       <div className="AboutUs_Name">ALL ABOUT US</div>
       <div className="AboutUs_Text">
         Hyper Inkers Tattoo Studio established in 2023. Hyper team with all tec
@@ -45,7 +44,6 @@ function AboutUs() {
     </div>
   ) : (
     <div className="AboutUs">
-      {/* <img src={BG} className="AboutUs_BG" alt=""/> */}
       <div className="AboutUs_Name">ALL ABOUT US</div>
       {/* <div className="AboutUs_Text">
         Hyper Inkers Tattoo Studio established in 2023. Hyper team with all tec

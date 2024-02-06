@@ -11,7 +11,6 @@ import des from "../../assets/ImgMobile/AboutPage/des.webp";
 function Service_AboutPage() {
   return (
     <div className="Service_AboutPage">
-      <img src={BG} alt="" className="Service_AboutPage_BG" />
       <div className="Service_AboutPage_Name">OUR SERVICE</div>
       <div className="Service_AboutPage_Cate">
         <div className="Service_AboutPage_Cate_1">

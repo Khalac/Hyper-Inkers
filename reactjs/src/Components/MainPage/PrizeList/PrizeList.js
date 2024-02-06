@@ -249,13 +249,12 @@ function PrizeList() {
     drag: false,
     slides: {
       origin: "center",
-      perView: isMobile ? 3 :4,
+      perView: isMobile ? 3 : 4,
       spacing: 15,
     },
   });
   return (
     <div className="PrizeList">
-      {/* <img src={BG} alt="" className="PrizeList_BG" /> */}
       <div ref={sliderRef} className="keen-slider PrizeList_Container">
         {Prize.map((prize, key) =>
           currentSlide === key ? (
@@ -298,7 +297,7 @@ function PrizeList() {
             </div>
           )
         )}
-         {/* {loaded && instanceRef.current && (
+        {/* {loaded && instanceRef.current && (
           <div className="Prize_Button">
             <div className="Prize_Go_Left">
               <MdArrowBackIos

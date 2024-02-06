@@ -12,14 +12,6 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-
-    .FAQ_BG{
-      position: absolute;
-      top: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 0;
-    }
     .FAQ_Name{
       font-size: 5.5vw;
       width: 100%;
@@ -28,6 +20,8 @@
       text-align: center;
       font-family: 'clesmont';
       letter-spacing: 2px;
+      padding-top: 5%;
+      padding-bottom: 3%;
     }
     .FAQ_Ques{
       height:5%;

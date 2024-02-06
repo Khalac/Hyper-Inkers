@@ -86,7 +86,6 @@ function Artist() {
   });
   return (
     <div className="Artist" id="Artist">
-      {/* <img src={BG} alt="" className="Artist_BG" /> */}
       <div className="Artist_Name">MEET OUR ARTIST</div>
       <div className="Artist_Text">
         Our artists exemplify professionalism from start to finish. They

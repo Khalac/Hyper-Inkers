@@ -58,3 +58,8 @@
   font-family: "ttrun";
   src: local("ttrun") ,url("./Components/assets/font/TT-Runs-Trial-Variable-Roman-BF640004cf9d367.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "ttrunbold";
+  src: local("ttrunbold") ,url("./Components/assets/font/TT-Runs-Trial-DemiBold-BF640004cc3f080.ttf") format("truetype");
+}

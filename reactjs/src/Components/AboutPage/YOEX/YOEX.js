@@ -8,7 +8,6 @@ import img from "../../assets/ImgMobile/AboutPage/Artists.webp";
 function YOEX() {
   return (
     <div className="YOEX">
-      <img src={BG} alt="" className="YOEX_BG" />
       <div className="YOEX_Name">
         <div>MORE THAN</div>
         <div>7 YEARS OF EXPERIENCE</div>

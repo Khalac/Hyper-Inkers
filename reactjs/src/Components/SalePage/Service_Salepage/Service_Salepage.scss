@@ -7,19 +7,13 @@
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    .Service_Salepage_BG{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-    }
     .Service_Salepage_Name{
       width: 80%;
       font-family: "clesmont";
       color: #cc6600;
       font-size: 5.5vw;
       text-align: center;
+      letter-spacing: 1px;
     }
    .Service_Salepage_Text{
     width: 90%;

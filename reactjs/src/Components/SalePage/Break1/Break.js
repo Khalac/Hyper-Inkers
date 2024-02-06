@@ -9,7 +9,6 @@ function Break() {
   console.log(isMobile);
   return (
     <div className="Break">
-      {/* <img src={BG} alt="" className="Break_BG" /> */}
       {isMobile ? (
         <h2 className="Break_Name">
           <div>

@@ -10,14 +10,6 @@
     align-items: center;
     position: relative;
     z-index: 0;
-    .Contact_SalePage_BG{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
     .Contact_SalePage_Name{
         height: 5%;
         width: 100%;
@@ -77,21 +69,22 @@
           color: #dcdbbe;
           font-family: "ladyrose";
           font-size: 2.5vw;
-          width: 30%;
+          width: 20%;
           display: flex;
           justify-content: end;
-          margin-right: 5%;
+          margin-right: 8%;
         }
         .Contact_SalePage_Infor_Detail_Infor{
-          width: 60%;
+          width: 50%;
           color: #dcdbbe;
           font-family: "ttrun";
+          letter-spacing: 1px;
           display: flex;
           font-size: 2.5vw;
           margin-bottom: 0.5%;
         }
         .Contact_SalePage_Infor_Detail_Logo{
-          width: 60%;
+          width: 50%;
           display: flex;
           flex-direction: row;
           .Contact_SalePage_Infor_Detail_Logo_Logo{
@@ -114,7 +107,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        font-family: "clesmont";
+        font-family: "ladyrose";
         font-size: 4vw;
       }
       .Contact_SalePage_Payment_Img{

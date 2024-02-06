@@ -50,7 +50,6 @@ function Service() {
   };
   return (
     <div className="Service">
-      {/* <img src={BG} alt="" className="Service_BG" /> */}
       <div className="Service_Name">OUR SERVICE</div>
       <div className="Service_Img">
         <div className="Service_Img_Top_Container">

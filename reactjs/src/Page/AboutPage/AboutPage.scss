@@ -10,6 +10,16 @@
     height: 100%;
     width: 100%;
     background-color: black;
+    position: relative;
+    .AboutPage_Bg{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../../Components/assets/ImgMobile/Background/MainBG1.png");
+      opacity: 0.6;
+    }
     .AboutPage_Header{
       height: 10vh;
       width: 100%;
@@ -58,6 +68,15 @@
     height: 100%;
     width: 100%;
     background-color: black;
+    .AboutPage_Bg{
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../../Components/assets/ImgMobile/Background/MainBG1.png");
+      opacity: 0.6;
+    }
     .AboutPage_Header{
       height: 10vh;
       width: 100%;

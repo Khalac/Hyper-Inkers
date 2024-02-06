@@ -160,6 +160,16 @@
         background-color: rgba(0, 0, 0, 0.66);
         cursor: pointer;
     }
+    .SalePage_Bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../../Components/assets/ImgMobile/Background/MainBG1.png");
+      opacity: 0.8;
+      object-fit: contain;
+    }
     .SalePage_Header{
       height: 10vh;
       width: 100%;

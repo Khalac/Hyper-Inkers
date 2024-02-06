@@ -17,7 +17,6 @@ import logo10 from "../../assets/ImgMobile/AboutPage/logo10.webp";
 function Convention() {
   return (
     <div className="Convention">
-      <img src={BG} alt="" className="Convention_BG" />
       <div className="Convention_Name">
         <div>15+ WORLD CONVENTION</div>
         <div>WITH ENTHUSIASM</div>

@@ -11,7 +11,6 @@ import Img4 from "../../assets/ImgMobile/AboutPage/4.webp";
 function About_AboutPage() {
   return (
     <div className="About_AboutPage">
-      <img src={BG} alt="" className="About_AboutPage_BG" />
       <div className="About_AboutPage_Name">ALL ABOUT US</div>
       <div className="About_AboutPage_Section1">
         <div className="About_AboutPage_Section1_Text_Img">

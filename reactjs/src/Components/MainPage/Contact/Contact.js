@@ -12,7 +12,6 @@ import time from "../../assets/Logo/time.webp";
 function Contact() {
   return (
     <div className="Contact" id="Contact">
-      {/* <img src={BG} alt="" className="Contact_BG" /> */}
       <div className="Contact_Name">CONTACT US</div>
       <div className="Contact_GoogleMap">
         <iframe
@@ -38,7 +37,7 @@ function Contact() {
               className="Contact_Infor_Left_Location_Logo"
             />
             <div className="Contact_Infor_Left_Location_Text">
-            Only 10 minutes drive from the airport
+              Only 10 minutes drive from the airport
             </div>
           </div>
         </div>

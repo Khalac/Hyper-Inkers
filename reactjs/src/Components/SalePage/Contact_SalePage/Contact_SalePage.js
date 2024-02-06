@@ -24,7 +24,6 @@ import { handlePhoneClick } from "../../../utils/helper";
 function Contact_SalePage() {
   return (
     <div className="Contact_SalePage">
-      {/* <img src={BG} alt="" className="Contact_SalePage_BG" /> */}
       <div className="Contact_SalePage_Name">CONTACT US</div>
       {isMobile ? (
         <React.Fragment>
@@ -56,7 +55,7 @@ function Contact_SalePage() {
             <div className="Contact_SalePage_Infor_Detail">
               <div className="Contact_SalePage_Infor_Detail_Name">ADDRESS</div>
               <div className="Contact_SalePage_Infor_Detail_Infor">
-                8045 Callaghan Rd, San Anton�o, TX 78230 (Only 10 minutes drive
+                8045 Callaghan Rd, San Antonio, TX 78230 (Only 10 minutes drive
                 from the airport)
               </div>
             </div>

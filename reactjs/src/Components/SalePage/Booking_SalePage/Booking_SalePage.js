@@ -6,7 +6,6 @@ import BG from "../../assets/ImgMobile/Background/MainBG.png";
 function Booking_SalePage() {
   return (
     <div className="Booking_SalePage">
-      {/* <img src={BG} alt="" className="Booking_SalePage_BG" /> */}
       <div className="Booking_SalePage_Name">
         <div className="Booking_SalePage_Name1">If you're interested</div>
         <div className="Booking_SalePage_Name2">Don't hesitate to book now</div>

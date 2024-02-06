@@ -144,7 +144,6 @@ function Gallery() {
           </div>
         </div>
       )}
-      {/* <img src={BG} alt="" className="Gallery_BG" /> */}
       <div className="Gallery_Name">HYPER GALLERY</div>
       <div className="Gallery_Gallery">
         <div className="Gallery_Gallery_Line1">

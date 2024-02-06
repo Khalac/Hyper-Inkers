@@ -82,7 +82,6 @@ function Artist_Salepage() {
   });
   return (
     <div className="Artist_Salepage">
-      {/* <img src={BG} alt="" className="Artist_Salepage_BG" /> */}
       <div className="Artist_Salepage_Name">our artists</div>
       <div ref={sliderRef} className="keen-slider Artist_Salepage_Artist">
         {ArtistArr.map((artist, key) => (

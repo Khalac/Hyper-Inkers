@@ -23,11 +23,13 @@
       font-family: 'clesmont';
       letter-spacing: 2px;
       z-index: 1;
+      
     }
     .About_AboutPage_Section1{
       height: 35%;
       width: 90%;
       position: relative;
+
       .About_AboutPage_Section1_Text_Img{
         height: 100%;
         width: 60%;
@@ -45,7 +47,7 @@
           top: 0;
           color: #cddbbe72;
           font-family: "LucidaSansTypewriterOblique";
-          font-size: 2.5vw;
+          font-size: 2vw;
           letter-spacing: 1px;
           text-align: right;
           line-height: 15px;
@@ -104,6 +106,7 @@
     .About_AboutPage_Section2{
       height: 50%;
       width: 90%;
+      padding-bottom: 10%;
       .About_AboutPage_Section2_Name{
         width: 100%;
         height: 25%;
@@ -119,7 +122,6 @@
         height: 60%;
         width: 100%;
         position: relative;
-        
         .About_AboutPage_Section2_Img1{
           position: absolute;
           left: 0;
@@ -150,7 +152,7 @@
               display: flex;
               flex-direction: column;
               align-items: center;
-              margin-top: 13%;
+              margin-top: 22%;
               .About_AboutPage_Section2_Number_Number{
                 color: #cc6600;
               font-family: "clesmont";
@@ -181,9 +183,9 @@
       .About_AboutPage_Section2_Text{
           color: #cddbbe72;
           font-family: "LucidaSansTypewriterOblique";
-          font-size: 2.5vw;
+          font-size: 2vw;
           letter-spacing: 1px;
-          text-align: justify;
+          text-align: left;
           margin-top: 5%;
           line-height: 13px;
       }

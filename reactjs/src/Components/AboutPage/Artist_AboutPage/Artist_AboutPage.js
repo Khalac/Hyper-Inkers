@@ -12,7 +12,6 @@ import Ben from "../../assets/ImgMobile/AboutPage/Ben.webp";
 function Artist_AboutPage() {
   return (
     <div className="Artist_AboutPage">
-      <img src={BG} alt="" className="Artist_AboutPage_BG" />
       <div className="Artist_AboutPage_Name">5 HYPER ARTISTS</div>
       <div className="Artist_AboutPage_Text">
         Our artists exemplify professionalism from start to finish. They

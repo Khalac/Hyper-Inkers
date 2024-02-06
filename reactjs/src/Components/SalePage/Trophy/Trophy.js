@@ -258,7 +258,6 @@ function Trophy() {
   });
   return (
     <div className="Trophy">
-      {/* <img src={BG} alt="" className="Trophy_BG" /> */}
       <h2 className="Trophy_Name">INTERNATIONAL AWARD WINNERS</h2>
       <div ref={sliderRef} className="keen-slider Trophy_Container">
         {Prize.map((prize, key) =>
