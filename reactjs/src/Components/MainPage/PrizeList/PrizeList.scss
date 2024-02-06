@@ -54,6 +54,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+
         .PrizeList_Container_Prize_Img{
           width: 100%;
           height: 15%;
@@ -162,13 +163,16 @@
 
 @media screen and (min-width: 768px){
   .PrizeList{
-    height: 100%;
+    height: 40vh;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.66);
+    padding-top: 2%;
+    padding-bottom: 2%;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
+    align-self: center;
     .PrizeList_BG{
       position: absolute;
       width: 100%;
@@ -178,11 +182,12 @@
       z-index: 0;
     }
     .PrizeList_Container{
-      height: 70%;
+      height: 80%;
       width: 100%;
-      background-color: white;
       z-index: 1;
-
+      margin: 10%;
+      position: relative;
+      background-color: white;
       .Prize_Index{
         position: absolute;
         bottom: 5%;
@@ -206,21 +211,21 @@
       }
       .PrizeList_Container_Prize{
         max-height: 80%;
-        height: 80%;
-
+        height: 70%;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         align-items: center;
         flex-direction: column;
+
         .PrizeList_Container_Prize_Img{
           width: 100%;
-          height: 15%;
+          height: 25%;
           display: flex;
           justify-content: center;
           align-items: center;
-
+          object-fit: contain;
           .PrizeList_Container_Prize_Img_Img{
-            width: 7%;
+            width: 15%;
             height: auto;
             transition: width 1s ease;
           }
@@ -229,12 +234,13 @@
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 8%;
           font-family: 'ladyrose';
-          font-size: 1vw;
+          font-size: 0.8vw;
           text-align: center;
           width: 50%;
+          line-height: 1.5;
           transition: height 0.5s ease;
+          margin-top: 2%;
         }
         .PrizeList_Container_Prize_Location{
           display: flex;
@@ -245,6 +251,7 @@
           font-size: 1.3vw;
           text-align: center;
           transition: height 0.5s ease;
+          margin-top: 5%;
         }
         .PrizeList_Container_Prize_Country{
           display: flex;
@@ -255,49 +262,48 @@
           font-size: 1.3vw;
           text-align: center;
           transition: height 0.5s ease;
+          margin-top: 6%;
+          margin-bottom: 3%;
         }
       }
       .PrizeList_Container_Prize_Active{
         max-height: 80%;
         height: 80%;
-
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         .PrizeList_Container_Prize_Img_Active{
           width: 100%;
-          height: 40%;
+          height: 50%;
           display: flex;
           justify-content: center;
           align-items: center;
-
           .PrizeList_Container_Prize_Img_Img_Active{
-            width: 20%;
-            height: auto;
-            transition: width 1s ease;
+            width: auto;
+            height: 70%;
+            transition: height 1s ease;
+            object-fit: fill;
           }
         }
         .PrizeList_Container_Prize_NamePrize_Active{
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          height: 10%;
           font-family: 'ladyrose';
           font-size: 1.2vw;
           text-align: center;
           width: 100%;
+          line-height: 1.5;
           transition: height 0.5s ease;
         }
         .PrizeList_Container_Prize_Location_Active{
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 5%;
+          height: 10%;
           font-family: "CompagnonMedium";
           font-size: 1.5vw;
           text-align: center;
           transition: height 0.5s ease;
+          margin-bottom: 4%;
         }
         .PrizeList_Container_Prize_Country_Active{
           display: flex;

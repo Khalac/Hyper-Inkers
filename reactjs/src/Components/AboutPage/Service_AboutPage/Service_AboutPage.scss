@@ -108,22 +108,24 @@
       font-family: "ladyrose";
       color: #cc6600;
       font-size: 4vw;
+      letter-spacing: 3px;
     }
     .Service_AboutPage_Text{
-      width: 90%;
+      width: 55%;
       color: #cddbbeac;
       font-family: "LucidaSansTypewriterOblique";
-      font-size: 1.5vw;
+      font-size: 1vw;
       text-align: justify;
       line-height: 30px;
+
     }
     .Service_AboutPage_Cate{
-      width: 100%;
+      width: 55%;
       display: flex;
       justify-content: center;
       align-items: center;
       flex-direction: row;
-      height: 15%;
+      height: 13%;
       .Service_AboutPage_Cate_1{
         height: 100%;
         width: 30%;

@@ -15,17 +15,14 @@
       left: 0;
     }
     .Service_Salepage_Name{
-      width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      width: 80%;
       font-family: "clesmont";
       color: #cc6600;
-      font-size: 6vw;
+      font-size: 5.5vw;
+      text-align: center;
     }
    .Service_Salepage_Text{
     width: 90%;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -40,47 +37,37 @@
     letter-spacing: 1px;
    }
    .Service_Salepage_Detail{
-      height: 17%;
+      height: 16%;
       width: 100%;
       display: flex;
-      justify-content: space-evenly;
+
       align-items: center;
       flex-direction: column;
       .Service_Salepage_Detail_Logo{
         width: 20%;
         height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: fill;
       }
       .Service_Salepage_Detail_Name{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         text-align: center;
-        width: 60%;
+        width: 100%;
         color: #cc9933;
         font-family: "ladyrose";
         font-size: 4vw;
+        line-height: 1.2;
+        margin-top: 5%;
+
       }
       .Service_Salepage_Detail_Des{
-        width: 70%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        position: relative;
+        width: 60%;
+        text-align: center;
+        margin-top: 2%;
+        margin-left: 5%;
         .Service_Salepage_Detail_Des_Detail{
           width: 90%;
-          display: flex;
-          flex-direction: row;
-          justify-content: center;
-          align-items: center;
-          .dot{
-            background-color: #dcdbbead;
-            border-radius: 50%;
-            width: 2vw;
-            height: 2vw;
-            margin-right: 2%;
-          }
           .Service_Salepage_Detail_Des1_Text{
             display: flex;
             flex-direction: row;
@@ -126,35 +113,37 @@
     }
     .Service_Salepage_Name{
       width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
       font-family: "clesmont";
       color: #cc6600;
-      font-size: 3.5vw;
+      font-size: 2vw;
+      text-align: center;
+      margin-top: 3%;
+      letter-spacing: 3px;
     }
    .Service_Salepage_Text{
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    width: 60%;
     justify-content: center;
     color: #dcdbbead;
     z-index: 3;
     font-family: "CompagnonMedium";
-    font-size: 1.3vw;
+    font-size: 1.2vw;
+    text-align: justify;
+    text-indent: 30px;
+    line-height: 25px;
     text-align: center;
-    line-height: 30px;
+    margin-top: 2%;
    }
    .Service_Salepage_Detail{
-      height: 17%;
-      width: 100%;
+      height: 100%;
+      width: 45%;
       display: flex;
-      justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
+      background-image: linear-gradient( #cc66002a, #33333310);
+      padding-bottom: 3%;
+      padding-top: 3%;
       .Service_Salepage_Detail_Logo{
-        width: 7%;
+        width: 20%;
         height: auto;
       }
       .Service_Salepage_Detail_Name{
@@ -163,10 +152,12 @@
         justify-content: center;
         align-items: center;
         text-align: center;
-        width: 60%;
+        width: 100%;
         color: #cc9933;
         font-family: "ladyrose";
-        font-size: 1.3vw;
+        font-size: 1.5vw;
+        margin-top: 5%;
+        line-height: 1.2;
       }
       .Service_Salepage_Detail_Des{
         width: 70%;
@@ -174,45 +165,38 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
+        margin-top: 5%;
+        
         .Service_Salepage_Detail_Des_Detail{
-          width: 90%;
+          width: 100%;
           display: flex;
           flex-direction: row;
           justify-content: center;
           align-items: center;
-
-          .dot{
-            background-color: #dcdbbead;
-            border-radius: 50%;
-            width: 0.5vw;
-            height: 0.5vw;
-            margin-right: 2%;
-          }
           .Service_Salepage_Detail_Des1_Text{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            text-align: center;
             color: #dcdbbead;
             font-family: "ladyrose";
-            font-size: 1.1vw;
-            line-height: 30px;
+            font-size: 0.7vw;
+            line-height: 25px;
+            letter-spacing: 1px;
           }
         }
       }
    }
    .Service_Salepage_Phone{
-    height: 2.5%;
     background-color: #1e5761;
     color: #dcdbbed4;
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-family: "clesmont";
     display: flex;
     justify-content: center;
     align-items: center;
-    width:45%;
-    z-index: 3;
+    width: 30%;
     border-radius: 50px;
+    margin-bottom: 4%;
+    margin-top: 4%;
+    height: 5vh;
    }
   }
 }

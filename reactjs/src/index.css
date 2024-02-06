@@ -1,0 +1,60 @@
+
+@font-face {
+  font-family: "CopperplateGothicBold";
+  src: local("CopperplateGothicBold"),url("./Components/assets/font/CopperplateGothicBold.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "LucidaSansTypewriterOblique";
+  src: local("LucidaSansTypewriterOblique"),url("./Components/assets/font/Lucida-Sans-Typewriter-Oblique.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "CompagnonMedium";
+  src:local("CompagnonMedium") ,url("./Components/assets/font/Compagnon-Medium.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "clesmont";
+  src: local("clesmont") ,url("./Components/assets/font/clesmont.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ladyrose";
+  src: local("ladyrose") ,url("./Components/assets/font/ladyrose.otf") format("truetype");
+}
+
+@font-face {
+  font-family: "LTYPE";
+  src: local("LTYPE") ,url("./Components/assets/font/LTYPE.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "LTYPEB";
+  src: local("LTYPEB") ,url("./Components/assets/font/LTYPEB.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "LTYPEBO";
+  src: local("LTYPEBO") ,url("./Components/assets/font/LTYPEBO.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "LTYPEO";
+  src: local("LTYPEO") ,url("./Components/assets/font/LTYPEO.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "bebas";
+  src: local("bebas") ,url("./Components/assets/font/UTM BEBAS.TTF") format("truetype");
+}
+
+@font-face {
+  font-family: "lucida";
+  src: local("lucida") ,url("./Components/assets/font/Lucida-Sans-Typewriter-Oblique.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ttrun";
+  src: local("ttrun") ,url("./Components/assets/font/TT-Runs-Trial-Variable-Roman-BF640004cf9d367.ttf") format("truetype");
+}

@@ -96,9 +96,9 @@
     }
     .Section2_Anet_Text{
 
-      width: 80%;
+      width: 50%;
       color: #dcdbbeb3;
-      font-size: 1.5vw;
+      font-size: 1vw;
       font-family: "LTYPE";
       display: flex;
       flex-direction: column;
@@ -111,7 +111,7 @@
       height: 50%;
       width: 100%;
       position: relative;
-
+      margin-bottom: 3%;
       .Section2_Anet_Img_Top_Container{
         position: absolute;
           height: auto;

@@ -17,7 +17,7 @@ import Contact_SalePage from "../../Components/SalePage/Contact_SalePage/Contact
 
 import call from "../../Components/assets/ImgMobile/ImgSalePage/call.webp";
 
-import { HashLink } from "react-router-hash-link";
+import { handlePhoneClick } from "../../utils/helper";
 
 function SalePage() {
   const ref = useRef(null);
@@ -28,10 +28,18 @@ function SalePage() {
 
   return (
     <div className="SalePage">
+      <div className="SalePage_Bg"></div>
       <div className="SalePage_Consultant">
         <div className="SalePage_Consultant_Text">Free Consultation</div>
-        <img src={call} alt="logo" className="SalePage_Consultant_Logo" />
-        <div className="SalePage_Consultant_Text">(210) 997-9737</div>
+        <img
+          onClick={handlePhoneClick}
+          src={call}
+          alt="logo"
+          className="SalePage_Consultant_Logo"
+        />
+        <div onClick={handlePhoneClick} className="SalePage_Consultant_Text">
+          (210) 997-9737
+        </div>
       </div>
       <div className="SalePage_Header">
         <Header />

@@ -16,15 +16,12 @@
       left: 0;
     }
     .Artist_Name{
-
       width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      font-family: "clesmont";
       color: #cc6600;
-      font-size: 6vw;
-     
+      font-size: 5.5vw;
+      text-align: center;
+      font-family: 'clesmont';
+      letter-spacing: 2px;
     }
     .Artist_Text{
 
@@ -191,12 +188,10 @@
   .Artist{
     height: 100%;
     width: 100%;
-
+    position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
-    position: relative;
     .Artist_BG{
       position: absolute;
       width: 100%;
@@ -205,57 +200,51 @@
       left: 0;
     }
     .Artist_Name{
-
       width: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
       font-family: "clesmont";
       color: #cc6600;
-      font-size: 4vw;
-     
+      font-size: 2vw;
+      margin-top: 3%;
     }
     .Artist_Text{
-
-      width: 80%;
+      width: 60%;
       text-align: center;
       font-family: "LTYPE";
       color: #dcdbbec4;
-      font-size: 1.5vw;
+      font-size: 1vw;
       display: flex;
       justify-content: center;
       align-items: center;
       line-height: 30px;
+      margin-top: 1%;
     }
     .Artist_Container{
       height: 70%;
-      width: 100%;
-
+      width: 70%;
       z-index: 1;
       position: relative;
       .Artist_Container_Normal{
-        max-height: 100%;
-        height: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
         .Artist_Container_Normal_Wrap{
-          height: 40%;
-          width: 50%;
+          height: 45%;
+          width: 80%;
           background-image: linear-gradient( #cc66004b, #33333310);
           position: relative;
           transition: width 1s ease;
           border-radius: 10px;
           .Artist_Container_Img_Img{
             position: absolute;
-            width: 80%;
+            width: 70%;
             height: auto;
             transition: width 1s ease;
             bottom: 0;
-            margin-left: 10%;
-            
+            margin-left: 15%;
           }
           .Artist_Container_Name{
             position: absolute;
@@ -273,7 +262,7 @@
             position: absolute;
             bottom: 0;
             transition: height 0.5s ease;
-            background-color: rgba(0, 0, 0, 0.287);
+            background-color: rgba(0, 0, 0, 0.563);
             color: #dcdbbeb3;
             font-size: 0.8vw;
             font-family: "LTYPE";
@@ -286,22 +275,21 @@
       }
       .Artist_Container_Active{
         max-height: 80%;
-        height: 80%;
-        
+        height: 70%;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         .Artist_Container_Active_Wrap{
-          height: 70%;
-            width: 70%;
+          height: 80%;
+            width: 100%;
             background-image: linear-gradient( #cc660051, #33333310);
             position: relative;
             transition: width 1s ease;
             border-radius: 10px;
           .Artist_Container_Img_Img_Active{
             position: absolute;
-            width: 90%;
+            width: 80%;
             margin-left: 5%;
             height: auto;
             transition: width 1s ease;
@@ -320,11 +308,11 @@
             height: 20%;
             width: 100%;
             position: absolute;
-            bottom: 0;
+            bottom: 10%;
             transition: height 0.5s ease;
-            background-color: rgba(0, 0, 0, 0.287);
+            background-color: rgba(0, 0, 0, 0.402);
             color: #dcdbbeb3;
-            font-size: 1.2vw;
+            font-size: 1vw;
             margin-bottom: 10%;
             font-family: "LTYPE";
             display: flex;
@@ -335,7 +323,6 @@
       
       }
       .Artist_Button_Container{
-        height: 6%;
         width: 60%;
         display: flex;
         flex-direction: row;
@@ -353,10 +340,11 @@
           background-color: #1e5761;
           bottom: 10%;
           color: #dcdbbebe;
-  font-family: "CompagnonMedium";
+          font-family: "CompagnonMedium";
           font-size: 2vw;
           left: 32.5%;
           border-radius: 30px;
+          padding-bottom: 1%;
         }
         .Artist_Go_Left{
           display: flex;

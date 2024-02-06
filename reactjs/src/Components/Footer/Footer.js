@@ -15,7 +15,7 @@ import { HashLink } from "react-router-hash-link";
 function Footer() {
   return (
     <div className="Footer">
-      <img src={BG} alt="" className="Footer_BG" />
+      {/* <img src={BG} alt="" className="Footer_BG" /> */}
       <img src={logo} alt="" className="Footer_Logo" />
       <div className="Footer_Link">
         <HashLink

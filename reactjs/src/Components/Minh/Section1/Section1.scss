@@ -124,24 +124,24 @@
       .Section1_Minh_Artist_Name{
         color: #cc6600;
         font-family: "ladyrose";
-        font-size: 4vw;
+        font-size: 3vw;
         margin-left: 10%;
         margin-bottom: 2%;
         margin-top: 20%;
       }
       .Section1_Minh_Artist_Style{
         color: #dcdbbeb3;
-        font-size: 2vw;
+        font-size: 1.5vw;
         font-family: "LTYPE";
         margin-left: 10%;
-        margin-bottom: 2%;
+        margin-bottom: 1%;
       }
     }
     .Section1_Minh_Text1{
 
-      width: 80%;
+      width: 50%;
       color: #dcdbbeb3;
-      font-size: 1.5vw;
+      font-size: 1vw;
       font-family: "LTYPE";
       display: flex;
       flex-direction: column;
@@ -152,16 +152,16 @@
     }
     .Section1_Minh_Img{
       height: 35%;
-      width: 70%;
+      width: 50%;
       background-image: url("../../assets/ImgMobile/ImgMinh/Minh.webp");
       background-position: 50% 50%;
       background-repeat: no-repeat;
       background-size: cover;
     }
     .Section1_Minh_Text2{
-      width: 80%;
+      width: 50%;
       color: #dcdbbeb3;
-      font-size: 1.5vw;
+      font-size: 1vw;
       font-family: "LTYPE";
       display: flex;
       flex-direction: column;

@@ -278,7 +278,7 @@ function FAQ() {
 
   return (
     <div className="FAQ" id="FAQ">
-      <img src={BG} alt="" className="FAQ_BG" />
+      {/* <img src={BG} alt="" className="FAQ_BG" /> */}
       <div className="FAQ_Name">FREQUENTLY ASKED QUESTION</div>
       <div className="FAQ_Ques">
         Here are some common questions about HYPER INKER Tattoo Studio
@@ -490,8 +490,9 @@ function FAQ() {
         <button
           className={`question-section ${active9}`}
           onClick={toggleAccordion9}
+          style={{marginBottom: '5%'}}
         >
-          <div>
+          <div >
             <div className="question-align">
               <h4 className="question-style">
                 WHAT IS THE AFTERCARE FOR A TATTOO?

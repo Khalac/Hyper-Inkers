@@ -99,8 +99,23 @@
     .Gallery_SalePage_Name{
       font-family: "clesmont";
       color: #cc6600;
-      font-size: 6vw;
+      font-size: 5.5vw;
       margin-left: 5%;
+    }
+    .Gallery_SalePage_Name_One{
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: #dcdbbead;
+      z-index: 3;
+      font-family: "ttrun";
+      font-size: 3vw;
+      text-align: justify;
+      text-indent: 30px;
+      line-height: 18px;
+      letter-spacing: 1px;
     }
     .Gallery_SalePage_Gallery{
       height: 18%;
@@ -150,7 +165,6 @@
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     position: relative;
@@ -246,12 +260,22 @@
     .Gallery_SalePage_Name{
       font-family: "clesmont";
       color: #cc6600;
-      font-size: 4vw;
-      margin-left: 5%;
+      font-size: 2vw;
+      margin-top: 3%;
+      letter-spacing: 3px;
+    }
+    .Gallery_SalePage_Name_One{
+      font-family: "CompagnonMedium";
+      color: #dcdbbec4;
+      font-size: 1vw;
+      text-align: center;
+      margin-top: 1%;
+      margin-bottom: 3%;
+      letter-spacing: 1px;
     }
     .Gallery_SalePage_Gallery{
       height: 20%;
-      width: 100%;
+      width: 80%;
       display: flex;
       flex-direction: row;
       justify-content: space-evenly;
@@ -263,6 +287,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
+        margin-bottom: 5%;
         .Gallery_SalePage_Gallery_Cat_Img{
           height: auto;
           width: 100%;
@@ -276,7 +301,8 @@
           width: 100%;
           font-family: "ladyrose";
           color: #dcdbbec4;
-          font-size: 1.3vw;
+          font-size: 1vw;
+          margin-top: 10%;
         }
       }
     }
@@ -284,14 +310,15 @@
       height: 4%;
       background-color: #1e5761;
       color: #dcdbbed4;
-      font-size: 3vw;
+      font-size: 2vw;
       font-family: "clesmont";
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 60%;
-      z-index: 3;
+      width: 30%;
       border-radius: 50px;
+
+      margin-bottom: 3%;
     }
   }
 }

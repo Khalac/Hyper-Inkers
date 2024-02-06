@@ -8,16 +8,22 @@ import fb from "../../assets/ImgMobile/ImgSalePage/Facebook.webp";
 import phone from "../../assets/ImgMobile/ImgSalePage/Callnow.webp";
 
 import { isMobile } from "react-device-detect";
+import { handlePhoneClick } from "../../../utils/helper";
 
 function Welcome() {
   return (
     <div className="Welcome_Sale">
       <div className="Welcome_Sale_Text">
-        <div className="Welcome_Sale_Text_Text">Welcome to</div>
-        <div className="Welcome_Sale_Name">HYPER INKERS</div>
-        <div className="Welcome_Sale_Des">
+        {/* <div className="Welcome_Sale_Text_Text">Welcome to</div> */}
+        <h1 className="Welcome_Sale_Name_One">
+          HYPER INKERS - PROFESSIONAL TATTOO STUDIO SAN ANTONIO TEXAS
+        </h1>
+        <h2 className="Welcome_Sale_Name">
+          EXPERT TATTOO ARTISTS, HIGH-END QUALITY TATTOO
+        </h2>
+        {/* <div className="Welcome_Sale_Des">
           INTERNATIONAL AWARD TATTOO STUDIO
-        </div>
+        </div> */}
         <div className="Welcome_Sale_Text_Icon">
           <img src={mail} alt="" className="Welcome_Sale_Text_Icon_Icon" />
           <img
@@ -48,8 +54,12 @@ function Welcome() {
       </div>
       {isMobile ? (
         <div className="Welcome_Sale_Icon">
-          <img src={phone} alt="" className="Welcome_Sale_Icon_Right_Icon" />
-          <div className="Welcome_Sale_Icon_Book">BOOKING</div>
+          <div onClick={handlePhoneClick} className="Welcome_Sale_Icon_Book">
+            CALL NOW
+          </div>
+          <div onClick={handlePhoneClick} className="Welcome_Sale_Icon_Book">
+            BOOKING
+          </div>
         </div>
       ) : (
         <></>

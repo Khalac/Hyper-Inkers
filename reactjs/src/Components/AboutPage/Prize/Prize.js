@@ -14,6 +14,8 @@ import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
+import { isMobile } from "react-device-detect";
+
 const PrizeList = [
   {
     imgPrize: First,
@@ -191,6 +193,8 @@ const PrizeList = [
   },
 ];
 
+const animation = { duration: 11000, easing: (t) => t };
+
 function Prize() {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
@@ -203,9 +207,21 @@ function Prize() {
     created() {
       setLoaded(true);
     },
+    created(s) {
+      s.moveToIdx(5, true, animation);
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    loop: true,
+    renderMode: "performance",
+    drag: false,
     slides: {
       origin: "center",
-      perView: 3,
+      perView: isMobile ? 3 : 4,
       spacing: 15,
     },
   });

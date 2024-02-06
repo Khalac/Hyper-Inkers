@@ -144,10 +144,11 @@
         font-family: "ladyrose";
         color: #cc6600;
         font-size: 3.5vw;
+        letter-spacing: 3px;
     }
     .Convention_Logo{
       height: 40%;
-      width: 90%;
+      width: 55%;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
@@ -166,11 +167,11 @@
           background-color: rgba(0, 0, 0, 0.259);
           border-radius: 10px;
           .Convention_Logo_Line1_Logo1{
-           width: 40%;
+           width: 50%;
            height: auto;
           }
           .Convention_Logo_Line1_Logo5{
-            width: 30%;
+            width: 40%;
             height: auto;
           }
         }
@@ -183,7 +184,7 @@
           background-color: rgba(0, 0, 0, 0.259);
           border-radius: 10px;
           .Convention_Logo_Line1_Logo2{
-           width: 40%;
+           width: 50%;
            height: auto;
           }
         }
@@ -196,7 +197,7 @@
           background-color: rgba(0, 0, 0, 0.259);
           border-radius: 10px;
           .Convention_Logo_Line1_Logo3{
-            width: 30%;
+            width: 40%;
            height: auto;
           }
         }
@@ -209,22 +210,22 @@
           background-color: rgba(0, 0, 0, 0.259);
           border-radius: 10px;
           .Convention_Logo_Line1_Logo4{
-            width: 30%;
+            width: 50%;
             height: auto;
           }
         }
       }
     }
     .Convention_Text{
-      width: 90%;
+      width: 55%;
       color: #cddbbeac;
       font-family: "LucidaSansTypewriterOblique";
-      font-size: 1.5vw;
+      font-size: 1vw;
       text-align: justify;
       line-height: 30px;
     }
     .Convention_Video{
-      width: 90%;
+      width:55%;
       height: 30%;
       display: flex;
       flex-direction: row;

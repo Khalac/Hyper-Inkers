@@ -1,4 +1,5 @@
-import React from "react";
+/* eslint-disable jsx-a11y/iframe-has-title */
+import React, { useState } from "react";
 import "./Contact_SalePage.scss";
 
 import BG from "../../assets/ImgMobile/Background/MainBG.png";
@@ -17,67 +18,134 @@ import fb from "../../assets/ImgMobile/ImgSalePage/fb.webp";
 import insta from "../../assets/ImgMobile/ImgSalePage/instact.webp";
 import tiktok from "../../assets/ImgMobile/ImgSalePage/tiktok.webp";
 import utu from "../../assets/ImgMobile/ImgSalePage/utu.webp";
+import { isMobile } from "react-device-detect";
+import { handlePhoneClick } from "../../../utils/helper";
 
 function Contact_SalePage() {
   return (
     <div className="Contact_SalePage">
-      <img src={BG} alt="" className="Contact_SalePage_BG" />
+      {/* <img src={BG} alt="" className="Contact_SalePage_BG" /> */}
       <div className="Contact_SalePage_Name">CONTACT US</div>
-      <div className="Contact_SalePage_GoogleMap">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.1129626908964!2d-98.55396912388136!3d29.51306637519554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f10.1!3m3!1m2!1s0x865c5e1fe7a633f3%3A0x1fea7b1bc20e4986!2s8045%20Callaghan%20Rd%2C%20San%20Antonio%2C%20TX%2078230%2C%20USA!5e0!3m2!1sen!2s!4v1703746573174!5m2!1sen!2s"
-          className="GoogleMap"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-      <div className="Contact_SalePage_Infor">
-        <div className="Contact_SalePage_Infor_Detail">
-          <div className="Contact_SalePage_Infor_Detail_Name">HOTLINE</div>
-          <div className="Contact_SalePage_Infor_Detail_Infor">
-            (210) 997-9737
+      {isMobile ? (
+        <React.Fragment>
+          <div className="Contact_SalePage_GoogleMap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.1129626908964!2d-98.55396912388136!3d29.51306637519554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f10.1!3m3!1m2!1s0x865c5e1fe7a633f3%3A0x1fea7b1bc20e498!20San%20Antonio%2C%20TX%2078230%2C%20USA!!!!!!!"
+              className="GoogleMap"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div className="Contact_SalePage_Infor">
+            <div className="Contact_SalePage_Infor_Detail">
+              <div className="Contact_SalePage_Infor_Detail_Name">HOTLINE</div>
+              <div
+                onClick={handlePhoneClick}
+                className="Contact_SalePage_Infor_Detail_Infor"
+              >
+                (210) 997-9737
+              </div>
+            </div>
+            <div className="Contact_SalePage_Infor_Detail">
+              <div className="Contact_SalePage_Infor_Detail_Name">GMAIL</div>
+              <div className="Contact_SalePage_Infor_Detail_Infor">
+                hyperinkers@gmail.com
+              </div>
+            </div>
+            <div className="Contact_SalePage_Infor_Detail">
+              <div className="Contact_SalePage_Infor_Detail_Name">ADDRESS</div>
+              <div className="Contact_SalePage_Infor_Detail_Infor">
+                8045 Callaghan Rd, San Anton�o, TX 78230 (Only 10 minutes drive
+                from the airport)
+              </div>
+            </div>
+            <div className="Contact_SalePage_Infor_Detail">
+              <div className="Contact_SalePage_Infor_Detail_Name">HOTLINE</div>
+              <div className="Contact_SalePage_Infor_Detail_Logo">
+                <img
+                  src={insta}
+                  alt="logo"
+                  className="Contact_SalePage_Infor_Detail_Logo_Logo"
+                />
+                <img
+                  src={fb}
+                  alt="logo"
+                  className="Contact_SalePage_Infor_Detail_Logo_Logo"
+                />
+                <img
+                  src={utu}
+                  alt="logo"
+                  className="Contact_SalePage_Infor_Detail_Logo_Logo"
+                />
+                <img
+                  src={tiktok}
+                  alt="logo"
+                  className="Contact_SalePage_Infor_Detail_Logo_Logo"
+                />
+              </div>
+            </div>
+          </div>
+        </React.Fragment>
+      ) : (
+        <div style={{ display: "flex", flexDirection: "row", width: "70%" }}>
+          <div className="Contact_SalePage_GoogleMap">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3472.1129626908964!2d-98.55396912388136!3d29.51306637519554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f10.1!3m3!1m2!1s0x865c5e1fe7a633f3%3A0x1fea7b1bc20e498!20San%20Antonio%2C%20TX%2078230%2C%20USA!!!!!!!"
+              className="GoogleMap"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <div className="Contact_SalePage_Infor">
+            <div className="Contact_SalePage_Infor_Detail">
+              <div className="Contact_SalePage_Infor_Detail_Name">HOTLINE</div>
+              <div className="Contact_SalePage_Infor_Detail_Infor">
+                (210) 997-9737
+              </div>
+            </div>
+            <div className="Contact_SalePage_Infor_Detail">
+              <div className="Contact_SalePage_Infor_Detail_Name">GMAIL</div>
+              <div className="Contact_SalePage_Infor_Detail_Infor">
+                hyperinkers@gmail.com
+              </div>
+            </div>
+            <div className="Contact_SalePage_Infor_Detail">
+              <div className="Contact_SalePage_Infor_Detail_Name">ADDRESS</div>
+              <div className="Contact_SalePage_Infor_Detail_Infor">
+                8045 Callaghan Rd, San Anton�o, TX 78230 (Only 10 minutes drive
+                from the airport)
+              </div>
+            </div>
+            <div className="Contact_SalePage_Infor_Detail">
+              <div className="Contact_SalePage_Infor_Detail_Name">HOTLINE</div>
+              <div className="Contact_SalePage_Infor_Detail_Logo">
+                <img
+                  src={insta}
+                  alt="logo"
+                  className="Contact_SalePage_Infor_Detail_Logo_Logo"
+                />
+                <img
+                  src={fb}
+                  alt="logo"
+                  className="Contact_SalePage_Infor_Detail_Logo_Logo"
+                />
+                <img
+                  src={utu}
+                  alt="logo"
+                  className="Contact_SalePage_Infor_Detail_Logo_Logo"
+                />
+                <img
+                  src={tiktok}
+                  alt="logo"
+                  className="Contact_SalePage_Infor_Detail_Logo_Logo"
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <div className="Contact_SalePage_Infor_Detail">
-          <div className="Contact_SalePage_Infor_Detail_Name">GMAIL</div>
-          <div className="Contact_SalePage_Infor_Detail_Infor">
-            hyperinkers@gmail.com
-          </div>
-        </div>
-        <div className="Contact_SalePage_Infor_Detail">
-          <div className="Contact_SalePage_Infor_Detail_Name">ADDRESS</div>
-          <div className="Contact_SalePage_Infor_Detail_Infor">
-            8045 Callaghan Rd, San Antonio, TX 78230 (Only 10 minutes drive from
-            the airport)
-          </div>
-        </div>
-        <div className="Contact_SalePage_Infor_Detail">
-          <div className="Contact_SalePage_Infor_Detail_Name">HOTLINE</div>
-          <div className="Contact_SalePage_Infor_Detail_Logo">
-            <img
-              src={insta}
-              alt="logo"
-              className="Contact_SalePage_Infor_Detail_Logo_Logo"
-            />
-            <img
-              src={fb}
-              alt="logo"
-              className="Contact_SalePage_Infor_Detail_Logo_Logo"
-            />
-            <img
-              src={utu}
-              alt="logo"
-              className="Contact_SalePage_Infor_Detail_Logo_Logo"
-            />
-            <img
-              src={tiktok}
-              alt="logo"
-              className="Contact_SalePage_Infor_Detail_Logo_Logo"
-            />
-          </div>
-        </div>
-      </div>
+      )}
       <div className="Contact_SalePage_Payment">
         <div className="Contact_SalePage_Payment_Text">
           We Accept All Major Credit Card
@@ -98,7 +166,9 @@ function Contact_SalePage() {
         </div>
       </div>
 
-      <div className="Contact_SalePage_Phone">(210) 997-9737</div>
+      <div className="Contact_SalePage_Phone" onClick={handlePhoneClick}>
+        (210) 997-9737
+      </div>
       <div className="Contact_SalePage_Direction">GET DIRECTIONS</div>
     </div>
   );

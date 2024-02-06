@@ -15,6 +15,7 @@ import First from "../../assets/ImgMobile/Prize/First.png";
 import Second from "../../assets/ImgMobile/Prize/Second.png";
 import Third from "../../assets/ImgMobile/Prize/Third.png";
 import Top3 from "../../assets/ImgMobile/Prize/Top3.png";
+import { isMobile } from "react-device-detect";
 
 const Prize = [
   {
@@ -43,7 +44,7 @@ const Prize = [
   },
   {
     imgPrize: Third,
-    namePrize: "SMALL JOB BLACK AND GREY",
+    namePrize: "SMALL JOB B & G",
     location: "Land of Ink",
     country: "BANGKOK 2022",
   },
@@ -67,7 +68,7 @@ const Prize = [
   },
   {
     imgPrize: Third,
-    namePrize: "LARGE BLACK AND GREY",
+    namePrize: "LARGE B & G",
     location: "Star of Texas",
     country: "AUSTIN 2023",
   },
@@ -114,7 +115,7 @@ const Prize = [
     country: "BRAZIL",
   },
   {
-    imgPrize: Top3,
+    imgPrize: Third,
     namePrize: "COLOR",
     location: "Tattoo Collectors Expo",
     country: "DALLAS, USA",
@@ -191,6 +192,36 @@ const Prize = [
     location: "Cangaco Tattoo Ink",
     country: "BRAZIL",
   },
+  {
+    imgPrize: Second,
+    namePrize: "MINIMALIST TATTOO",
+    location: "Ink Show",
+    country: "Singapore",
+  },
+  {
+    imgPrize: First,
+    namePrize: "BEST ASIAN",
+    location: "Flower City",
+    country: "Rochester, NY",
+  },
+  {
+    imgPrize: Second,
+    namePrize: "ORIENTAL",
+    location: "Tierra De Ensueno",
+    country: "Columbia",
+  },
+  {
+    imgPrize: First,
+    namePrize: "Realismo Color",
+    location: "Tattoo Arte",
+    country: "Mexico",
+  },
+  {
+    imgPrize: Best,
+    namePrize: "Mejor De La Expo",
+    location: "Tattoo Arte",
+    country: "Mexico",
+  },
 ];
 
 const animation = { duration: 11000, easing: (t) => t };
@@ -221,14 +252,14 @@ function Trophy() {
     drag: false,
     slides: {
       origin: "center",
-      perView: 3,
-      spacing: 15,
+      perView: isMobile ? 4 : 5,
+      spacing: 5,
     },
   });
   return (
     <div className="Trophy">
-      <img src={BG} alt="" className="Trophy_BG" />
-      <div className="Trophy_Name">TROPHY AWARDS</div>
+      {/* <img src={BG} alt="" className="Trophy_BG" /> */}
+      <h2 className="Trophy_Name">INTERNATIONAL AWARD WINNERS</h2>
       <div ref={sliderRef} className="keen-slider Trophy_Container">
         {Prize.map((prize, key) =>
           currentSlide === key ? (
@@ -239,7 +270,6 @@ function Trophy() {
                   alt=""
                   className="Trophy_Container_Img_Img_Active"
                 />
-
                 <div className="Trophy_Container_Name_Active">
                   {prize.namePrize}
                 </div>

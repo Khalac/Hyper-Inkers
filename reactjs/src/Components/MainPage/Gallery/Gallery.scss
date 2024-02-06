@@ -126,12 +126,11 @@
     .Gallery_Name{
       height: 5%;
         width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "clesmont";
         color: #cc6600;
-        font-size: 6vw;
+        font-size: 5.5vw;
+        text-align: center;
+        font-family: 'clesmont';
+        letter-spacing: 2px;
     }
     .Gallery_Gallery{
       height: 90%;
@@ -174,7 +173,7 @@
         .Gallery_Gallery_Line1_Linework{
           height: 100%;
           width: 25%;
-          background-image: url("../../assets/ImgMobile/ImgMainPage/LineworkBG.webp");
+          background-image: url("../../assets/ImgMobile/ImgGallery/fineline/3.webp");
           background-position: 50% 50%;
           background-repeat: no-repeat;
           background-size: cover;
@@ -229,8 +228,9 @@
         }
         .Gallery_Gallery_Line2_BNG{
           height: 100%;
+
           width: 55%;
-          background-image: url("../../assets/ImgMobile/ImgMainPage/BNGBG.webp");
+          background-image: url("../../assets/ImgMobile/ImgGallery/blackgrey/9.webp");
           background-position: 50% 50%;
           background-repeat: no-repeat;
           background-size: 100%;
@@ -262,7 +262,7 @@
         .Gallery_Gallery_Line3_Realism{
           height: 100%;
           width: 40%;
-          background-image: url("../../assets/ImgMobile/ImgMainPage/Realism.webp");
+          background-image: url("../../assets/ImgMobile/ImgGallery/realism/3.webp");
           background-position: 50% 50%;
           background-repeat: no-repeat;
           background-size:cover;
@@ -351,7 +351,7 @@
       .Gallery_Gallery_Line3_Bottom_Container{
         height: 70%;
         width: 100%;
-        background-image: url("../../assets/ImgMobile/ImgMainPage/RealismBG.webp");
+        background-image: url("../../assets/ImgMobile/ImgGallery/fineline/12.webp");
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size:cover;
@@ -385,7 +385,6 @@
     background-color: rgba(255, 255, 255, 0.166);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
     position: relative;
     .popUp, .overlay {
@@ -510,15 +509,18 @@
         align-items: center;
         font-family: "clesmont";
         color: #cc6600;
-        font-size: 4vw;
+        font-size: 2vw;
+        margin-top: 3%;
     }
     .Gallery_Gallery{
-      height: 90%;
-      width: 40%;
+      height: 85%;
+      width: 50%;
+      margin-top: 1%;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       flex-direction: column;
+      margin-bottom: 3%;
       .Gallery_Gallery_Line1{
         height: 25%;
         width: 100%;
@@ -553,7 +555,7 @@
         .Gallery_Gallery_Line1_Linework{
           height: 100%;
           width: 25%;
-          background-image: url("../../assets/ImgMobile/ImgMainPage/LineworkBG.webp");
+          background-image: url("../../assets/ImgMobile/ImgGallery/fineline/3.webp");
           background-position: 50% 50%;
           background-repeat: no-repeat;
           background-size: cover;
@@ -584,8 +586,8 @@
         flex-direction: row;
         .Gallery_Gallery_Line2_Portrait{
           height: 100%;
-          width: 40%;
-          background-image: url("../../assets/ImgMobile/ImgMainPage/PortraitBG.webp");
+          width: 43%;
+        background-image: url("../../assets/ImgMobile/ImgGallery/blackgrey/7.webp");
           background-position: 50% 50%;
           background-repeat: no-repeat;
           background-size:cover;
@@ -609,7 +611,7 @@
         .Gallery_Gallery_Line2_BNG{
           height: 100%;
           width: 55%;
-          background-image: url("../../assets/ImgMobile/ImgMainPage/BNGBG.webp");
+          background-image: url("../../assets/ImgMobile/ImgGallery/blackgrey/9.webp");
           background-position: 50% 50%;
           background-repeat: no-repeat;
           background-size: 100%;
@@ -640,8 +642,8 @@
         flex-direction: row;
         .Gallery_Gallery_Line3_Realism{
           height: 100%;
-          width: 40%;
-          background-image: url("../../assets/ImgMobile/ImgMainPage/Realism.webp");
+          width: 43%;
+          background-image: url("../../assets/ImgMobile/ImgGallery/realism/3.webp");
           background-position: 50% 50%;
           background-repeat: no-repeat;
           background-size:cover;
@@ -730,7 +732,7 @@
       .Gallery_Gallery_Line3_Bottom_Container{
         height: 70%;
         width: 100%;
-        background-image: url("../../assets/ImgMobile/ImgMainPage/RealismBG.webp");
+        background-image: url("../../assets/ImgMobile/ImgGallery/fineline/12.webp");
         background-position: 50% 50%;
         background-repeat: no-repeat;
         background-size:cover;

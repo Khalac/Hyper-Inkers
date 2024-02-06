@@ -18,17 +18,19 @@
     }
     .logoHeader{
       height: auto;
-      max-width: 25%;
-      margin-left: 3%;
-      margin-right: 5%;
+      max-width: 26%;
+      position: absolute;
+      left: 5%;
+      top: 41%;
     }
     .Pages{
-      width: 60%;
+      width: 66%;
       height: 100%;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       z-index: 2;
+      margin-left: auto;
       .Page{
         width: 30%;
         display: flex;
@@ -50,7 +52,7 @@
     height: 100%;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     flex-direction: row;
     background: black;
@@ -65,16 +67,20 @@
     .logoHeader{
       height: auto;
       max-width: 15%;
-      margin-left: 3%;
-      margin-right: 5%;
+      // margin-left: 3%;
+      // margin-right: 15%;
+      position: absolute;
+      left: 13%;
+      top: 30%;
     }
     .Pages{
-      width: 60%;
+      width: 30%;
       height: 100%;
       display: flex;
       justify-content: space-evenly;
       align-items: center;
       z-index: 2;
+      margin-left: 12%;
       .Page{
         width: 30%;
         display: flex;

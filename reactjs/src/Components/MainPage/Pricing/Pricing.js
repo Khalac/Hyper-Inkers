@@ -6,7 +6,7 @@ import BG from "../../assets/ImgMobile/Background/MainBG.png";
 function Pricing() {
   return (
     <div className="Pricing">
-      <img src={BG} alt="" className="Pricing_BG" />
+      {/* <img src={BG} alt="" className="Pricing_BG" /> */}
       <div className="Pricing_Name">OUR PRICING</div>
       <div className="Pricing_Container">
         <div className="Pricing_Detail">

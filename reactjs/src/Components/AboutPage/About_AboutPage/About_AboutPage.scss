@@ -215,7 +215,7 @@
       display: flex;
       align-items: flex-end;
       font-family: 'clesmont';
-      letter-spacing: 2px;
+      letter-spacing: 3px;
       z-index: 1;
     }
     .About_AboutPage_Section1{
@@ -239,7 +239,7 @@
           top: 0;
           color: #cddbbe72;
           font-family: "LucidaSansTypewriterOblique";
-          font-size: 1.3vw;
+          font-size: 1vw;
           text-align: right;
           line-height: 30px;
         }
@@ -272,7 +272,7 @@
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;
-
+          margin-top: 15%;
           .About_AboutPage_Section1_Number{
             height: 100%;
             width: 85%;
@@ -282,12 +282,12 @@
             .About_AboutPage_Section1_Number_Number{
               color: #cc6600;
               font-family: "clesmont";
-              font-size: 5vw;
+              font-size: 4vw;
             }
             .About_AboutPage_Section1_Number_Text{
               color: #cddbbeac;
               font-family: "clesmont";
-              font-size: 2vw;
+              font-size: 1.5vw;
             }
           }
         }
@@ -379,11 +379,12 @@
       .About_AboutPage_Section2_Text{
           color: #cddbbe72;
           font-family: "LucidaSansTypewriterOblique";
-          font-size: 1.5vw;
+          font-size: 1vw;
           text-align: justify;
-          margin-top: 5%;
+          margin-top: 8%;
         width: 80%;
         margin-left: 10%;
+        line-height: 30px;
 
       }
     }

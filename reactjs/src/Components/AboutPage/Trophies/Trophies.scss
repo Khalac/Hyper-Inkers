@@ -75,9 +75,10 @@
         font-family: "ladyrose";
         color: #cc6600;
         font-size: 3.5vw;
+        letter-spacing: 3px;
     }
     .Trophies_banner{
-      width: 50%;
+      width: 55%;
       height: auto;
     }
     .Trophies_Img{
@@ -91,12 +92,12 @@
       }
     }
     .Trophies_Text{
-      width: 70%;
+      width: 55%;
       color: #cddbbeac;
       font-family: "LucidaSansTypewriterOblique";
-      font-size: 1.5vw;
+      font-size: 1vw;
       line-height: 30px;
-      text-align: justify;
+      text-align: left;
     }
   }
 }

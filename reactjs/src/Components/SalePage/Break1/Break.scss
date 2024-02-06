@@ -16,7 +16,7 @@
     }
     .Break_Name{
       margin-left: 5%;
-      height: 40%;
+      height: 50%;
       width: 90%;
       display: flex;
       flex-direction: column;
@@ -24,8 +24,9 @@
       align-items: center;
       font-family: "ladyrose";
       color: #993300;
-      font-size: 4.5vw;
+      font-size: 3vw;
       text-align: center;
+      line-height: 20px;
     }
   }
 }
@@ -34,7 +35,6 @@
   .Break{
     height: 100%;
     width: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,8 +47,7 @@
       left: 0;
     }
     .Break_Name{
-
-      height: 40%;
+      height: 100%;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -56,8 +55,10 @@
       align-items: center;
       font-family: "ladyrose";
       color: #993300;
-      font-size: 2vw;
+      font-size: 1.6vw;
       text-align: center;
+      line-height: 1.2;
+      letter-spacing: 1px;
     }
   }
 }

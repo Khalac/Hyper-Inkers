@@ -11,14 +11,14 @@ import Third from "../../assets/ImgMobile/Prize/Third.png";
 import Top3 from "../../assets/ImgMobile/Prize/Top3.png";
 
 import { MdArrowBackIos, MdArrowForwardIos } from "react-icons/md";
-
+import { isMobile } from "react-device-detect";
 import { useKeenSlider } from "keen-slider/react";
 import "keen-slider/keen-slider.min.css";
 
 const Prize = [
   {
     imgPrize: First,
-    namePrize: "BEST OF SMALL COLOR FEMALE",
+    namePrize: "BEST SMALL COLOR FE",
     location: "Villian Arts",
     country: "HOUSTON 2021",
   },
@@ -42,7 +42,7 @@ const Prize = [
   },
   {
     imgPrize: Third,
-    namePrize: "SMALL JOB BLACK AND GREY",
+    namePrize: "SMALL JOB B & G",
     location: "Land of Ink",
     country: "BANGKOK 2022",
   },
@@ -66,14 +66,14 @@ const Prize = [
   },
   {
     imgPrize: Third,
-    namePrize: "LARGE BLACK AND GREY",
+    namePrize: "LARGE B & G",
     location: "Star of Texas",
     country: "AUSTIN 2023",
   },
   {
     imgPrize: First,
     namePrize: "BEST OF SHOW",
-    location: "Palm City Tattoo Expo",
+    location: "Palm City Expo",
     country: "MCALLEN 2023",
   },
   {
@@ -91,37 +91,37 @@ const Prize = [
   {
     imgPrize: First,
     namePrize: "COLORIDO",
-    location: "Expo Tattoo Brasília",
+    location: "Expo Brasília",
     country: "BRAZIL",
   },
   {
     imgPrize: First,
     namePrize: "CICATRIZADO",
-    location: "Expo Tattoo Brasília",
+    location: "Expo Brasília",
     country: "BRAZIL",
   },
   {
     imgPrize: Second,
     namePrize: "ORIENTAL",
-    location: "Expo Tattoo Brasília",
+    location: "Expo Brasília",
     country: "BRAZIL",
   },
   {
     imgPrize: First,
     namePrize: "MELHOR DO EVENTO",
-    location: "Expo Tattoo Brasília",
+    location: "Expo Brasília",
     country: "BRAZIL",
   },
   {
     imgPrize: Top3,
     namePrize: "COLOR",
-    location: "Tattoo Collectors Expo",
+    location: "Collectors Expo",
     country: "DALLAS, USA",
   },
   {
     imgPrize: Best,
     namePrize: "BEST ASIAN",
-    location: "Tattoo Collectors Expo",
+    location: "Collectors Expo",
     country: "DALLAS, USA",
   },
   {
@@ -132,8 +132,8 @@ const Prize = [
   },
   {
     imgPrize: First,
-    namePrize: "MELHOR DO",
-    location: "Evento Tattoo Week",
+    namePrize: "MELHOR DO EVENTO",
+    location: "Tattoo Week",
     country: "BRAZIL",
   },
   {
@@ -145,52 +145,83 @@ const Prize = [
   {
     imgPrize: First,
     namePrize: "BEST ORIENTA",
-    location: "Inksane Tattoo Fest V",
+    location: "Inksane Fest V",
     country: "PUERTO RICO",
   },
   {
     imgPrize: First,
     namePrize: "BEST OVER ALL",
-    location: "Inksane Tattoo Fest V",
+    location: "Inksane Fest V",
     country: "PUERTO RICO",
   },
   {
     imgPrize: Best,
     namePrize: "BEST OF SHOW",
-    location: "Inksane Tattoo Fest V",
+    location: "Inksane Fest V",
     country: "PUERTO RICO",
   },
   {
     imgPrize: First,
     namePrize: "ARTE FUSION",
-    location: "Cangaco Tattoo Ink",
+    location: "Cangaco Tattoo",
     country: "BRAZIL",
   },
   {
     imgPrize: Best,
     namePrize: "MELHOR DO EVENTO",
-    location: "Cangaco Tattoo Ink",
+    location: "Cangaco Tattoo",
     country: "BRAZIL",
   },
   {
     imgPrize: Second,
     namePrize: "REALISMO COLORIDO",
-    location: "Cangaco Tattoo Ink",
+    location: "Cangaco Tattoo",
     country: "BRAZIL",
   },
   {
     imgPrize: First,
     namePrize: "FECHAMENTO",
-    location: "Cangaco Tattoo Ink",
+    location: "Cangaco Tattoo",
     country: "BRAZIL",
   },
   {
     imgPrize: First,
     namePrize: "FREE HAND",
-    location: "Cangaco Tattoo Ink",
+    location: "Cangaco Tattoo",
     country: "BRAZIL",
   },
+  {
+    imgPrize: Second,
+    namePrize: "MINIMALIST TATTOO",
+    location: "Ink Show",
+    country: "Singapore",
+  },
+  {
+    imgPrize: First,
+    namePrize: "BEST ASIAN",
+    location: "Flower City",
+    country: "Rochester, NY",
+  },
+  {
+    imgPrize: Second,
+    namePrize: "ORIENTAL",
+    location: "Tierra De Ensueno",
+    country: "Columbia",
+  },
+  {
+    imgPrize: First,
+    namePrize: "Realismo Color",
+    location: "Tattoo Arte",
+    country: "Mexico",
+  },
+  {
+    imgPrize: Best,
+    namePrize: "Mejor De La Expo",
+    location: "Tattoo Arte",
+    country: "Mexico",
+  },
 ];
+const animation = { duration: 11000, easing: (t) => t };
 
 function PrizeList() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -204,15 +235,27 @@ function PrizeList() {
     created() {
       setLoaded(true);
     },
+    created(s) {
+      s.moveToIdx(5, true, animation);
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    loop: true,
+    renderMode: "performance",
+    drag: false,
     slides: {
       origin: "center",
-      perView: 3,
+      perView: isMobile ? 3 :4,
       spacing: 15,
     },
   });
   return (
     <div className="PrizeList">
-      <img src={BG} alt="" className="PrizeList_BG" />
+      {/* <img src={BG} alt="" className="PrizeList_BG" /> */}
       <div ref={sliderRef} className="keen-slider PrizeList_Container">
         {Prize.map((prize, key) =>
           currentSlide === key ? (
@@ -255,7 +298,7 @@ function PrizeList() {
             </div>
           )
         )}
-        {loaded && instanceRef.current && (
+         {/* {loaded && instanceRef.current && (
           <div className="Prize_Button">
             <div className="Prize_Go_Left">
               <MdArrowBackIos
@@ -276,7 +319,7 @@ function PrizeList() {
               />
             </div>
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );

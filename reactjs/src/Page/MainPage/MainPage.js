@@ -15,10 +15,12 @@ import FAQ from "../../Components/MainPage/FAQ/FAQ";
 import Contact from "../../Components/MainPage/Contact/Contact";
 import Booking from "../../Components/MainPage/Booking/Booking";
 import Footer from "../../Components/Footer/Footer";
+import BG from "../../Components/assets/ImgMobile/Background/MainBG1.png";
 
 function MainPage() {
   return (
     <div className="MainPage">
+      <div className="MainPage_Bg"></div>
       <div className="MainPage_Header">
         <Header />
       </div>

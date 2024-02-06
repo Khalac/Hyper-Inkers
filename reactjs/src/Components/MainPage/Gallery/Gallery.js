@@ -144,7 +144,7 @@ function Gallery() {
           </div>
         </div>
       )}
-      <img src={BG} alt="" className="Gallery_BG" />
+      {/* <img src={BG} alt="" className="Gallery_BG" /> */}
       <div className="Gallery_Name">HYPER GALLERY</div>
       <div className="Gallery_Gallery">
         <div className="Gallery_Gallery_Line1">
@@ -203,7 +203,7 @@ function Gallery() {
               className="Gallery_Gallery_Line3_Bottom_Container"
               onClick={() => popUpImg()}
             >
-              <div className="Gallery_Gallery_Line3_Bottom_Text">Blackwork</div>
+              <div className="Gallery_Gallery_Line3_Bottom_Text">BLACKWORK</div>
             </div>
           </div>
         </div>

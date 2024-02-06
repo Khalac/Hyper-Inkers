@@ -42,14 +42,126 @@ function WCU() {
   //     if (contain.current) ob.unobserve(contain.current);
   //   };
   // }, [i, setI]);
+  const wcuRef = useRef(null);
+
+  useEffect(() => {
+    const options = {
+      root: null, // Use the viewport as the root
+      rootMargin: '0px', // No margin
+      threshold: 0.5, // Trigger when at least 50% of the target is visible
+    };
+
+    const callback = (entries, observer) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          // Run your code when the target is visible
+          console.log('User scrolled to the WCU section!');
+          runWordConvention()
+          runYearConvention()
+          runTrophiesConvention()
+          runTattoos()
+        }
+      });
+    };
+
+    const observer = new IntersectionObserver(callback, options);
+
+    if (wcuRef.current) {
+      observer.observe(wcuRef.current);
+    }
+
+    return () => {
+      if (wcuRef.current) {
+        observer.unobserve(wcuRef.current);
+      }
+    };
+  }, [wcuRef]);
+  const [yearExp, setYearExp] = useState(0);
+  const [wordConventionNumber, setWordConventionNumber] = useState(0);
+  const [trohies, setTrophies] = useState(0);
+  const [tattoos, setTattoos] = useState(0);
+  const runWordConvention = () => {
+    if (wordConventionNumber === 0) {
+    const targetValue = 15;
+    const interval = 50; // Update every 50 milliseconds
+
+    const steps = 1;
+
+    const intervalId = setInterval(() => {
+      setWordConventionNumber((prevNumber) => {
+        const nextNumber = prevNumber + steps;
+        return nextNumber < targetValue ? Math.floor(nextNumber) : targetValue;
+      });
+    }, interval);
+    return () => {
+      clearInterval(intervalId);
+    };
+    }
+  }
+  const runYearConvention = () => {
+    if (wordConventionNumber === 0) {
+    const targetValue = 8;
+    const interval = 50; // Update every 50 milliseconds
+
+    const steps = 1;
+
+    const intervalId = setInterval(() => {
+      setYearExp((prevNumber) => {
+        const nextNumber = prevNumber + steps;
+        return nextNumber < targetValue ? nextNumber : targetValue;
+      });
+    }, interval);
+    return () => {
+      clearInterval(intervalId);
+    };
+    }
+  }
+  const runTrophiesConvention = () => {
+    if (wordConventionNumber === 0) {
+    const targetValue = 30;
+    const interval = 50; // Update every 50 milliseconds
+
+    const steps = 1
+
+    const intervalId = setInterval(() => {
+      setTrophies((prevNumber) => {
+        const nextNumber = prevNumber + steps;
+        return nextNumber < targetValue ? nextNumber : targetValue;
+      });
+    }, interval);
+    return () => {
+      clearInterval(intervalId);
+    };
+    }
+  }
+  const runTattoos = () => {
+    if (wordConventionNumber === 0) {
+    const targetValue = 10000;
+    const duration = 10000; // 10 seconds
+    const interval = 50; // Update every 50 milliseconds
+
+    const steps = targetValue / (duration / interval);
+
+    const intervalId = setInterval(() => {
+      setTattoos((prevNumber) => {
+        const nextNumber = prevNumber + steps;
+        return nextNumber < targetValue ? Math.floor(nextNumber) : targetValue;
+      });
+    }, interval);
+    return () => {
+      clearInterval(intervalId);
+    };
+    }
+  }
+
 
   return (
-    <div className="WCU">
-      <img src={BG} alt="" className="WCU_BG" />
-      <div className="WCU_Name">WHY CHOOSE US?</div>
+    <div ref={wcuRef}  className="WCU">
+      {/* <img src={BG} alt="" className="WCU_BG" /> */}
+      <h2 className="WCU_Name">OUR SKILLED TEAM WITH YEARS EXPERIENCE</h2>
       <div className="WCU_Detail">
         <div className="WCU_Detail_1">
-          <div className="WCU_Detail_1_Number">10</div>
+          <div className="WCU_Detail_1_Number">{yearExp}</div>
           {isMobile ? (
             <div className="WCU_Detail_1_Text">
               <div>Years</div>
@@ -60,17 +172,17 @@ function WCU() {
           )}
         </div>
         <div className="WCU_Detail_1">
-          <div className="WCU_Detail_1_Number">15+</div>
+          <div className="WCU_Detail_1_Number">{wordConventionNumber}</div>
           <div className="WCU_Detail_1_Text">World Convention</div>
         </div>
       </div>
       <div className="WCU_Detail">
         <div className="WCU_Detail_1">
-          <div className="WCU_Detail_1_Number">30+</div>
+          <div className="WCU_Detail_1_Number">{trohies}+</div>
           <div className="WCU_Detail_1_Text">Trophies</div>
         </div>
         <div className="WCU_Detail_1">
-          <div className="WCU_Detail_1_Number">10K</div>
+          <div className="WCU_Detail_1_Number">{tattoos}+</div>
           <div className="WCU_Detail_1_Text">Tattoos</div>
         </div>
       </div>

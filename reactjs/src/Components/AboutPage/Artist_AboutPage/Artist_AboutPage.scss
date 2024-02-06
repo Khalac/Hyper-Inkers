@@ -46,7 +46,7 @@
         height: auto;
       }
       .Artist_AboutPage_Artist_Name{
-        margin-top: 2%;
+        margin-top: 3%;
         font-family: "CopperplateGothicBold";
         font-size: 4vw;
         color: #1e5761;
@@ -86,12 +86,13 @@
         font-family: "ladyrose";
         color: #cc6600;
         font-size: 4vw;
+        letter-spacing: 3px;
     }
     .Artist_AboutPage_Text{
-      width: 90%;
+      width: 55%;
       color: #cddbbeac;
       font-family: "LucidaSansTypewriterOblique";
-      font-size: 1.5vw;
+      font-size: 1vw;
       text-align: justify;
       line-height: 30px;
 
@@ -108,15 +109,16 @@
         height: auto;
       }
       .Artist_AboutPage_Artist_Name{
-        margin-top: 2%;
+        margin-top: 1%;
         font-family: "CopperplateGothicBold";
-        font-size: 2vw;
+        font-size: 2.5vw;
         color: #1e5761;
+        margin-bottom: 1%;
       }
       .Artist_AboutPage_Artist_Cate{
         color: #cddbbeac;
         font-family: "LucidaSansTypewriterOblique";
-        font-size: 1.5vw;
+        font-size: 1vw;
       }
     }
   }

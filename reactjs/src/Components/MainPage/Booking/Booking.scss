@@ -15,16 +15,14 @@
       left: 0;
     }
     .Booking_Name{
-
       width: 100%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-family: "clesmont";
       color: #cc6600;
-      font-size: 6vw;
-      
+      font-size: 5.5vw;
+      text-align: center;
+      font-family: 'clesmont';
+      letter-spacing: 2px;
+      font-size: 5.5vw;
+      margin-top: -20%;
     }
     .Booking_Text{
       width: 80%;
@@ -84,7 +82,6 @@
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     position: relative;
     .Booking_BG{
@@ -95,7 +92,6 @@
       left: 0;
     }
     .Booking_Name{
-
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -103,24 +99,24 @@
       align-items: center;
       font-family: "clesmont";
       color: #cc6600;
-      font-size: 4vw;
-      margin-bottom: 1%;
+      font-size: 2vw;
+      margin-top: 3%;
     }
     .Booking_Text{
       width: 80%;
-
       text-align: center;
       display: flex;
       justify-content: center;
       align-items: center;
       font-family: "LTYPE";
       color: #dcdbbec4;
-      font-size: 1.5vw;
-      margin-bottom: 3%;
+      font-size: 1.2vw;
+      margin-top: 3%;
+      margin-bottom: 1%;
     }
     .Booking_Form{
-      height: 10%;
-      width: 90%;
+      height: 100%;
+      width: 70%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -140,16 +136,18 @@
       }
     }
     .Booking_Button{
-      height: 8%;
+      height: 5%;
+      padding: 5px;
       background-color: #1e5761;
       color: #dcdbbec4;
-      font-size: 4vw;
+      font-size: 1.5vw;
       font-family: "clesmont";
       display: flex;
       justify-content: center;
       align-items: center;
-      width: 50%;
-      margin-top: 3%;
+      width: 35%;
+      margin-top: 2%;
+      margin-bottom: 4%;
       z-index: 3;
     }
     

@@ -17,8 +17,9 @@
     .Artist_Salepage_Name{
       font-family: "clesmont";
       color: #cc6600;
-      font-size: 6vw;
-      margin-left: 5%;
+      font-size: 5.5vw;
+      display: 100%;
+      text-align: center;
     }
     .Artist_Salepage_Artist{
       height: 80%;
@@ -57,7 +58,6 @@
     background-color: rgba(255, 255, 255, 0.166);
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     position: relative;
     align-items: center;
     .Artist_Salepage_BG{
@@ -70,14 +70,16 @@
     .Artist_Salepage_Name{
       font-family: "clesmont";
       color: #cc6600;
-      font-size: 4vw;
-      width: 95%;
-
+      font-size: 2vw;
+      width: 100%;
+      text-align: center;
+      margin-top: 3%;
     }
     .Artist_Salepage_Artist{
       height: 80%;
-      width: 60%;
+      width: 75%;
 
+      margin-bottom: 3%;
       .Artist_Salepage_Artist_Container{
         width: 100%;
         height: 100%;
@@ -86,19 +88,24 @@
         justify-content: center;
         flex-direction: column;
         justify-content: space-evenly;
+        margin-top: 5%;
         .Artist_Salepage_Artist_Img{
           width: 45%;
           height: auto;
+          border: 1;
+          border-color: #327f80;
         }
         .Artist_Salepage_Artist_Name{
           font-family: "ladyrose";
-          font-size: 3vw;
+          font-size: 2vw;
           color:#327f80 ;
+          margin-top: 5%;
         }
         .Artist_Salepage_Artist_Name_Cat{
           font-family: "CompagnonMedium";
         color: #dcdbbec4;
-        font-size: 1.5vw;
+        font-size: 1vw;
+        margin-top: 1%;
         }
       }
     }

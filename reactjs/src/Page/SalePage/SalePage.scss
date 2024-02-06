@@ -3,7 +3,19 @@
   .SalePage{
     height: 100%;
     width: 100%;
-    background-color: black;
+    // background-image: url("../../Components/assets/ImgMobile/Background/MainBG1.png");
+    background-color: rgba(0, 0, 0, 1); 
+   position: relative;
+    .SalePage_Bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../../Components/assets/ImgMobile/Background/MainBG1.png");
+      opacity: 0.8;
+      object-fit: contain;
+    }
     .SalePage_Consultant{
       position: sticky;
       top: 0;
@@ -50,7 +62,7 @@
       width: 100%;
     }
     .SalePage_Break{
-      height: 20vh;
+      height: 16vh;
       width: 100%;
     }
     .SalePage_OpenTime{
@@ -62,11 +74,11 @@
       width: 100%;
     }
     .SalePage_Trohpy{
-      height: 75vh;
+      height: 60vh;
       width: 100%;
     }
     .SalePage_Service{
-      height: 170vh;
+      height: 200vh;
       width: 100%;
     }
     .SalePage_Artist{
@@ -96,11 +108,23 @@
   .SalePage{
     height: 100%;
     width: 100%;
-    background-color: black;
+    // background-image: url("../../Components/assets/ImgMobile/Background/MainBG1.png");
+    background-color: rgba(0, 0, 0, 1); 
+   position: relative;
+    .SalePage_Bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url("../../Components/assets/ImgMobile/Background/MainBG1.png");
+      opacity: 0.8;
+      object-fit: contain;
+    }
     .SalePage_Consultant{
       position: sticky;
       top: 0;
-      height: 6vh;
+      height: 8vh;
       width: 100%;
 
       display: flex;
@@ -145,35 +169,35 @@
       width: 100%;
     }
     .SalePage_Break{
-      height: 13vh;
+      height: 16vh;
       width: 100%;
     }
     .SalePage_OpenTime{
-      height: 100vh;
+      height: 100%;
       width: 100%;
     }
     .SalePage_WCU{
-      height: 60vh;
+      height: 100%;
       width: 100%;
     }
     .SalePage_Trohpy{
-      height: 90vh;
+      height: 100%;
       width: 100%;
     }
     .SalePage_Service{
-      height: 210vh;
+      height: 100%;
       width: 100%;
     }
     .SalePage_Artist{
-      height: 80vh;
+      height: 100%;
       width: 100%;
     }
     .SalePage_Gallery{
-      height: 200vh;
+      height: 100%;
       width: 100%;
     }
     .SalePage_Contact{
-      height: 150vh;
+      height: 100%;
       width: 100%;
     }
     .SalePage_Footer{
@@ -181,7 +205,7 @@
       width: 100%;
     }
     .SalePage_Booking{
-      height: 130vh;
+      height: 100%;
       width: 100%;
     }
   }

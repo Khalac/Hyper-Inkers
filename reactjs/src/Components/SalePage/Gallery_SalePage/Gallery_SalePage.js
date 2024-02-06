@@ -10,6 +10,8 @@ import bngImg from "../../assets/ImgMobile/ImgSalePage/bng.webp";
 import smallImg from "../../assets/ImgMobile/ImgSalePage/small.webp";
 import numberImg from "../../assets/ImgMobile/ImgSalePage/number.webp";
 import cartoonImg from "../../assets/ImgMobile/ImgSalePage/cartoon.webp";
+import { isMobile } from "react-device-detect";
+import { handlePhoneClick } from "../../../utils/helper";
 
 function Gallery_SalePage() {
   const [popUp, setPopUp] = useState(false);
@@ -128,93 +130,195 @@ function Gallery_SalePage() {
           </div>
         </div>
       )}
-      <img src={BG} alt="" className="Gallery_SalePage_BG" />
-      <div className="Gallery_SalePage_Name">TATTOO GALLERY</div>
-      <div className="Gallery_SalePage_Gallery">
-        <div className="Gallery_SalePage_Gallery_Cat">
-          <img
-            src={asianImg}
-            alt="img"
-            className="Gallery_SalePage_Gallery_Cat_Img"
-          />
-          <div className="Gallery_SalePage_Gallery_Cat_Text">Asian Tattoo</div>
-        </div>
-        <div className="Gallery_SalePage_Gallery_Cat">
-          <img
-            src={portraitImg}
-            alt="img"
-            className="Gallery_SalePage_Gallery_Cat_Img"
-            onClick={() => popUpImg("portrait")}
-          />
-          <div className="Gallery_SalePage_Gallery_Cat_Text">Portrait</div>
-        </div>
+      <h2 className="Gallery_SalePage_Name">
+        STRONG PORFOLIO ABOUT TATTOO, ART AND DESIGN
+      </h2>
+      <div className="Gallery_SalePage_Name_One">
+        Each artist specializes in a distinct style of tattooing, covering
+        everything from Hyper Realism to Oriental (Asian style)
       </div>
-      <div className="Gallery_SalePage_Gallery">
-        <div className="Gallery_SalePage_Gallery_Cat">
-          <img
-            src={colorImg}
-            alt="img"
-            className="Gallery_SalePage_Gallery_Cat_Img"
-            onClick={() => popUpImg("color")}
-          />
-          <div className="Gallery_SalePage_Gallery_Cat_Text">Color</div>
-        </div>
-        <div className="Gallery_SalePage_Gallery_Cat">
-          <img
-            src={bngImg}
-            alt="img"
-            className="Gallery_SalePage_Gallery_Cat_Img"
-            onClick={() => popUpImg("blackgrey")}
-          />
-          <div className="Gallery_SalePage_Gallery_Cat_Text">
-            Black and Grey
+      {isMobile ? (
+        <React.Fragment>
+          <div className="Gallery_SalePage_Gallery">
+            <div className="Gallery_SalePage_Gallery_Cat">
+              <img
+                src={asianImg}
+                alt="img"
+                className="Gallery_SalePage_Gallery_Cat_Img"
+              />
+              <div className="Gallery_SalePage_Gallery_Cat_Text">
+                Asian Tattoo
+              </div>
+            </div>
+            <div className="Gallery_SalePage_Gallery_Cat">
+              <img
+                src={portraitImg}
+                alt="img"
+                className="Gallery_SalePage_Gallery_Cat_Img"
+                onClick={() => popUpImg("portrait")}
+              />
+              <div className="Gallery_SalePage_Gallery_Cat_Text">Portrait</div>
+            </div>
           </div>
-        </div>
+          <div className="Gallery_SalePage_Gallery">
+            <div className="Gallery_SalePage_Gallery_Cat">
+              <img
+                src={colorImg}
+                alt="img"
+                className="Gallery_SalePage_Gallery_Cat_Img"
+                onClick={() => popUpImg("color")}
+              />
+              <div className="Gallery_SalePage_Gallery_Cat_Text">Color</div>
+            </div>
+            <div className="Gallery_SalePage_Gallery_Cat">
+              <img
+                src={bngImg}
+                alt="img"
+                className="Gallery_SalePage_Gallery_Cat_Img"
+                onClick={() => popUpImg("blackgrey")}
+              />
+              <div className="Gallery_SalePage_Gallery_Cat_Text">
+                Black and Grey
+              </div>
+            </div>
+          </div>
+          <div className="Gallery_SalePage_Gallery">
+            <div className="Gallery_SalePage_Gallery_Cat">
+              <img
+                src={smallImg}
+                alt="img"
+                className="Gallery_SalePage_Gallery_Cat_Img"
+              />
+              <div className="Gallery_SalePage_Gallery_Cat_Text">
+                Small Tattoo
+              </div>
+            </div>
+            <div className="Gallery_SalePage_Gallery_Cat">
+              <img
+                src={realismImg}
+                alt="img"
+                className="Gallery_SalePage_Gallery_Cat_Img"
+                onClick={() => popUpImg("realism")}
+              />
+              <div className="Gallery_SalePage_Gallery_Cat_Text">
+                Realism Tattoo
+              </div>
+            </div>
+          </div>
+          <div className="Gallery_SalePage_Gallery">
+            <div className="Gallery_SalePage_Gallery_Cat">
+              <img
+                src={cartoonImg}
+                alt="img"
+                className="Gallery_SalePage_Gallery_Cat_Img"
+              />
+              <div className="Gallery_SalePage_Gallery_Cat_Text">
+                Cartoon Tattoo
+              </div>
+            </div>
+            <div className="Gallery_SalePage_Gallery_Cat">
+              <img
+                src={numberImg}
+                alt="img"
+                className="Gallery_SalePage_Gallery_Cat_Img"
+              />
+              <div className="Gallery_SalePage_Gallery_Cat_Text">
+                Number - Lettering
+              </div>
+            </div>
+          </div>
+        </React.Fragment>
+      ) : (
+        <React.Fragment>
+          <div className="Gallery_SalePage_Gallery">
+            <div className="Gallery_SalePage_Gallery_Cat">
+              <img
+                src={asianImg}
+                alt="img"
+                className="Gallery_SalePage_Gallery_Cat_Img"
+              />
+              <div className="Gallery_SalePage_Gallery_Cat_Text">
+                Asian Tattoo
+              </div>
+            </div>
+            <div className="Gallery_SalePage_Gallery_Cat">
+              <img
+                src={portraitImg}
+                alt="img"
+                className="Gallery_SalePage_Gallery_Cat_Img"
+                onClick={() => popUpImg("portrait")}
+              />
+              <div className="Gallery_SalePage_Gallery_Cat_Text">Portrait</div>
+            </div>
+            <div className="Gallery_SalePage_Gallery_Cat">
+              <img
+                src={colorImg}
+                alt="img"
+                className="Gallery_SalePage_Gallery_Cat_Img"
+                onClick={() => popUpImg("color")}
+              />
+              <div className="Gallery_SalePage_Gallery_Cat_Text">Color</div>
+            </div>
+            <div className="Gallery_SalePage_Gallery_Cat">
+              <img
+                src={bngImg}
+                alt="img"
+                className="Gallery_SalePage_Gallery_Cat_Img"
+                onClick={() => popUpImg("blackgrey")}
+              />
+              <div className="Gallery_SalePage_Gallery_Cat_Text">
+                Black and Grey
+              </div>
+            </div>
+          </div>
+          <div className="Gallery_SalePage_Gallery">
+            <div className="Gallery_SalePage_Gallery_Cat">
+              <img
+                src={smallImg}
+                alt="img"
+                className="Gallery_SalePage_Gallery_Cat_Img"
+              />
+              <div className="Gallery_SalePage_Gallery_Cat_Text">
+                Small Tattoo
+              </div>
+            </div>
+            <div className="Gallery_SalePage_Gallery_Cat">
+              <img
+                src={realismImg}
+                alt="img"
+                className="Gallery_SalePage_Gallery_Cat_Img"
+                onClick={() => popUpImg("realism")}
+              />
+              <div className="Gallery_SalePage_Gallery_Cat_Text">
+                Realism Tattoo
+              </div>
+            </div>
+            <div className="Gallery_SalePage_Gallery_Cat">
+              <img
+                src={cartoonImg}
+                alt="img"
+                className="Gallery_SalePage_Gallery_Cat_Img"
+              />
+              <div className="Gallery_SalePage_Gallery_Cat_Text">
+                Cartoon Tattoo
+              </div>
+            </div>
+            <div className="Gallery_SalePage_Gallery_Cat">
+              <img
+                src={numberImg}
+                alt="img"
+                className="Gallery_SalePage_Gallery_Cat_Img"
+              />
+              <div className="Gallery_SalePage_Gallery_Cat_Text">
+                Number - Lettering
+              </div>
+            </div>
+          </div>
+        </React.Fragment>
+      )}
+      <div onClick={handlePhoneClick} className="Gallery_SalePage_Booking">
+        BOOKING NOW
       </div>
-      <div className="Gallery_SalePage_Gallery">
-        <div className="Gallery_SalePage_Gallery_Cat">
-          <img
-            src={smallImg}
-            alt="img"
-            className="Gallery_SalePage_Gallery_Cat_Img"
-          />
-          <div className="Gallery_SalePage_Gallery_Cat_Text">Small Tattoo</div>
-        </div>
-        <div className="Gallery_SalePage_Gallery_Cat">
-          <img
-            src={realismImg}
-            alt="img"
-            className="Gallery_SalePage_Gallery_Cat_Img"
-            onClick={() => popUpImg("realism")}
-          />
-          <div className="Gallery_SalePage_Gallery_Cat_Text">
-            Realism Tattoo
-          </div>
-        </div>
-      </div>
-      <div className="Gallery_SalePage_Gallery">
-        <div className="Gallery_SalePage_Gallery_Cat">
-          <img
-            src={cartoonImg}
-            alt="img"
-            className="Gallery_SalePage_Gallery_Cat_Img"
-          />
-          <div className="Gallery_SalePage_Gallery_Cat_Text">
-            Cartoon Tattoo
-          </div>
-        </div>
-        <div className="Gallery_SalePage_Gallery_Cat">
-          <img
-            src={numberImg}
-            alt="img"
-            className="Gallery_SalePage_Gallery_Cat_Img"
-          />
-          <div className="Gallery_SalePage_Gallery_Cat_Text">
-            Number - Lettering
-          </div>
-        </div>
-      </div>
-      <div className="Gallery_SalePage_Booking">BOOKING NOW</div>
     </div>
   );
 }

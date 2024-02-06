@@ -18,7 +18,10 @@
     .WCU_Name{
       font-family: "clesmont";
       color: #cc6600;
-      font-size: 6vw;
+      font-size: 5.5vw;
+      width: 90%;
+      text-align: center;
+      letter-spacing: 1px;
     }
     .WCU_Detail{
       width: 100%;
@@ -38,7 +41,7 @@
           color: #dcdbbe;
           z-index: 3;
           font-family: "ladyrose";
-          font-size: 9vw;
+          font-size: 7vw;
           border-bottom: 2px solid #993300;
         }
         .WCU_Detail_1_Text{
@@ -77,17 +80,21 @@
     .WCU_Name{
       font-family: "clesmont";
       color: #cc6600;
-      font-size: 3.5vw;
+      font-size: 2vw;
+      margin-top: 3%;
+      margin-bottom: 3%;
+      letter-spacing: 3px;
     }
     .WCU_Detail{
-      width: 65%;
-      height: 25%;
+      width: 40%;
+      height: 10vh;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
       flex-direction: row;
+      margin-bottom: 5%;
       .WCU_Detail_1{
-        width: 25%;
+        width: 40%;
         height: 100%;
         .WCU_Detail_1_Number{
           height: 50%;
@@ -97,14 +104,16 @@
           color: #dcdbbe;
           z-index: 3;
           font-family: "ladyrose";
-          font-size: 4vw;
+          font-size: 3vw;
           border-bottom: 2px solid #993300;
+          margin-bottom: 1%;
+          padding-bottom: 5px;
         }
         .WCU_Detail_1_Text{
           color: #dcdbbead;
           font-family: "ladyrose";
-          font-size: 1.5vw;
-          height: 55%;
+          font-size: 1.4vw;
+          height: 50%;
           display: flex;
           flex-direction: column;
           justify-content: center;

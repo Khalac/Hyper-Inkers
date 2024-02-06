@@ -3,12 +3,13 @@ import "./Booking.scss";
 
 import BG from "../../assets/ImgMobile/Background/MainBG.png";
 import { useState } from "react";
+import { handlePhoneClick } from "../../../utils/helper";
 
 function Booking() {
   const [name, setName] = useState();
   return (
     <div className="Booking">
-      <img src={BG} alt="" className="Booking_BG" />
+      {/* <img src={BG} alt="" className="Booking_BG" /> */}
       <div className="Booking_Name">
         <div className="Booking_Name1">READY TO GET</div>
         <div className="Booking_Name2">SUPER HYPER TATTOO</div>
@@ -45,7 +46,7 @@ function Booking() {
           onChange={(values) => setName(values.target.value)}
         />
       </div>
-      <div className="Booking_Button">BOOKING NOW</div>
+      <div onClick={handlePhoneClick}  className="Booking_Button">BOOKING NOW</div>
     </div>
   );
 }

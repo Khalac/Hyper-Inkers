@@ -15,7 +15,7 @@
       left: 0;
     }
     .Trophy_Name{
-
+      text-align: center;
       height: 10%;
       width: 100%;
       display: flex;
@@ -23,12 +23,13 @@
       align-items: center;
       font-family: "clesmont";
       color: #cc6600;
-      font-size: 6vw;
+      font-size: 5.5vw; 
+      margin-top: 7%;
+      letter-spacing: 1px;
     }
     .Trophy_Container{
-      height: 70%;
+      height: 80%;
       width: 100%;
-
       z-index: 1;
       position: relative;
       .Trophy_Container_Normal{
@@ -60,7 +61,6 @@
       .Trophy_Container_Active{
         max-height: 100%;
         height: 100%;
-        
         display: flex;
         justify-content: center;
         align-items: center;
@@ -74,20 +74,20 @@
             align-items: center;
             flex-direction: column;
           .Trophy_Container_Img_Img_Active{
-            
-            width: 100%;
-            height: auto;
+            width: 92%;
+            height: 40%;
             transition: width 1s ease;
-
+            object-fit: fill;
           }
           .Trophy_Container_Name_Active{
             margin-top: 15%;
             transition: height 0.5s ease;
               color: #cc6600ae;
-              font-size: 3vw;
+              font-size: 2.5vw;
               font-family: "ladyrose";
               margin-bottom: 5%;
               text-align: center;
+              width: 100%;
           }
           .Trophy_Container_Location_Active{
             font-family: "CompagnonMedium";
@@ -124,14 +124,12 @@
           color: #dcdbbebe;
           font-family: "LTYPE";
           font-size: 3vw;
-
           border-radius: 10px;
         }
         .Trophy_Go_Left{
           display: flex;
           justify-content: center;
           color: #dcdbbebe;
-
           font-size: 8vw;
         }
         .Trophy_Go_Right{
@@ -147,13 +145,12 @@
 
 @media screen and (min-width: 768px){
   .Trophy{
-    height: 100%;
+    height: 70vh;
     width: 100%;
     background-color: rgba(255, 255, 255, 0.166);
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
     position: relative;
     .Trophy_BG{
       position: absolute;
@@ -163,23 +160,21 @@
       left: 0;
     }
     .Trophy_Name{
-
       width: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      text-align: center;
       font-family: "clesmont";
       color: #cc6600;
-      font-size: 3.5vw;
+      font-size: 2vw;
+      margin-top: 3%;
+      letter-spacing: 3px;
     }
     .Trophy_Container{
-      height: 60%;
-      width: 100%;
-
+      height: 100%;
+      width: 80%;
       z-index: 1;
       position: relative;
       .Trophy_Container_Normal{
-        max-height: 60%;
+        max-height: 50%;
         height: 60%;
         display: flex;
         justify-content: center;
@@ -207,31 +202,29 @@
       .Trophy_Container_Active{
         max-height: 100%;
         height: 100%;
-        
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: column;
         .Trophy_Container_Active_Wrap{
             height: 100%;
-            width: 80%;
+            width: 100%;
             transition: width 1s ease;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
           .Trophy_Container_Img_Img_Active{
-            
             width: 60%;
-            height: auto;
+            height: 30%;
             transition: width 1s ease;
-
+            object-fit: contain;
           }
           .Trophy_Container_Name_Active{
             margin-top: 5%;
             transition: height 0.5s ease;
               color: #cc6600ae;
-              font-size: 2vw;
+              font-size: 1.4vw;
               font-family: "ladyrose";
               margin-bottom: 2%;
               text-align: center;
@@ -239,7 +232,7 @@
           }
           .Trophy_Container_Location_Active{
             font-family: "CompagnonMedium";
-            font-size: 1.5vw;
+            font-size: 1vw;
             color: #dcdbbea2;
             text-align: center;
             margin-bottom: 1%;
@@ -263,6 +256,7 @@
         position: absolute;
         bottom: 0;
         left: 20%;
+        margin-bottom: 4%;
         .Trophy_Link{
           display: flex;
           justify-content: center;
@@ -272,7 +266,7 @@
           bottom: 10%;
           color: #dcdbbebe;
           font-family: "LTYPE";
-          font-size: 1.5vw;
+          font-size: 1vw;
 
           border-radius: 10px;
         }

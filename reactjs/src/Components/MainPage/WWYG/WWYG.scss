@@ -16,13 +16,12 @@
       left: 0;
     }
     .WWYG_Name{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-family: "clesmont";
+        width: 70%;
         color: #cc6600;
-        font-size: 6vw;
+        font-size: 5.5vw;
+        text-align: center;
+        font-family: 'clesmont';
+        letter-spacing: 2px;
     }
     .WWYG_Text{
       width: 80%;
@@ -80,10 +79,8 @@
   .WWYG{
     height: 100%;
     width: 100%;
-
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
     position: relative;
     .WWYG_BG{
@@ -92,6 +89,8 @@
       height: 100%;
       top: 0;
       left: 0;
+      object-fit: cover;
+      opacity: 0.13;
     }
     .WWYG_Name{
         width: 100%;
@@ -100,33 +99,36 @@
         align-items: center;
         font-family: "clesmont";
         color: #cc6600;
-        font-size: 4vw;
+        font-size: 2vw;
+        margin-top: 3%;
+        letter-spacing: 3px;
     }
     .WWYG_Text{
       height: 5%;
-      width: 80%;
+      width: 60%;
       text-align: center;
       font-family: "LTYPE";
       color: #dcdbbec4;
-      font-size: 1.5vw;
+      font-size: 1vw;
       display: flex;
       justify-content: center;
       line-height: 30px;
+      margin-top: 3%;
     }
     .WWYG_Detail{
-      height: 22%;
-      width: 40%;
+      height: 100%;
+      width: 28%;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-evenly;
       background-image: linear-gradient( #cc66002a, #33333310);
       z-index: 2;
       margin-bottom: 10%;
+      padding-top: 2%;
       .WWYG_Detail_Img{
-        height: 60%;
+        height: 75%;
         width: auto;
-
+        margin-top: 3%;
       }
       .WWYG_Detail_Name{
         height: 10%;
@@ -136,18 +138,20 @@
         align-items: center;
         color: #cc6600;
         font-family: "ladyrose";
-        font-size: 2vw;
+        font-size: 1.2vw;
+        margin-top: 5%;
       }
       .WWYG_Detail_Des{
         height: 15%;
-        width: 80%;
+        width: 100%;
         text-align: center;
         font-family: "LTYPE";
-      color: #dcdbbec4;
-      font-size: 1.5vw;
-      display: flex;
-      justify-content: center;
-      line-height: 25px;
+        color: #dcdbbec4;
+        font-size: 0.8vw;
+        display: flex;
+        justify-content: center;
+        line-height: 20px;
+        margin-top: 3%;
       }
     }
   }

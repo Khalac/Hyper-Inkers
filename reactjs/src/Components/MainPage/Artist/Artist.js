@@ -56,6 +56,7 @@ function Artist() {
 
   const [currentSlide, setCurrentSlide] = useState(0);
   const [loaded, setLoaded] = useState(false);
+  const animation = { duration: 11000, easing: (t) => t };
   const [sliderRef, instanceRef] = useKeenSlider({
     loop: true,
     renderMode: performance,
@@ -65,6 +66,18 @@ function Artist() {
     created() {
       setLoaded(true);
     },
+    created(s) {
+      s.moveToIdx(5, true, animation);
+    },
+    updated(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    animationEnded(s) {
+      s.moveToIdx(s.track.details.abs + 5, true, animation);
+    },
+    loop: true,
+    renderMode: "performance",
+    drag: false,
     slides: {
       origin: "center",
       perView: 3,
@@ -73,7 +86,7 @@ function Artist() {
   });
   return (
     <div className="Artist" id="Artist">
-      <img src={BG} alt="" className="Artist_BG" />
+      {/* <img src={BG} alt="" className="Artist_BG" /> */}
       <div className="Artist_Name">MEET OUR ARTIST</div>
       <div className="Artist_Text">
         Our artists exemplify professionalism from start to finish. They
@@ -117,7 +130,7 @@ function Artist() {
             </div>
           )
         )}
-        {loaded && instanceRef.current && (
+        {true && (
           <div className="Artist_Button_Container">
             <div className="Artist_Go_Left">
               <IoIosArrowRoundBack
@@ -126,7 +139,10 @@ function Artist() {
                 }
               />
             </div>
-            <div className="Artist_Link" onClick={() => goToPage(currentSlide)}>
+            <div
+              className="Artist_Link"
+              onClick={() => nav(`${ArtistArr[currentSlide].link}`)}
+            >
               VIEW PORFOLIO
             </div>
 
