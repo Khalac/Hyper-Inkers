@@ -10,12 +10,10 @@ import Ben from "./Page/Ben/Ben";
 import AboutPage from "./Page/AboutPage/AboutPage";
 import Minh from "./Page/Minh/Minh";
 import "./index.css";
-import { Analytics } from "@vercel/analytics/react";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <Analytics />
     <HashRouter>
       <Routes>
         <Route exac path="/" element={<SalePage />} />
