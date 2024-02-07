@@ -25,7 +25,6 @@ function Section2_Ben() {
   };
   return (
     <div className="Section2_Ben">
-      <img src={BG} alt="" className="Section2_Ben_BG" />
       <div className="Section2_Ben_Img">
         <div className="Section2_Ben_Img_Top_Container">
           <img src={ArrImg[i]} alt="" className="Section2_Ben_Img_Top" />

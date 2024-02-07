@@ -9,7 +9,6 @@ import Minh from "../../assets/ImgMobile/Artist/Min.webp";
 function Section1_Minh() {
   return (
     <div className="Section1_Minh">
-      <img src={BG} alt="" className="Section1_Minh_BG" />
       <div className="Section1_Minh_Artist">
         <img src={Minh} alt="" className="Section1_Minh_Artist_Img" />
         <div className="Section1_Minh_Artist_Name">MINH</div>

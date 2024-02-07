@@ -25,7 +25,6 @@ function Section2_Nicole() {
   };
   return (
     <div className="Section2_Nicole">
-      <img src={BG} alt="" className="Section2_Nicole_BG" />
       <div className="Section2_Nicole_Text">
         Her journey into this artistry initially began with an interest in
         tattooing, but when she got her hands on a piercing needle, it felt like

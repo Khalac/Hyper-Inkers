@@ -193,7 +193,7 @@ const PrizeList = [
   },
 ];
 
-const animation = { duration: 11000, easing: (t) => t };
+const animation = { duration: 15000, easing: (t) => t };
 
 function Prize() {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -286,7 +286,7 @@ function Prize() {
         </div>
       </div>
       <div className="Prize_Text_Container">
-        <div className="Prize_Text">
+        <div className="Prize_Text" style={{ marginBottom: "2%" }}>
           We view every client as an extension of our family, and your trust in
           us is a responsibility we cherish. Our promise is to deliver nothing
           short of excellence, ensuring that your tattoo experience is not just

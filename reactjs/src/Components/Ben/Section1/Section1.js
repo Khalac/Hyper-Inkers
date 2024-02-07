@@ -9,7 +9,6 @@ import Ben from "../../assets/ImgMobile/Artist/Ben.webp";
 function Section1_Ben() {
   return (
     <div className="Section1_Ben">
-      <img src={BG} alt="" className="Section1_Ben_BG" />
       <div className="Section1_Ben_Artist">
         <img src={Ben} alt="" className="Section1_Ben_Artist_Img" />
         <div className="Section1_Ben_Artist_Name">Ben</div>

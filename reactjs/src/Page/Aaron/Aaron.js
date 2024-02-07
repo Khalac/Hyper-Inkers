@@ -11,6 +11,7 @@ import Section2 from "../../Components/Aaron/Section2/Section2";
 function Aaron() {
   return (
     <div className="Aaron">
+      <div className="Aaron_Bg"></div>
       <div className="Aaron_Header">
         <Header />
       </div>

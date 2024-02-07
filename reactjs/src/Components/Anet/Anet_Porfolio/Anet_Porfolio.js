@@ -76,7 +76,6 @@ function Anet_Porfolio() {
   });
   return (
     <div className="Anet_Porfolio">
-      <img src={BG} alt="" className="Anet_Porfolio_BG" />
       <div className="Anet_Porfolio_Name">Anet'S PORFOLIO</div>
       <div ref={sliderRef} className="keen-slider Anet_Porfolio_Img_Container">
         {imgArr.map((imgPor, key) => (

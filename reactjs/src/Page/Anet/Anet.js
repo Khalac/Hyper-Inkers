@@ -11,6 +11,7 @@ import Section2 from "../../Components/Anet/Section2/Section2";
 function Anet() {
   return (
     <div className="Anet">
+      <div className="Anet_Bg"></div>
       <div className="Anet_Header">
         <Header />
       </div>

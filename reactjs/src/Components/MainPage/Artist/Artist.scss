@@ -202,6 +202,7 @@
       color: #cc6600;
       font-size: 2vw;
       margin-top: 3%;
+      letter-spacing: 1px;
     }
     .Artist_Text{
       width: 60%;
@@ -226,7 +227,7 @@
         align-items: center;
         flex-direction: column;
         .Artist_Container_Normal_Wrap{
-          height: 45%;
+          height: 50%;
           width: 80%;
           background-image: linear-gradient( #cc66004b, #33333310);
           position: relative;
@@ -275,7 +276,7 @@
         align-items: center;
         flex-direction: column;
         .Artist_Container_Active_Wrap{
-          height: 80%;
+            height: 85%;
             width: 100%;
             background-image: linear-gradient( #cc660051, #33333310);
             position: relative;

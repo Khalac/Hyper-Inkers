@@ -11,6 +11,7 @@ import Section2 from "../../Components/Nicole/Section2/Section2";
 function Nicole() {
   return (
     <div className="Nicole">
+      <div className="Nicole_Bg"></div>
       <div className="Nicole_Header">
         <Header />
       </div>

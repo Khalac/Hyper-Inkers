@@ -25,7 +25,6 @@ function Section2_Anet() {
   };
   return (
     <div className="Section2_Anet">
-      <img src={BG} alt="" className="Section2_Anet_BG" />
       <div className="Section2_Anet_Text">
         Yet, as she immersed herself further into the world of tattoos within
         the shop, her passion for the craft blossomed. This transformation was

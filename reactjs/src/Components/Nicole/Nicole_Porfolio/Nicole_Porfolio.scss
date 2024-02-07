@@ -166,13 +166,15 @@
       }
       .Nicole_Porfolio_Button_Container{
         height: 5%;
-        width: 100%;
+        width: 58%;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         align-items: center;
         position: absolute;
         bottom: 0%;
+        transform: translateX(-50%);
+        left:50%;
 
         .Nicole_Porfolio_dots {
           display: flex;
@@ -181,8 +183,8 @@
         }
         .Nicole_Porfolio_dot {
           border: none;
-          width: 0.5vw;
-          height: 0.5vw;
+          width: 0.4vw;
+          height: 0.4vw;
           background: #dcdbbe83;
           border-radius: 50%;
           margin: 0 30%;
@@ -203,14 +205,13 @@
           display: flex;
           justify-content: center;
           color: #398795be;
-
-          font-size: 6vw;
+          font-size: 5vw;
         }
         .Nicole_Porfolio_Go_Right{
           display: flex;
           justify-content: center;
           color: #398795be;
-          font-size: 6vw;
+          font-size: 5vw;
         }
       }
     }
@@ -218,12 +219,12 @@
       display: flex;
         justify-content: center;
         align-items: center;
-        height: 7%;
-        width: 60%;
+        height: 5%;
+        width: 33%;
         background-color: #1e5761;
         color: #dcdbbebe;
         font-family: "clesmont";
-        font-size: 3vw;
+        font-size: 2.5vw;
         z-index: 3;
     }
   }

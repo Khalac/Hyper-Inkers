@@ -76,7 +76,6 @@ function Ben_Porfolio() {
   });
   return (
     <div className="Ben_Porfolio">
-      <img src={BG} alt="" className="Ben_Porfolio_BG" />
       <div className="Ben_Porfolio_Name">Ben'S PORFOLIO</div>
       <div ref={sliderRef} className="keen-slider Ben_Porfolio_Img_Container">
         {imgArr.map((imgPor, key) => (

@@ -9,7 +9,6 @@ import Aaron from "../../assets/ImgMobile/Artist/Aaron.webp";
 function Section1_Aaron() {
   return (
     <div className="Section1_Aaron">
-      <img src={BG} alt="" className="Section1_Aaron_BG" />
       <div className="Section1_Aaron_Artist">
         <img src={Aaron} alt="" className="Section1_Aaron_Artist_Img" />
         <div className="Section1_Aaron_Artist_Name">AARON</div>

@@ -11,6 +11,7 @@ import Section2 from "../../Components/Minh/Section2/Section2";
 function Minh() {
   return (
     <div className="Minh">
+      <div className="Minh_Bg"></div>
       <div className="Minh_Header">
         <Header />
       </div>

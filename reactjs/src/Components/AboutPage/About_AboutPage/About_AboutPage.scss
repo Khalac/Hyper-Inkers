@@ -203,21 +203,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    .About_AboutPage_BG{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-    }
     .About_AboutPage_Name{
       color: #cc6600;
-      font-size: 4vw;
-      width: 90%;
+      font-size: 2vw;
+      width: 80%;
       display: flex;
       align-items: flex-end;
       font-family: 'clesmont';
-      letter-spacing: 3px;
+      letter-spacing: 1px;
       z-index: 1;
     }
     .About_AboutPage_Section1{
@@ -379,15 +372,13 @@
         }
       }
       .About_AboutPage_Section2_Text{
-          color: #cddbbe72;
-          font-family: "LucidaSansTypewriterOblique";
-          font-size: 1vw;
-          text-align: justify;
-          margin-top: 8%;
+        color: #cddbbe72;
+        font-family: "LucidaSansTypewriterOblique";
+        font-size: 1vw;
+        margin-top: 8%;
         width: 80%;
         margin-left: 10%;
         line-height: 30px;
-
       }
     }
     

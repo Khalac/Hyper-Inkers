@@ -9,7 +9,6 @@ import Anet from "../../assets/ImgMobile/Artist/Anet.webp";
 function Section1_Anet() {
   return (
     <div className="Section1_Anet">
-      <img src={BG} alt="" className="Section1_Anet_BG" />
       <div className="Section1_Anet_Artist">
         <img src={Anet} alt="" className="Section1_Anet_Artist_Img" />
         <div className="Section1_Anet_Artist_Name">ANETHE</div>

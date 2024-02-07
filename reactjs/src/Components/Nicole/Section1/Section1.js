@@ -9,7 +9,6 @@ import Nicole from "../../assets/ImgMobile/Artist/Nicole.webp";
 function Section1_Nicole() {
   return (
     <div className="Section1_Nicole">
-      <img src={BG} alt="" className="Section1_Nicole_BG" />
       <div className="Section1_Nicole_Artist">
         <img src={Nicole} alt="" className="Section1_Nicole_Artist_Img" />
         <div className="Section1_Nicole_Artist_Name">NICOLE</div>

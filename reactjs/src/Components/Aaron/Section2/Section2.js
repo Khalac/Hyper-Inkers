@@ -25,7 +25,6 @@ function Section2_Aaron() {
   };
   return (
     <div className="Section2_Aaron">
-      <img src={BG} alt="" className="Section2_Aaron_BG" />
       <div className="Section2_Aaron_Text">
         While he finds himself primarily immersed in the world of black and grey
         realism, a style he's grown to adore, Aaron also harbors a deep longing

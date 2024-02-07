@@ -11,6 +11,7 @@ import Section2 from "../../Components/Ben/Section2/Section2";
 function Ben() {
   return (
     <div className="Ben">
+      <div className="Ben_Bg"></div>
       <div className="Ben_Header">
         <Header />
       </div>

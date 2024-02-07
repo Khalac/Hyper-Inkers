@@ -25,7 +25,6 @@ function Section2_Minh() {
   };
   return (
     <div className="Section2_Minh">
-      <img src={BG} alt="" className="Section2_Minh_BG" />
       <div className="Section2_Minh_Text">
         This young artist's enthusiasm knows no bounds when it comes to tattoo
         styles. He finds inspiration in a multitude of genres, with a simple
