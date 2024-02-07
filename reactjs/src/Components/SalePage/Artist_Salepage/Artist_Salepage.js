@@ -27,12 +27,12 @@ const ArtistArr = [
     category: "Portrait - Realism - Black & Grey",
     link: "/Artist/Ben",
   },
-  {
-    img: Anet,
-    name: "ANET",
-    category: "Color - LineWork - Black & Grey",
-    link: "/Artist/Anet",
-  },
+  // {
+  //   img: Anet,
+  //   name: "ANET",
+  //   category: "Color - LineWork - Black & Grey",
+  //   link: "/Artist/Anet",
+  // },
   {
     img: Nicole,
     name: "NICOLE",
@@ -83,8 +83,7 @@ function Artist_Salepage() {
     renderMode: "performance",
     mode: "free",
     slides: {
-      perView: 2,
-      spacing: 15,
+      perView: 3,
     },
   });
   return (

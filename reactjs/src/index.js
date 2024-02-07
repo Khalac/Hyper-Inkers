@@ -21,7 +21,7 @@ root.render(
         <Route exac path="/MainPage" element={<MainPage />} />
         <Route exac path="/AboutPage" element={<AboutPage />} />
         <Route exac path="/Artist/Min" element={<Minh />} />
-        <Route exac path="/Artist/Anet" element={<Anet />} />
+        {/* <Route exac path="/Artist/Anet" element={<Anet />} /> */}
         <Route exac path="/Artist/Aaron" element={<Aaron />} />
         <Route exac path="/Artist/Nicole" element={<Nicole />} />
         <Route exac path="/Artist/Ben" element={<Ben />} />

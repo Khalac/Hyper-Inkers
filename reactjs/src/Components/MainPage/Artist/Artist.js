@@ -30,12 +30,12 @@ const ArtistArr = [
     category: "PORTRAIT, REALISM, BLACK & GREY",
     link: "/Artist/ben",
   },
-  {
-    img: Anet,
-    name: "ANET",
-    category: "COLOR, LINEWORK, BLACK & GREY",
-    link: "/Artist/Anet",
-  },
+  // {
+  //   img: Anet,
+  //   name: "ANET",
+  //   category: "COLOR, LINEWORK, BLACK & GREY",
+  //   link: "/Artist/Anet",
+  // },
   {
     img: Nicole,
     name: "NICOLE",

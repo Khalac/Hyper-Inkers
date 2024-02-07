@@ -507,7 +507,7 @@
     }
     .Gallery_Gallery{
       height: 85%;
-      width: 30%;
+      width: 45%;
       margin-top: 1%;
       display: flex;
       justify-content: space-evenly;
@@ -530,6 +530,7 @@
           background-size: cover;
           position: relative;
           cursor: pointer;
+          border-radius: 20px;
           .Gallery_Gallery_Line1_Color_Text{
             position: absolute;
             color: #dcdbbe;
@@ -547,13 +548,14 @@
         }
         .Gallery_Gallery_Line1_Linework{
           height: 100%;
-          width: 25%;
+          width: 28%;
           background-image: url("../../assets/ImgMobile/ImgGallery/fineline/3.webp");
           background-position: 50% 50%;
           background-repeat: no-repeat;
           background-size: cover;
           position: relative;
           cursor: pointer;
+          border-radius: 20px;
           .Gallery_Gallery_Line1_Linework_Text{
             position: absolute;
             color: #dcdbbe;
@@ -564,9 +566,10 @@
             justify-content: center;
             align-items: center;
             top: 0;
-
+            border-radius: 20px;
             font-family: "ladyrose";
             font-size: 1vw;
+
           }
         }
       }
@@ -586,6 +589,7 @@
           background-size:cover;
           position: relative;
           cursor: pointer;
+          border-radius: 20px;
           .Gallery_Gallery_Line2_Portrait_Text{
             position: absolute;
             color: #dcdbbe;
@@ -599,6 +603,7 @@
             left: 0;
             font-family: "ladyrose";
             font-size: 1vw;
+            border-radius: 20px;
           }
         }
         .Gallery_Gallery_Line2_BNG{
@@ -610,6 +615,7 @@
           background-size: 100%;
           position: relative;
           cursor: pointer;
+          border-radius: 20px;
           .Gallery_Gallery_Line2_BNG_Text{
             position: absolute;
             color: #dcdbbe;
@@ -623,6 +629,7 @@
             left: 0;
             font-family: "ladyrose";
             font-size: 1vw;
+            border-radius: 20px;
           }
         }
       }
@@ -642,6 +649,7 @@
           background-size:cover;
           position: relative;
           cursor: pointer;
+          border-radius: 20px;
           .Gallery_Gallery_Line3_Realism_Text{
             position: absolute;
             color: #dcdbbe;
@@ -669,6 +677,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-between;
+
             .Gallery_Gallery_Line3_Top_Pier{
               height: 100%;
               width: 47.5%;
@@ -678,6 +687,7 @@
               background-size:cover;
               position: relative;
               cursor: pointer;
+              border-radius: 20px;
               .Gallery_Gallery_Line3_Top_Pier_Text{
                 position: absolute;
                 color: #dcdbbe;
@@ -695,13 +705,14 @@
             }
             .Gallery_Gallery_Line3_Top_Mini{
               height: 100%;
-              width: 47.5%;
+              width: 48%;
               background-image: url("../../assets/ImgMobile/ImgMainPage/MiniBG.webp");
               background-position: 50% 50%;
               background-repeat: no-repeat;
               background-size:cover;
               position: relative;
               cursor: pointer;
+              border-radius: 20px;
               .Gallery_Gallery_Line3_Top_Mini_Text{
                 position: absolute;
                 color: #dcdbbe;
@@ -715,6 +726,7 @@
                 left: 0;
                 font-family: "ladyrose";
                 font-size: 1vw;
+                border-radius: 20px;
               }
             }
             
@@ -723,7 +735,7 @@
        
       }
       .Gallery_Gallery_Line3_Bottom_Container{
-        height: 70%;
+        height: 72%;
         width: 100%;
         background-image: url("../../assets/ImgMobile/ImgGallery/fineline/12.webp");
         background-position: 50% 50%;
@@ -731,7 +743,9 @@
         background-size:cover;
         position: relative;
         cursor: pointer;
+        border-radius: 20px;
         .Gallery_Gallery_Line3_Bottom_Text{
+          border-radius: 20px;
           position: absolute;
           color: #dcdbbe;
           background-image: linear-gradient(to left,#33333321, #cc660080, #33333321);

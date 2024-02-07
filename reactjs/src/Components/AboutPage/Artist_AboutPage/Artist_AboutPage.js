@@ -36,7 +36,7 @@ function Artist_AboutPage() {
           BLACK & GREY - LINEWORK - COLOR
         </div>
       </div>
-      <div className="Artist_AboutPage_Artist">
+      {/* <div className="Artist_AboutPage_Artist">
         <img src={Anet} alt="" className="Artist_AboutPage_Artist_Img" />
         <div
           className="Artist_AboutPage_Artist_Name"
@@ -47,7 +47,7 @@ function Artist_AboutPage() {
         <div className="Artist_AboutPage_Artist_Cate">
           BLACK & GREY - LINEWORK - COLOR
         </div>
-      </div>
+      </div> */}
       <div className="Artist_AboutPage_Artist">
         <img src={Aaron} alt="" className="Artist_AboutPage_Artist_Img" />
         <div
