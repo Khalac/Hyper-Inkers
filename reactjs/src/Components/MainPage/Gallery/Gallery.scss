@@ -8,6 +8,8 @@
     justify-content: center;
     align-items: center;
     position: relative;
+    padding-bottom: 5%;
+    padding-top: 3%;
     .popUp, .overlay {
       width: 100%;
       max-height: 100%;
@@ -162,7 +164,7 @@
         }
         .Gallery_Gallery_Line1_Linework{
           height: 100%;
-          width: 25%;
+          width: 28%;
           background-image: url("../../assets/ImgMobile/ImgGallery/fineline/3.webp");
           background-position: 50% 50%;
           background-repeat: no-repeat;
@@ -219,7 +221,7 @@
         .Gallery_Gallery_Line2_BNG{
           height: 100%;
 
-          width: 55%;
+          width: 58%;
           background-image: url("../../assets/ImgMobile/ImgGallery/blackgrey/9.webp");
           background-position: 50% 50%;
           background-repeat: no-repeat;
@@ -275,7 +277,7 @@
         }
        .Gallery_Gallery_Line3_Container{
           height: 100%;
-          width: 55%;
+          width: 58%;
           display: flex;
           flex-direction: column;
           justify-content: space-between;
@@ -339,7 +341,7 @@
        
       }
       .Gallery_Gallery_Line3_Bottom_Container{
-        height: 70%;
+        height: 73%;
         width: 100%;
         background-image: url("../../assets/ImgMobile/ImgGallery/fineline/12.webp");
         background-position: 50% 50%;

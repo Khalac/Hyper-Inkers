@@ -43,14 +43,14 @@
         z-index: 2;
         .About_AboutPage_Section1_Text{
           width: 80%;
-          right: 0;
-          top: 0;
           color: #cddbbe72;
-          font-family: "LucidaSansTypewriterOblique";
-          font-size: 2vw;
+          font-family: "lucida";
+          font-size: 2.5vw;
           letter-spacing: 1px;
           text-align: right;
           line-height: 15px;
+ 
+
         }
         .About_AboutPage_Section1_Img2{
           width: 100%;
@@ -80,7 +80,7 @@
           display: flex;
           flex-direction: column;
           justify-content: space-evenly;
-          margin-top: 15%;
+          margin-top: 25%;
           .About_AboutPage_Section1_Number{
             height: 100%;
             width: 85%;
@@ -95,7 +95,7 @@
             .About_AboutPage_Section1_Number_Text{
               color: #cddbbeac;
               font-family: "clesmont";
-              font-size: 3vw;
+              font-size: 2.5vw;
             }
           }
         }
@@ -161,7 +161,7 @@
               .About_AboutPage_Section2_Number_Text{
                 color: #cddbbeac;
                 font-family: "clesmont";
-                font-size: 2.77vw;
+                font-size: 2.5vw;
               }
             }
           }
@@ -182,11 +182,11 @@
       }
       .About_AboutPage_Section2_Text{
           color: #cddbbe72;
-          font-family: "LucidaSansTypewriterOblique";
-          font-size: 2vw;
+          font-family: "lucida";
+          font-size: 2.5vw;
           letter-spacing: 1px;
-          text-align: left;
-          margin-top: 5%;
+          text-align: center;
+          margin-top: 7%;
           line-height: 13px;
       }
     }

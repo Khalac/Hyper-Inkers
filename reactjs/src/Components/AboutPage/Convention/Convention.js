@@ -18,7 +18,7 @@ function Convention() {
   return (
     <div className="Convention">
       <div className="Convention_Name">
-        <div>15+ WORLD CONVENTION</div>
+        <div style={{ marginBottom: "1%" }}>15+ WORLD CONVENTION</div>
         <div>WITH ENTHUSIASM</div>
       </div>
       <div className="Convention_Logo">
@@ -102,11 +102,14 @@ function Convention() {
         </div>
       </div>
       <div className="Convention_Text">
-        Our artists actively participate in numerous competitions across various
-        countries, consistently achieving victories that contribute to their
-        undisputed level of skill and technique. They blend traditional
-        knowledge with a commitment to recognizing and absorbing modern trends,
-        resulting in the unique character and style that defines each artist.
+        <div style={{ marginBottom: "5%" }}>
+          Our artists actively participate in numerous competitions across
+          various countries, consistently achieving victories that contribute to
+          their undisputed level of skill and technique.
+        </div>{" "}
+        They blend traditional knowledge with a commitment to recognizing and
+        absorbing modern trends, resulting in the unique character and style
+        that defines each artist.
       </div>
       <div className="Convention_Video">
         <video className="Convention_Video_Video" controls muted preload="none">

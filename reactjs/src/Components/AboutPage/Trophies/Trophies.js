@@ -12,7 +12,7 @@ function Trophies() {
   return (
     <div className="Trophies">
       <div className="Trophies_Name">
-        <div>30+ TROPHIES</div>
+        <div style={{ marginBottom: "1%" }}>30+ TROPHIES</div>
         <div>WITH PRICELESS VALUE</div>
       </div>
       <img src={bg} alt="Banner" className="Trophies_banner" />
