@@ -8,6 +8,7 @@ import Nicole from "../../assets/ImgMobile/AboutPage/Nicole.webp";
 import Aaron from "../../assets/ImgMobile/AboutPage/Aaron.webp";
 import Anet from "../../assets/ImgMobile/AboutPage/Anet.webp";
 import Ben from "../../assets/ImgMobile/AboutPage/Ben.webp";
+import Eriq from "../../assets/ImgMobile/AboutPage/Eriq.webp";
 
 import { useNavigate } from "react-router-dom";
 
@@ -81,6 +82,18 @@ function Artist_AboutPage() {
         </div>
         <div className="Artist_AboutPage_Artist_Cate">
           BLACK & GREY - BLACKWORK - REALISM
+        </div>
+      </div>
+      <div className="Artist_AboutPage_Artist">
+        <img src={Eriq} alt="" className="Artist_AboutPage_Artist_Img" />
+        <div
+          className="Artist_AboutPage_Artist_Name"
+          onClick={() => nav("/Artist/Eriq")}
+        >
+          ERIQ
+        </div>
+        <div className="Artist_AboutPage_Artist_Cate">
+          BLACK & GREY - BIO-ORGANIC - REALISM
         </div>
       </div>
     </div>

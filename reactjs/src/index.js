@@ -10,6 +10,7 @@ import Ben from "./Page/Ben/Ben";
 import AboutPage from "./Page/AboutPage/AboutPage";
 import Minh from "./Page/Minh/Minh";
 import "./index.css";
+import Eriq from "./Page/Eriq/Eriq";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -24,6 +25,7 @@ root.render(
         <Route exac path="/Artist/Aaron" element={<Aaron />} />
         <Route exac path="/Artist/Nicole" element={<Nicole />} />
         <Route exac path="/Artist/Ben" element={<Ben />} />
+        <Route exac path="/Artist/Eriq" element={<Eriq />} />
       </Routes>
     </HashRouter>
   </React.StrictMode>

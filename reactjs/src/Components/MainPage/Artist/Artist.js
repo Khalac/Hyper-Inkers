@@ -11,6 +11,7 @@ import Nicole from "../../assets/ImgMobile/Artist/Nicole.webp";
 import Ben from "../../assets/ImgMobile/Artist/Ben.webp";
 import Anet from "../../assets/ImgMobile/Artist/Anet.webp";
 import Aaron from "../../assets/ImgMobile/Artist/Aaron.webp";
+import Eriq from "../../assets/ImgMobile/Artist/Eriq.webp";
 
 import { useNavigate } from "react-router-dom";
 
@@ -46,6 +47,12 @@ const ArtistArr = [
     name: "AARON",
     category: "PORTRAIT, REALISM, BLACK & GREY",
     link: "/Artist/Aaron",
+  },
+  {
+    img: Eriq,
+    name: "ERIQ",
+    category: "BIO_ORGANIC, REALISM, BLACK & GREY",
+    link: "/Artist/Eriq",
   },
 ];
 function Artist() {

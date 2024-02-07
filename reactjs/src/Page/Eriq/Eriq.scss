@@ -6,57 +6,42 @@
 
 
 @media screen and (max-width: 768px){
-  .AboutPage{
+  .Eriq{
     height: 100%;
     width: 100%;
     background-color: black;
     position: relative;
-    .AboutPage_Bg{
+    .Eriq_Bg {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       background-image: url("../../Components/assets/ImgMobile/Background/MainBG1.png");
-      opacity: 0.6;
+      opacity: 0.8;
+      object-fit: contain;
     }
-    .AboutPage_Header{
+    .Eriq_Header{
       height: 10vh;
       width: 100%;
     }
-    .Welcome_AboutPage{
+    .Eriq_Welcome{
       height: 40vh;
       width: 100%;
     }
-    .AboutPage_About{
-      height: 170vh;
+    .Eriq_Section1{
+      height: 120vh;
       width: 100%;
     }
-    .AboutPage_Artist{
-      height: 200vh;
+    .Eriq_Porfolio{
+      height: 120vh;
       width: 100%;
     }
-    .AboutPage_YOEX{
-      height: 55vh;
+    .Eriq_Section2{
+      height:70vh;
       width: 100%;
     }
-    .AboutPage_Convention{
-      height: 110vh;
-      width: 100%;
-    }
-    .AboutPage_Trophies{
-      height: 100vh;
-      width: 100%;
-    }
-    .AboutPage_Prize{
-      height: 80vh;
-      width: 100%;
-    }
-    .AboutPage_Service{
-      height: 110vh;
-      width: 100%;
-    }
-    .AboutPage_Footer{
+    .Eriq_Footer{
       height: 30vh;
       width: 100%;
     }
@@ -64,57 +49,42 @@
 }
 
 @media screen and (min-width: 768px){
-  .AboutPage{
+  .Eriq{
     height: 100%;
     width: 100%;
     background-color: black;
     position: relative;
-    .AboutPage_Bg{
+    .Eriq_Bg {
       position: absolute;
       top: 0;
       left: 0;
       right: 0;
       bottom: 0;
       background-image: url("../../Components/assets/ImgMobile/Background/MainBG1.png");
-      opacity: 0.6;
+      opacity: 0.8;
+      object-fit: contain;
     }
-    .AboutPage_Header{
+    .Eriq_Header{
       height: 10vh;
       width: 100%;
     }
-    .Welcome_AboutPage{
+    .Eriq_Welcome{
       height: 100vh;
       width: 100%;
     }
-    .AboutPage_About{
-      height: 280vh;
-      width: 100%;
-    }
-    .AboutPage_Artist{
-      height: 270vh;
-      width: 100%;
-    }
-    .AboutPage_YOEX{
-      height: 80vh;
-      width: 100%;
-    }
-    .AboutPage_Convention{
-      height: 160vh;
-      width: 100%;
-    }
-    .AboutPage_Trophies{
+    .Eriq_Section1{
       height: 150vh;
       width: 100%;
     }
-    .AboutPage_Prize{
-      height: 100vh;
-      width: 100%;
-    }
-    .AboutPage_Service{
+    .Eriq_Porfolio{
       height: 150vh;
       width: 100%;
     }
-    .AboutPage_Footer{
+    .Eriq_Section2{
+      height: 110vh;
+      width: 100%;
+    }
+    .Eriq_Footer{
       height: 40vh;
       width: 100%;
     }

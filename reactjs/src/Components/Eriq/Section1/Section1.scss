@@ -1,0 +1,154 @@
+@media screen and (max-width: 768px){
+  .Section1_Eriq{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    .Section1_Eriq_Artist{
+      height: 25%;
+      width: 80%;
+      background-image: linear-gradient(to left, #cc66004b, #3333333b);
+      position: relative;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .Section1_Eriq_Artist_Img{
+        position: absolute;
+        width: 50%;
+        height: auto;
+        bottom: 0;
+        right: 0;
+      }
+      .Section1_Eriq_Artist_Name{
+        color: #cc6600;
+        font-family: "ladyrose";
+        font-size: 6vw;
+        margin-left: 10%;
+        margin-bottom: 2%;
+        margin-top: 20%;
+      }
+      .Section1_Eriq_Artist_Style{
+        color: #dcdbbeb3;
+        font-size: 3vw;
+        font-family: "LTYPE";
+        margin-left: 10%;
+        margin-bottom: 2%;
+      }
+    }
+    .Section1_Eriq_Text1{
+      width: 80%;
+      color: #dcdbbeb3;
+      font-size: 2.2vw;
+      font-family: "lucida";
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      line-height: 15px;
+      letter-spacing: 1px;
+    }
+    .Section1_Eriq_Img{
+      height: 30%;
+      width: 100%;
+      background-image: url("../../assets/ImgMobile/ImgEriq/Eriq.webp");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .Section1_Eriq_Text2{
+      height: 10%;
+      width: 80%;
+      color: #dcdbbeb3;
+      font-size: 2.2vw;
+      letter-spacing: 1px;
+      font-family: "lucida";
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      line-height: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px){
+  .Section1_Eriq{
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+    .Section1_Eriq_Artist{
+      height: 25%;
+      width: 40%;
+      background-image: linear-gradient(to left, #cc66004b, #3333333b);
+      position: relative;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .Section1_Eriq_Artist_Img{
+        position: absolute;
+        width: 45%;
+        height: auto;
+        bottom: 0;
+        right: 0%;
+      }
+      .Section1_Eriq_Artist_Name{
+        color: #cc6600;
+        font-family: "ladyrose";
+        font-size: 3vw;
+        margin-left: 10%;
+        margin-bottom: 2%;
+        margin-top: 10%;
+      }
+      .Section1_Eriq_Artist_Style{
+        color: #dcdbbeb3;
+        font-size: 1.3vw;
+        font-family: "LTYPE";
+        margin-left: 10%;
+        margin-bottom: 2%;
+      }
+    }
+    .Section1_Eriq_Text1{
+      width: 50%;
+      color: #dcdbbeb3;
+      font-size: 1vw;
+      font-family: "LTYPE";
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: justify;
+      line-height: 30px;
+    }
+    .Section1_Eriq_Img{
+      height: 35%;
+      width: 50%;
+      background-image: url("../../assets/ImgMobile/ImgEriq/Eriq.webp");
+      background-position: 50% 50%;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .Section1_Eriq_Text2{
+      width: 50%;
+      color: #dcdbbeb3;
+      font-size: 1vw;
+      font-family: "LTYPE";
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: justify;
+      line-height: 30px;
+    }
+  }
+}

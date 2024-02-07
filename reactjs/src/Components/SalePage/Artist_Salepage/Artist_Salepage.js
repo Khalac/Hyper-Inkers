@@ -10,6 +10,7 @@ import Ben from "../../assets/ImgMobile/ImgSalePage/Ben.webp";
 import Anet from "../../assets/ImgMobile/ImgSalePage/Anet.webp";
 import Nicole from "../../assets/ImgMobile/ImgSalePage/Nicole.webp";
 import Aaron from "../../assets/ImgMobile/ImgSalePage/Aaron.webp";
+import Eriq from "../../assets/ImgMobile/ImgSalePage/Eriq.webp";
 
 import { useNavigate } from "react-router-dom";
 
