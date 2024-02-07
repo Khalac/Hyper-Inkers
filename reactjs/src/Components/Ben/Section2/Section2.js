@@ -8,6 +8,7 @@ import Ben1 from "../../assets/ImgMobile/ImgBen/Ben1.webp";
 import Ben2 from "../../assets/ImgMobile/ImgBen/Ben2.webp";
 
 import { IoIosArrowDropdown } from "react-icons/io";
+import { isMobile } from "react-device-detect";
 
 function Section2_Ben() {
   const ArrImg = [Ben1, Ben2];
@@ -23,7 +24,26 @@ function Section2_Ben() {
       setJ(1);
     }
   };
-  return (
+  return isMobile ? (
+    <div className="Section2_Ben">
+      <div className="Section2_Ben_Img" style={{ marginBottom: "30%" }}>
+        <div className="Section2_Ben_Img_Top_Container">
+          <img src={ArrImg[i]} alt="" className="Section2_Ben_Img_Top" />
+        </div>
+        <div className="Section2_Ben_Img_Bottom_Container">
+          <img src={ArrImg[j]} alt="" className="Section2_Ben_Img_Bottom" />
+          <IoIosArrowDropdown
+            className="Section2_Ben_Img_Button"
+            onClick={() => changeImg()}
+          />
+        </div>
+      </div>
+      <div className="Section2_Ben_Text">
+        In just a little over a year, this budding artist has honed his skills
+        and developed a love for the intricate world of realism.
+      </div>
+    </div>
+  ) : (
     <div className="Section2_Ben">
       <div className="Section2_Ben_Img" style={{ marginBottom: "5%" }}>
         <div className="Section2_Ben_Img_Top_Container">

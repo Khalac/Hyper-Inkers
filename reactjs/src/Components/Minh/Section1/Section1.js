@@ -17,7 +17,10 @@ function Section1_Minh() {
         <div className="Section1_Minh_Artist_Style">Realism</div>
       </div>
       <div className="Section1_Minh_Text1">
-        <div className="Section1_Minh_Text1_Text1">
+        <div
+          className="Section1_Minh_Text1_Text1"
+          style={{ marginBottom: "5%" }}
+        >
           Meet a talented individual named Minh, who hails from Vietnam and was
           born in 1999. At just 24 years old, he has already spent 7 years
           honing his craft as a tattoo artist.

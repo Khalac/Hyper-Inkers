@@ -8,6 +8,7 @@ import Aaron1 from "../../assets/ImgMobile/ImgAaron/Aaron1.webp";
 import Aaron2 from "../../assets/ImgMobile/ImgAaron/Aaron2.webp";
 
 import { IoIosArrowDropdown } from "react-icons/io";
+import { isMobile } from "react-device-detect";
 
 function Section2_Aaron() {
   const ArrImg = [Aaron1, Aaron2];
@@ -23,7 +24,32 @@ function Section2_Aaron() {
       setJ(1);
     }
   };
-  return (
+  return isMobile ? (
+    <div className="Section2_Aaron">
+      <div className="Section2_Aaron_Text" style={{ marginBottom: "1%" }}>
+        While he finds himself primarily immersed in the world of black and grey
+        realism, a style he's grown to adore, Aaron also harbors a deep longing
+        to delve into more traditional Japanese tattooing.
+      </div>
+      <div className="Section2_Aaron_Img" style={{ marginBottom: "10%" }}>
+        <div className="Section2_Aaron_Img_Top_Container">
+          <img src={ArrImg[i]} alt="" className="Section2_Aaron_Img_Top" />
+        </div>
+        <div className="Section2_Aaron_Img_Bottom_Container">
+          <img src={ArrImg[j]} alt="" className="Section2_Aaron_Img_Bottom" />
+          <IoIosArrowDropdown
+            className="Section2_Aaron_Img_Button"
+            onClick={() => changeImg()}
+          />
+        </div>
+      </div>
+      <div className="Section2_Aaron_Text">
+        While he finds himself primarily immersed in the world of black and grey
+        realism, a style he's grown to adore, Aaron also harbors a deep longing
+        to delve into more traditional Japanese tattooing.
+      </div>
+    </div>
+  ) : (
     <div className="Section2_Aaron">
       <div className="Section2_Aaron_Text" style={{ marginBottom: "3%" }}>
         While he finds himself primarily immersed in the world of black and grey

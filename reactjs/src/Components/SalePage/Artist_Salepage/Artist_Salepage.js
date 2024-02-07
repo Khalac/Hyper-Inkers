@@ -44,6 +44,12 @@ const ArtistArr = [
     category: "Portrait - Realism - Black & Grey",
     link: "/Artist/Aaron",
   },
+  {
+    img: Eriq,
+    name: "ERIQ",
+    category: "Bio-organic - Realism - Black & Grey",
+    link: "/Artist/Eriq",
+  },
 ];
 
 const animation = { duration: 15000, easing: (t) => t };

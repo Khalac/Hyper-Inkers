@@ -2,20 +2,11 @@
   .Section1_Anet{
     height: 100%;
     width: 100%;
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
     position: relative;
-    
-    .Section1_Anet_BG{
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
-    }
     .Section1_Anet_Artist{
       height: 25%;
       width: 80%;
@@ -51,13 +42,13 @@
     .Section1_Anet_Text1{
       width: 80%;
       color: #dcdbbeb3;
-      font-size: 2vw;
-      font-family: "LTYPE";
+      font-size: 2.2vw;
+      font-family: "lucida";
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      line-height: 13px;
+      line-height: 15px;
       letter-spacing: 1px;
     }
     .Section1_Anet_Img{
@@ -69,17 +60,16 @@
       background-size: cover;
     }
     .Section1_Anet_Text2{
-      height: 10%;
       width: 80%;
       color: #dcdbbeb3;
-      font-size: 2vw;
+      font-size: 2.2vw;
       letter-spacing: 1px;
-      font-family: "LTYPE";
+      font-family: "lucida";
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      line-height: 13px;
+      line-height: 15px;
     }
   }
 }

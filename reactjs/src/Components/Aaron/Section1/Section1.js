@@ -17,12 +17,10 @@ function Section1_Aaron() {
         <div className="Section1_Aaron_Artist_Style">Realism</div>
       </div>
       <div className="Section1_Aaron_Text1">
-        <div className="Section1_Aaron_Text1_Text1">
-          Meet Aaron, a 23-year-old tattoo artist whose journey into the world
-          of ink began at the young age of 16. While it took a few years to
-          truly refine his craft, the initial spark that ignited his passion
-          came from watching mesmerizing tattoo time-lapses on YouTube.
-        </div>
+        Meet Aaron, a 23-year-old tattoo artist whose journey into the world of
+        ink began at the young age of 16. While it took a few years to truly
+        refine his craft, the initial spark that ignited his passion came from
+        watching mesmerizing tattoo time-lapses on YouTube.
       </div>
       <div className="Section1_Aaron_Img"></div>
       <div className="Section1_Aaron_Text2">

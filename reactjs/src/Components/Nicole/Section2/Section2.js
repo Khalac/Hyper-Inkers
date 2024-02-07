@@ -8,6 +8,7 @@ import Nicole1 from "../../assets/ImgMobile/ImgNicole/Nicole1.webp";
 import Nicole2 from "../../assets/ImgMobile/ImgNicole/Nicole2.webp";
 
 import { IoIosArrowDropdown } from "react-icons/io";
+import { isMobile } from "react-device-detect";
 
 function Section2_Nicole() {
   const ArrImg = [Nicole1, Nicole2];
@@ -23,7 +24,40 @@ function Section2_Nicole() {
       setJ(1);
     }
   };
-  return (
+  return isMobile ? (
+    <div className="Section2_Nicole">
+      <div className="Section2_Nicole_Text" style={{ marginBottom: "1%" }}>
+        Her journey into this artistry initially began with an interest in
+        tattooing, but when she got her hands on a piercing needle, it felt like
+        destiny. Nicole thrives on the joy of embellishing people's bodies and
+        witnessing their happiness.
+      </div>
+      <div className="Section2_Nicole_Text" style={{ marginBottom: "1%" }}>
+        One of her remarkable strengths is her ability to pierce swiftly,
+        minimizing discomfort for her clients. Known for her gentle touch, her
+        sessions are delicate and efficient, ensuring a pleasant experience for
+        all.
+      </div>
+      <div className="Section2_Nicole_Img" style={{ marginBottom: "8%" }}>
+        <div className="Section2_Nicole_Img_Top_Container">
+          <img src={ArrImg[i]} alt="" className="Section2_Nicole_Img_Top" />
+        </div>
+        <div className="Section2_Nicole_Img_Bottom_Container">
+          <img src={ArrImg[j]} alt="" className="Section2_Nicole_Img_Bottom" />
+          <IoIosArrowDropdown
+            className="Section2_Nicole_Img_Button"
+            onClick={() => changeImg()}
+          />
+        </div>
+      </div>
+      <div className="Section2_Nicole_Text">
+        While she dabbles in tattoos, Nicole has truly found her calling as a
+        professional piercer. Each passing day deepens her love for her craft,
+        and she's immensely grateful for the journey that brought her to this
+        fulfilling profession.
+      </div>
+    </div>
+  ) : (
     <div className="Section2_Nicole">
       <div className="Section2_Nicole_Text" style={{ marginBottom: "3%" }}>
         Her journey into this artistry initially began with an interest in
