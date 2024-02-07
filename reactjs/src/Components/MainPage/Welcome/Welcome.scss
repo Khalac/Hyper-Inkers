@@ -99,6 +99,7 @@
       z-index: 1;
       letter-spacing: 2px;
       z-index: 1;
+      margin-top: 1%;
     }
     .Welcome_PageName{
       height: 50%;
@@ -135,7 +136,7 @@
       }
     }
     .Welcome_Text{
-      width: 70%;
+      width: 55%;
       height: 25%;
       font-size: 1.2vw;
       font-family: "CompagnonMedium";
@@ -154,7 +155,7 @@
       display: flex;
       justify-content: end;
       font-family: "bebas";
-      color: #1e5761;
+      color: #339898;
       z-index: 1;
       .Welcome_Button_Text{
         cursor: pointer;
@@ -163,7 +164,7 @@
         justify-content: center;
         align-items: center;
         z-index: 1;
-        font-size: 1.5vw;
+        font-size: 2.5vw;
       }
     }
   }

@@ -402,16 +402,16 @@
         height: 80%;
         width: 70%;
         display: grid;
-        grid-template-columns: auto auto auto ;
+        grid-template-columns: auto auto auto auto;
         background-color: #2d2e2d;
         overflow-y: auto;
         overflow-x: hidden;
-        column-gap: 15px;
-        row-gap: 20px;
+        column-gap: 50px;
+        row-gap: 40px;
         font-size: 100%;
         z-index: 4;
         position: relative;
-      z-index: 3;
+        z-index: 3;
 
         
       .Realism_div_1, .Realism_div_2, .Realism_div_3, .Realism_div_4, .Realism_div_5, .Realism_div_6, .Realism_div_7, .Realism_div_8, .Realism_div_9, .Realism_div_10,.Realism_div_11, .Realism_div_12, .Realism_div_13, .Realism_div_14, .Realism_div_15, .Realism_div_23, .Realism_div_24, .Realism_div_25, .Realism_div_16, .Realism_div_17, .Realism_div_18, .Realism_div_19, .Realism_div_20, .Realism_div_21, .Realism_div_22{

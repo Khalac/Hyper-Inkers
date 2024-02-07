@@ -25,18 +25,18 @@ function Section2_Anet() {
   };
   return (
     <div className="Section2_Anet">
-      <div className="Section2_Anet_Text">
+      <div className="Section2_Anet_Text" style={{ marginBottom: "3%" }}>
         Yet, as she immersed herself further into the world of tattoos within
         the shop, her passion for the craft blossomed. This transformation was
         especially remarkable considering her previous disinterest in art,
         drawing, or painting.
       </div>
-      <div className="Section2_Anet_Text">
+      <div className="Section2_Anet_Text" style={{ marginBottom: "3%" }}>
         Anethe's journey from a career she hadn't imagined to her current role
         in the tattooing world is atestament to the unexpected paths life can
         lead us on.
       </div>
-      <div className="Section2_Anet_Img">
+      <div className="Section2_Anet_Img" style={{ marginBottom: "5%" }}>
         <div className="Section2_Anet_Img_Top_Container">
           <img src={ArrImg[i]} alt="" className="Section2_Anet_Img_Top" />
         </div>

@@ -25,7 +25,7 @@ function Section2_Ben() {
   };
   return (
     <div className="Section2_Ben">
-      <div className="Section2_Ben_Img">
+      <div className="Section2_Ben_Img" style={{ marginBottom: "5%" }}>
         <div className="Section2_Ben_Img_Top_Container">
           <img src={ArrImg[i]} alt="" className="Section2_Ben_Img_Top" />
         </div>

@@ -21,7 +21,7 @@ function Welcome() {
       <div
         className="Welcome_Text"
         style={{
-          marginTop: 50,
+          marginTop: 30,
           marginBottom: 30,
           display: "flex",
           flexDirection: "column",
@@ -29,8 +29,8 @@ function Welcome() {
       >
         Are you looking for the best tattoo studio in San Antonio?
         <h3 style={{ fontFamily: "CompagnonMedium", fontSize: "2.5vw" }}>
-          Look no further than Hyper Inkers. Our award-winning artist has
-          competed in over 10 different countries around the world
+          <div>Look no further than Hyper Inkers.</div>Our award-winning artist
+          has competed in over 10 different countries around the world
         </h3>
       </div>
       <div className="Welcome_Button">

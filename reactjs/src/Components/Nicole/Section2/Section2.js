@@ -25,19 +25,19 @@ function Section2_Nicole() {
   };
   return (
     <div className="Section2_Nicole">
-      <div className="Section2_Nicole_Text">
+      <div className="Section2_Nicole_Text" style={{ marginBottom: "3%" }}>
         Her journey into this artistry initially began with an interest in
         tattooing, but when she got her hands on a piercing needle, it felt like
         destiny. Nicole thrives on the joy of embellishing people's bodies and
         witnessing their happiness.
       </div>
-      <div className="Section2_Nicole_Text">
+      <div className="Section2_Nicole_Text" style={{ marginBottom: "3%" }}>
         One of her remarkable strengths is her ability to pierce swiftly,
         minimizing discomfort for her clients. Known for her gentle touch, her
         sessions are delicate and efficient, ensuring a pleasant experience for
         all.
       </div>
-      <div className="Section2_Nicole_Img">
+      <div className="Section2_Nicole_Img" style={{ marginBottom: "5%" }}>
         <div className="Section2_Nicole_Img_Top_Container">
           <img src={ArrImg[i]} alt="" className="Section2_Nicole_Img_Top" />
         </div>

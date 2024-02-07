@@ -14,30 +14,33 @@
       font-size: 5.5vw;
       display: 100%;
       text-align: center;
+      margin-top: 5%;
     }
     .Artist_Salepage_Artist{
       height: 80%;
-      width: 95%;
-      margin-left: 5%;
+      width: 100%;
       .Artist_Salepage_Artist_Container{
         width: 100%;
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: center;
         .Artist_Salepage_Artist_Img{
           width: 80%;
           height: auto;
+          margin-bottom: 8%;
         }
         .Artist_Salepage_Artist_Name{
           font-family: "ladyrose";
           font-size: 5vw;
           color:#327f80 ;
+          margin-bottom: 5%;
         }
         .Artist_Salepage_Artist_Name_Cat{
           font-family: "CompagnonMedium";
-        color: #dcdbbec4;
-        font-size: 3vw;
+          color: #dcdbbec4;
+          font-size: 3vw;
+          width: 80%;
         }
       }
     }

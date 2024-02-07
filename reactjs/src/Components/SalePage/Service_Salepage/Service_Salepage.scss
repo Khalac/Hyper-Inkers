@@ -24,16 +24,16 @@
     color: #dcdbbead;
     z-index: 3;
     font-family: "ttrun";
-    font-size: 3vw;
+    font-size: 2.5vw;
     line-height: 18px;
     letter-spacing: 1px;
-
+    text-align: center;
    }
    .Service_Salepage_Detail{
       height: 16%;
       width: 100%;
       display: flex;
-
+      justify-content: center;
       align-items: center;
       flex-direction: column;
       .Service_Salepage_Detail_Logo{
@@ -55,12 +55,15 @@
 
       }
       .Service_Salepage_Detail_Des{
+
         width: 60%;
-        text-align: center;
         margin-top: 2%;
-        margin-left: 5%;
         .Service_Salepage_Detail_Des_Detail{
-          width: 90%;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
           .Service_Salepage_Detail_Des1_Text{
             display: flex;
             flex-direction: row;
@@ -68,6 +71,7 @@
             font-family: "ladyrose";
             font-size: 2.5vw;
             line-height: 15px;
+            line-height: 20px;
           }
         }
       }
@@ -84,6 +88,7 @@
     width: 90%;
     z-index: 3;
     border-radius: 50px;
+    margin-bottom: 3%;
    }
   }
 }
@@ -154,7 +159,7 @@
         line-height: 1.2;
       }
       .Service_Salepage_Detail_Des{
-        width: 70%;
+        width: 85%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -181,12 +186,12 @@
    .Service_Salepage_Phone{
     background-color: #1e5761;
     color: #dcdbbed4;
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-family: "clesmont";
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 25%;
     border-radius: 50px;
     margin-bottom: 4%;
     margin-top: 4%;

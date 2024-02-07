@@ -25,12 +25,12 @@ function Section2_Aaron() {
   };
   return (
     <div className="Section2_Aaron">
-      <div className="Section2_Aaron_Text">
+      <div className="Section2_Aaron_Text" style={{ marginBottom: "3%" }}>
         While he finds himself primarily immersed in the world of black and grey
         realism, a style he's grown to adore, Aaron also harbors a deep longing
         to delve into more traditional Japanese tattooing.
       </div>
-      <div className="Section2_Aaron_Img">
+      <div className="Section2_Aaron_Img" style={{ marginBottom: "5%" }}>
         <div className="Section2_Aaron_Img_Top_Container">
           <img src={ArrImg[i]} alt="" className="Section2_Aaron_Img_Top" />
         </div>

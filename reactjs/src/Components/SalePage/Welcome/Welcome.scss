@@ -74,11 +74,6 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-        .Welcome_Sale_Icon_Right_Icon{
-          width: auto;
-          height: 6vw;
-          cursor: pointer;
-        }
         .Welcome_Sale_Icon_Book{
           width: 38%;
           height: 6vw;
@@ -90,6 +85,8 @@
           align-items: center;
           border-radius: 20px;
           font-size: 4vw;
+          cursor: pointer;
+          padding-top: 1%;
         }
     }
   }

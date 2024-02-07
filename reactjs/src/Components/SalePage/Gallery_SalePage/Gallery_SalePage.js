@@ -316,7 +316,11 @@ function Gallery_SalePage() {
           </div>
         </React.Fragment>
       )}
-      <div onClick={handlePhoneClick} className="Gallery_SalePage_Booking">
+      <div
+        onClick={handlePhoneClick}
+        className="Gallery_SalePage_Booking"
+        style={{ marginBottom: "5vh" }}
+      >
         BOOKING NOW
       </div>
     </div>

@@ -9,7 +9,10 @@ import Aaron from "../../assets/ImgMobile/AboutPage/Aaron.webp";
 import Anet from "../../assets/ImgMobile/AboutPage/Anet.webp";
 import Ben from "../../assets/ImgMobile/AboutPage/Ben.webp";
 
+import { useNavigate } from "react-router-dom";
+
 function Artist_AboutPage() {
+  const nav = useNavigate();
   return (
     <div className="Artist_AboutPage">
       <div className="Artist_AboutPage_Name">5 HYPER ARTISTS</div>
@@ -22,35 +25,60 @@ function Artist_AboutPage() {
       </div>
       <div className="Artist_AboutPage_Artist">
         <img src={Minh} alt="" className="Artist_AboutPage_Artist_Img" />
-        <div className="Artist_AboutPage_Artist_Name">MINH</div>
+        <div
+          className="Artist_AboutPage_Artist_Name"
+          onClick={() => nav("/Artist/Min")}
+        >
+          MINH
+        </div>
         <div className="Artist_AboutPage_Artist_Cate">
           BLACK & GREY - LINEWORK - COLOR
         </div>
       </div>
       <div className="Artist_AboutPage_Artist">
         <img src={Anet} alt="" className="Artist_AboutPage_Artist_Img" />
-        <div className="Artist_AboutPage_Artist_Name">ANETHE</div>
+        <div
+          className="Artist_AboutPage_Artist_Name"
+          onClick={() => nav("/Artist/Anet")}
+        >
+          ANETHE
+        </div>
         <div className="Artist_AboutPage_Artist_Cate">
           BLACK & GREY - LINEWORK - COLOR
         </div>
       </div>
       <div className="Artist_AboutPage_Artist">
         <img src={Aaron} alt="" className="Artist_AboutPage_Artist_Img" />
-        <div className="Artist_AboutPage_Artist_Name">AARON</div>
+        <div
+          className="Artist_AboutPage_Artist_Name"
+          onClick={() => nav("/Artist/Aaron")}
+        >
+          AARON
+        </div>
         <div className="Artist_AboutPage_Artist_Cate">
           BLACK & GREY - PORTRAIT - REALISM
         </div>
       </div>
       <div className="Artist_AboutPage_Artist">
         <img src={Nicole} alt="" className="Artist_AboutPage_Artist_Img" />
-        <div className="Artist_AboutPage_Artist_Name">NICOLE</div>
+        <div
+          className="Artist_AboutPage_Artist_Name"
+          onClick={() => nav("/Artist/Nicole")}
+        >
+          NICOLE
+        </div>
         <div className="Artist_AboutPage_Artist_Cate">
           PIERCING - LINEWORK - BLACKWORK
         </div>
       </div>
       <div className="Artist_AboutPage_Artist">
         <img src={Ben} alt="" className="Artist_AboutPage_Artist_Img" />
-        <div className="Artist_AboutPage_Artist_Name">BENJAMIN</div>
+        <div
+          className="Artist_AboutPage_Artist_Name"
+          onClick={() => nav("/Artist/Ben")}
+        >
+          BENJAMIN
+        </div>
         <div className="Artist_AboutPage_Artist_Cate">
           BLACK & GREY - BLACKWORK - REALISM
         </div>

@@ -8,6 +8,8 @@
     justify-content: space-evenly;
     align-items: center;
     position: relative;
+
+
     .WWYG_BG{
       position: absolute;
       width: 100%;
@@ -22,6 +24,8 @@
         text-align: center;
         font-family: 'clesmont';
         letter-spacing: 2px;
+        margin-bottom: 5%;
+
     }
     .WWYG_Text{
       width: 80%;
@@ -33,6 +37,7 @@
       justify-content: center;
       line-height: 15px;
       letter-spacing: 1px;
+
     }
     .WWYG_Detail{
       height: 25%;
@@ -100,7 +105,7 @@
         font-family: "clesmont";
         color: #cc6600;
         font-size: 2vw;
-        margin-top: 3%;
+        margin-top: 5%;
         letter-spacing: 3px;
     }
     .WWYG_Text{
@@ -114,10 +119,11 @@
       justify-content: center;
       line-height: 30px;
       margin-top: 3%;
+
     }
     .WWYG_Detail{
       height: 100%;
-      width: 28%;
+      width: 30%;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -143,11 +149,11 @@
       }
       .WWYG_Detail_Des{
         height: 15%;
-        width: 100%;
+        width: 90%;
         text-align: center;
         font-family: "LTYPE";
         color: #dcdbbec4;
-        font-size: 0.8vw;
+        font-size: 0.7vw;
         display: flex;
         justify-content: center;
         line-height: 20px;

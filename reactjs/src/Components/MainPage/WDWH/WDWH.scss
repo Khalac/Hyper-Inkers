@@ -8,6 +8,8 @@
       justify-content: space-evenly;
       align-items: center;
       position: relative;
+      padding-bottom: 5%;
+      padding-top: 3%;
       .WDWH_BG{
         position: absolute;
         width: 100%;
@@ -57,7 +59,7 @@
           border-radius: 10px;
           display: flex;
           flex-direction: column;
-          justify-content: space-evenly;
+          justify-content: center;
           align-items: end;
           position: relative;
           .WDWH_Tag_Logo{
@@ -70,21 +72,22 @@
           }
           .WDWH_Tag_Text{
             width: 80%;
-            height: 70%;
+            height: 100%;
             .WDWH_Tag_Text_Name{
-              height: 40%;
               color: #cc6600;
               font-family: "clesmont";
               font-size: 3.3vw;
               width: 100%;
               display: flex;
               align-items: end;
+              margin-top: 8%;
+              margin-bottom: 3%;
             }
             .WDWH_Tag_Text_Des{
               display: flex;
               justify-content: center;
               align-items: center;
-              height: 60%;
+
               color: black;
               font-family: "LTYPEBO";
               font-size: 2vw;
@@ -93,11 +96,12 @@
             }
           }
           .WDWH_Tag_Learn_More{
+            position: absolute;
             font-family: "bebas";
             color: #1e5761;
             font-size: 2.8vw;
-            margin-right: 5%;
-            margin-top: 3%;
+            bottom: 11%;
+            right: 8%;
           }
         }
       }
@@ -137,7 +141,8 @@
       justify-content: center;
       align-items: center;
       line-height: 30px;
-      margin-top: 1%;     
+      margin-top: 2.5%;  
+      margin-bottom: 1%;   
       .WDWH_Text{
         width: 60%;
         text-align: center;
@@ -190,9 +195,9 @@
           }
         }
         .WDWH_Tag_Learn_More{
-          font-family: "ttrun";
+          font-family: "bebas";
           color: #1e5761;
-          font-size: 1vw;
+          font-size: 1.5vw;
         }
       }
     }

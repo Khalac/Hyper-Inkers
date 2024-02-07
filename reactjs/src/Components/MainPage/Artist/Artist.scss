@@ -185,6 +185,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+
     align-items: center;
     .Artist_BG{
       position: absolute;
@@ -201,7 +202,7 @@
       font-family: "clesmont";
       color: #cc6600;
       font-size: 2vw;
-      margin-top: 3%;
+      margin-top: 5%;
       letter-spacing: 1px;
     }
     .Artist_Text{
@@ -239,7 +240,8 @@
             height: auto;
             transition: width 1s ease;
             bottom: 0;
-            margin-left: 15%;
+            transform: translateX(-50%);
+            left: 50%;
           }
           .Artist_Container_Name{
             position: absolute;
@@ -276,7 +278,7 @@
         align-items: center;
         flex-direction: column;
         .Artist_Container_Active_Wrap{
-            height: 85%;
+            height: 82%;
             width: 100%;
             background-image: linear-gradient( #cc660051, #33333310);
             position: relative;
@@ -284,28 +286,29 @@
             border-radius: 10px;
           .Artist_Container_Img_Img_Active{
             position: absolute;
-            width: 80%;
-            margin-left: 5%;
+            width: 90%;
             height: auto;
             transition: width 1s ease;
             bottom: 20%;
+            transform: translateX(-50%);
+            left: 50%;
           }
           .Artist_Container_Name_Active{
             position: absolute;
             transition: height 0.5s ease;
             top: 5%;
-              left: 10%;
-              color: #dcdbbe9a;
-              font-size: 3vw;
-              font-family: "ladyrose";
+            left: 10%;
+            color: #dcdbbeb3;
+            font-size: 2.7vw;
+            font-family: "ladyrose";
           }
           .Artist_Container_Category_Active{
-            height: 20%;
+            height: 10%;
             width: 100%;
             position: absolute;
             bottom: 10%;
             transition: height 0.5s ease;
-            background-color: rgba(0, 0, 0, 0.402);
+            background-color: rgba(0, 0, 0, 0.622);
             color: #dcdbbeb3;
             font-size: 1vw;
             margin-bottom: 10%;

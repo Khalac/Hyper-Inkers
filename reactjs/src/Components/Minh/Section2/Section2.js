@@ -25,19 +25,19 @@ function Section2_Minh() {
   };
   return (
     <div className="Section2_Minh">
-      <div className="Section2_Minh_Text">
+      <div className="Section2_Minh_Text" style={{ marginBottom: "3%" }}>
         This young artist's enthusiasm knows no bounds when it comes to tattoo
         styles. He finds inspiration in a multitude of genres, with a simple
         criterion: if it looks good, it captivates him.
       </div>
-      <div className="Section2_Minh_Text">
+      <div className="Section2_Minh_Text" style={{ marginBottom: "3%" }}>
         This constant desire to explore and learn keeps Minh open to new atistic
         horizons. His portfolio proudly showcases his expertise in Black and
         Grey realism, Color Realism, and a deep appreciation for Oriental style
         tattoos. Beyond these specialties, Minh is always ready to embrace and
         excel in any style requested by his clients.
       </div>
-      <div className="Section2_Minh_Img">
+      <div className="Section2_Minh_Img" style={{ marginBottom: "5%" }}>
         <div className="Section2_Minh_Img_Top_Container">
           <img src={ArrImg[i]} alt="" className="Section2_Minh_Img_Top" />
         </div>

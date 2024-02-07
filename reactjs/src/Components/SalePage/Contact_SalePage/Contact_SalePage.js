@@ -60,27 +60,57 @@ function Contact_SalePage() {
               </div>
             </div>
             <div className="Contact_SalePage_Infor_Detail">
-              <div className="Contact_SalePage_Infor_Detail_Name">HOTLINE</div>
+              <div className="Contact_SalePage_Infor_Detail_Name">
+                FOLLOW US
+              </div>
               <div className="Contact_SalePage_Infor_Detail_Logo">
                 <img
                   src={insta}
                   alt="logo"
                   className="Contact_SalePage_Infor_Detail_Logo_Logo"
+                  onClick={() =>
+                    window.open(
+                      "https://www.instagram.com/hyperinkers/",
+                      "_blank",
+                      "rel=noopener noreferrer"
+                    )
+                  }
                 />
                 <img
                   src={fb}
                   alt="logo"
                   className="Contact_SalePage_Infor_Detail_Logo_Logo"
+                  onClick={() =>
+                    window.open(
+                      "https://www.facebook.com/profile.php?id=61551762555399",
+                      "_blank",
+                      "rel=noopener noreferrer"
+                    )
+                  }
                 />
                 <img
                   src={utu}
                   alt="logo"
                   className="Contact_SalePage_Infor_Detail_Logo_Logo"
+                  onClick={() =>
+                    window.open(
+                      "https://www.youtube.com/@HyperInkers",
+                      "_blank",
+                      "rel=noopener noreferrer"
+                    )
+                  }
                 />
                 <img
                   src={tiktok}
                   alt="logo"
                   className="Contact_SalePage_Infor_Detail_Logo_Logo"
+                  onClick={() =>
+                    window.open(
+                      "https://www.tiktok.com/@hyperinkers",
+                      "_blank",
+                      "rel=noopener noreferrer"
+                    )
+                  }
                 />
               </div>
             </div>
@@ -113,32 +143,62 @@ function Contact_SalePage() {
             <div className="Contact_SalePage_Infor_Detail">
               <div className="Contact_SalePage_Infor_Detail_Name">ADDRESS</div>
               <div className="Contact_SalePage_Infor_Detail_Infor">
-                8045 Callaghan Rd, San Anton�o, TX 78230 (Only 10 minutes drive
+                8045 Callaghan Rd, San Antonio, TX 78230 (Only 10 minutes drive
                 from the airport)
               </div>
             </div>
             <div className="Contact_SalePage_Infor_Detail">
-              <div className="Contact_SalePage_Infor_Detail_Name">HOTLINE</div>
+              <div className="Contact_SalePage_Infor_Detail_Name">
+                FOLLOW US
+              </div>
               <div className="Contact_SalePage_Infor_Detail_Logo">
                 <img
                   src={insta}
                   alt="logo"
                   className="Contact_SalePage_Infor_Detail_Logo_Logo"
+                  onClick={() =>
+                    window.open(
+                      "https://www.instagram.com/hyperinkers/",
+                      "_blank",
+                      "rel=noopener noreferrer"
+                    )
+                  }
                 />
                 <img
                   src={fb}
                   alt="logo"
                   className="Contact_SalePage_Infor_Detail_Logo_Logo"
+                  onClick={() =>
+                    window.open(
+                      "https://www.facebook.com/profile.php?id=61551762555399",
+                      "_blank",
+                      "rel=noopener noreferrer"
+                    )
+                  }
                 />
                 <img
                   src={utu}
                   alt="logo"
                   className="Contact_SalePage_Infor_Detail_Logo_Logo"
+                  onClick={() =>
+                    window.open(
+                      "https://www.youtube.com/@HyperInkers",
+                      "_blank",
+                      "rel=noopener noreferrer"
+                    )
+                  }
                 />
                 <img
                   src={tiktok}
                   alt="logo"
                   className="Contact_SalePage_Infor_Detail_Logo_Logo"
+                  onClick={() =>
+                    window.open(
+                      "https://www.tiktok.com/@hyperinkers",
+                      "_blank",
+                      "rel=noopener noreferrer"
+                    )
+                  }
                 />
               </div>
             </div>

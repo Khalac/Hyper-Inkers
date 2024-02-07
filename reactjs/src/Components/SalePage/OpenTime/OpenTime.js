@@ -11,7 +11,7 @@ function OpenTime() {
         <div className="OpenTime_Time_Text">WALK-IN WELCOME</div>
       </div>
       <div className="OpenTime_Text">
-        <div>
+        <div style={{ marginBottom: "5%" }}>
           {"\t"}Hyper Inkers was founded in 2023. We are young artists who
           discovered our love for tattooing at an early age, bringing with us
           many years of experience.
@@ -31,7 +31,6 @@ function OpenTime() {
         style={{
           height: "50%",
           width: "40%",
-          backgroundColor: "red",
           display: "flex",
           alignItems: "flex-start",
           justifyContent: "center",

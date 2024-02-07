@@ -137,7 +137,7 @@
       font-family: "clesmont";
       color: #cc6600;
       font-size: 2vw;
-      margin-top: 3%;
+      margin-top: 5%;
       text-align: center;
       letter-spacing: 1px;
     }
@@ -198,6 +198,7 @@
         width: 30%;
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
         background-image: linear-gradient( #cc66002a, #33333310);
         .Service_Detail_Img_Container{
@@ -206,7 +207,7 @@
           display: flex;
           align-items: center;
           justify-content: center;
-          margin-top: 5%;
+          margin-top: 10%;
           .Service_Detail_Img{
             width: 35%;
             height: auto;
@@ -233,7 +234,7 @@
             line-height: 20px;
             font-family: "LTYPE";
             color: #dcdbbec4;
-            font-size: 0.8vw;
+            font-size: 0.7vw;
             text-align: center;
           }
         }

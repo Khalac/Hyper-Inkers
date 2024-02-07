@@ -349,7 +349,7 @@ function FAQ() {
               ref={contentRef3}
               className={active3 ? `answer answer-divider` : `answer`}
             >
-              <p>We only accept cash.</p>
+              <p>We accept all major credit card.</p>
             </div>
           </div>
         </button>
@@ -490,9 +490,9 @@ function FAQ() {
         <button
           className={`question-section ${active9}`}
           onClick={toggleAccordion9}
-          style={{marginBottom: '5%'}}
+          style={{ marginBottom: "5%" }}
         >
-          <div >
+          <div>
             <div className="question-align">
               <h4 className="question-style">
                 WHAT IS THE AFTERCARE FOR A TATTOO?
