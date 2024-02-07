@@ -18,7 +18,7 @@ const ArtistArr = [
     img: Min,
     name: "MINH",
     category: "Color - Realism - Black & Grey",
-    link: "/Artist/Minh",
+    link: "/Artist/Min",
   },
   {
     img: Ben,
