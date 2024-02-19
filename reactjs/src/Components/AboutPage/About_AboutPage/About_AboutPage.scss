@@ -242,13 +242,11 @@
         .About_AboutPage_Section1_Img2{
           width: 75%;
           height: auto;
-          bottom: 0;
-          right: 0;
           border-top: 10px solid;
           border-left: 10px solid;
           border-image: linear-gradient(to right top, #cc6600, black);
           border-image-slice: 1;
-  
+          margin-bottom: 10%;
         }
       }
       .About_AboutPage_Section1_Number_Img{
@@ -307,7 +305,7 @@
         color: #cc9933;
         letter-spacing: 1.5px;
         margin-left: -10%;
-
+        
       }
       .About_AboutPage_Section2_Img{
         height: 60%;
@@ -361,7 +359,7 @@
         .About_AboutPage_Section2_Img2{
           position: absolute;
           right: 10%;
-          bottom: 0%;
+          bottom: 5%;
           height: 100%;
           width: 45%;
           display: flex;
